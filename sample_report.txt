@@ -1,0 +1,92 @@
+COMMUNITY REGIONAL MEDICAL CENTER
+2823 FRESNO STREET
+FRESNO, CA 93721
+(559) 459-6000
+
+PATIENT INFORMATION
+Name: John Doe
+DOB: 05/15/1965
+MRN: 78934562
+Visit Date: 03/12/2023
+Provider: Dr. Robert Chen, MD
+
+LABORATORY RESULTS
+
+Complete Blood Count:
+WBC: 12.3 x 10^3/uL (H)    [Reference: 4.5-11.0 x 10^3/uL]
+RBC: 4.21 x 10^6/uL        [Reference: 4.20-5.80 x 10^6/uL]
+Hemoglobin: 13.2 g/dL      [Reference: 13.5-17.5 g/dL]
+Hematocrit: 39.1%          [Reference: 41.0-53.0%]
+Platelets: 378 x 10^3/uL   [Reference: 150-450 x 10^3/uL]
+
+Basic Metabolic Panel:
+Sodium: 141 mEq/L          [Reference: 135-145 mEq/L]
+Potassium: 5.2 mEq/L (H)   [Reference: 3.5-5.1 mEq/L]
+Chloride: 102 mEq/L        [Reference: 98-107 mEq/L]
+CO2: 24 mEq/L              [Reference: 22-30 mEq/L]
+BUN: 28 mg/dL (H)          [Reference: 7-20 mg/dL]
+Creatinine: 1.8 mg/dL (H)  [Reference: 0.6-1.2 mg/dL]
+Glucose: 182 mg/dL (H)     [Reference: 70-99 mg/dL]
+eGFR: 48 mL/min/1.73m²     [Reference: >60 mL/min/1.73m²]
+
+Lipid Panel:
+Total Cholesterol: 248 mg/dL (H)  [Reference: <200 mg/dL]
+Triglycerides: 195 mg/dL (H)      [Reference: <150 mg/dL]
+HDL: 38 mg/dL (L)                 [Reference: >40 mg/dL]
+LDL: 171 mg/dL (H)                [Reference: <100 mg/dL]
+
+HbA1c: 7.8% (H)            [Reference: <5.7%]
+
+URINALYSIS
+Color: Amber
+Clarity: Slightly Cloudy
+Specific Gravity: 1.025
+pH: 5.5
+Protein: 1+ (30 mg/dL)
+Glucose: Negative
+Ketones: Negative
+Blood: Trace
+Leukocyte Esterase: Negative
+Nitrites: Negative
+WBCs: 2-5/HPF
+RBCs: 0-2/HPF
+
+RADIOLOGY FINDINGS
+Chest X-ray (03/12/2023):
+Two-view chest radiograph shows mild cardiomegaly with a cardiothoracic ratio of approximately 0.55. Lung fields appear clear without evidence of consolidation, effusion, or pneumothorax. No acute pulmonary process identified. Minimal degenerative changes noted in the thoracic spine.
+
+ASSESSMENT
+1. Type 2 Diabetes Mellitus (E11.9) - Poorly controlled with HbA1c of 7.8%
+2. Hypertension (I10) - Currently under fair control with medication
+3. Chronic Kidney Disease, Stage 3 (N18.3) - eGFR 48 mL/min/1.73m²
+4. Hyperlipidemia (E78.5) - LDL significantly above target
+5. Mild Proteinuria (R80.9) - Possibly related to diabetic nephropathy
+
+PLAN
+1. Adjust diabetes management:
+   - Increase Metformin to 1000mg twice daily
+   - Add Empagliflozin 10mg daily
+   - Continue lifestyle modifications
+
+2. Continue current antihypertensive regimen:
+   - Lisinopril 20mg daily
+   - Monitor blood pressure at home
+
+3. Nephrology referral for CKD management
+   - Recommend dietary protein restriction
+   - Avoid nephrotoxic medications
+
+4. Adjust lipid management:
+   - Increase Atorvastatin to 40mg daily
+   - Recheck lipids in 3 months
+
+5. Follow-up appointment in 1 month
+   - Bring blood pressure log
+   - Consider additional medication adjustments if targets not met
+
+Patient was counseled on the importance of medication adherence, blood glucose monitoring, and dietary modifications. All questions were addressed, and patient verbalized understanding of the treatment plan.
+
+Electronically signed by:
+Robert Chen, MD
+Internal Medicine
+03/12/2023 16:45 

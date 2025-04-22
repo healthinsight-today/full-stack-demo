@@ -1,0 +1,107 @@
+[
+  {
+    "id": "vit-d3",
+    "name": "Vitamin D3",
+    "dosage": "2000 IU",
+    "frequency": "daily",
+    "timing": "with meals",
+    "reason": "Low vitamin D levels detected in blood test",
+    "priority": "high",
+    "description": "Vitamin D3 is essential for calcium absorption and bone health. It also plays an important role in immune function and mood regulation.",
+    "benefits": [
+      "Improves calcium absorption",
+      "Supports bone health",
+      "Enhances immune function",
+      "May reduce risk of depression"
+    ],
+    "warnings": [
+      "Do not exceed recommended dosage without medical supervision",
+      "May interact with certain medications"
+    ],
+    "sources": ["Sunlight exposure", "Fatty fish", "Egg yolks", "Fortified foods"]
+  },
+  {
+    "id": "omega-3",
+    "name": "Omega-3 Fish Oil",
+    "dosage": "1000 mg",
+    "frequency": "daily",
+    "timing": "with meals",
+    "reason": "Elevated triglyceride levels and inflammation markers",
+    "priority": "medium",
+    "description": "Omega-3 fatty acids have been shown to reduce inflammation and may help lower risk of chronic diseases such as heart disease, cancer, and arthritis.",
+    "benefits": [
+      "Reduces inflammation",
+      "Lowers triglycerides",
+      "Supports brain health",
+      "May improve heart health"
+    ],
+    "warnings": [
+      "May increase bleeding risk if taking blood thinners",
+      "Choose high-quality sources to minimize mercury exposure"
+    ],
+    "sources": ["Fatty fish (salmon, mackerel)", "Flaxseeds", "Walnuts", "Chia seeds"]
+  },
+  {
+    "id": "magnesium",
+    "name": "Magnesium Glycinate",
+    "dosage": "400 mg",
+    "frequency": "daily",
+    "timing": "before bed",
+    "reason": "Low magnesium levels and reported muscle cramps",
+    "priority": "medium",
+    "description": "Magnesium is involved in over 300 biochemical reactions in the body and is critical for muscle and nerve function, blood glucose control, and bone health.",
+    "benefits": [
+      "Reduces muscle cramps and tension",
+      "Supports sleep quality",
+      "Helps regulate blood pressure",
+      "May reduce migraine frequency"
+    ],
+    "warnings": [
+      "May cause digestive upset in some individuals",
+      "Should be used with caution in those with kidney disease"
+    ],
+    "sources": ["Dark leafy greens", "Nuts and seeds", "Whole grains", "Legumes"]
+  },
+  {
+    "id": "probiotics",
+    "name": "Probiotic Complex",
+    "dosage": "10 billion CFU",
+    "frequency": "daily",
+    "timing": "before breakfast",
+    "reason": "Gut microbiome imbalance detected in analysis",
+    "priority": "medium",
+    "description": "Probiotics help maintain a healthy balance of gut bacteria, which is essential for digestive health, immune function, and even mood regulation.",
+    "benefits": [
+      "Improves digestive health",
+      "Supports immune function",
+      "May help with bloating and gas",
+      "Could improve mental health"
+    ],
+    "warnings": [
+      "Start with a lower dose if new to probiotics",
+      "Store according to package instructions to maintain potency"
+    ],
+    "sources": ["Yogurt", "Kefir", "Sauerkraut", "Kimchi", "Kombucha"]
+  },
+  {
+    "id": "b-complex",
+    "name": "Vitamin B Complex",
+    "dosage": "1 capsule",
+    "frequency": "daily",
+    "timing": "with breakfast",
+    "reason": "Suboptimal B vitamin levels, particularly B12 and folate",
+    "priority": "low",
+    "description": "B vitamins play a vital role in maintaining good health and well-being. They have a direct impact on your energy levels, brain function, and cell metabolism.",
+    "benefits": [
+      "Supports energy production",
+      "Enhances cognitive function",
+      "Helps maintain healthy skin and hair",
+      "Supports red blood cell formation"
+    ],
+    "warnings": [
+      "May cause vivid dreams if taken late in the day",
+      "May turn urine bright yellow (normal and harmless)"
+    ],
+    "sources": ["Whole grains", "Meat", "Eggs", "Legumes", "Leafy greens"]
+  }
+] 

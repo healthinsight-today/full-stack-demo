@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fruits-1",
+    "category": "Fruits",
+    "name": "Berries",
+    "items": ["Blueberries", "Strawberries", "Raspberries"],
+    "benefits": ["Rich in antioxidants", "Support heart health", "May improve blood sugar control"],
+    "reason": "Your vitamin C levels are slightly low and your inflammatory markers are elevated.",
+    "priority": "high",
+    "preparation_tips": "Add to yogurt, oatmeal, or eat as a snack. Frozen berries retain most nutrients and are available year-round."
+  },
+  {
+    "id": "fruits-2",
+    "category": "Fruits",
+    "name": "Citrus Fruits",
+    "items": ["Oranges", "Grapefruits", "Lemons"],
+    "benefits": ["High in vitamin C", "Support immune function", "Contain flavonoids that may reduce stroke risk"],
+    "reason": "Your vitamin C levels could be improved to support immune function.",
+    "priority": "medium",
+    "preparation_tips": "Eat fresh, add to water, or use in salad dressings."
+  },
+  {
+    "id": "vegetables-1",
+    "category": "Vegetables",
+    "name": "Leafy Greens",
+    "items": ["Spinach", "Kale", "Swiss Chard"],
+    "benefits": ["Rich in folate and magnesium", "Support cardiovascular health", "Provide vitamin K for bone health"],
+    "reason": "Your folate levels are below optimal range and your bone mineral density could benefit from additional support.",
+    "priority": "high",
+    "preparation_tips": "Add to smoothies, sauté with garlic, or use as a base for salads."
+  },
+  {
+    "id": "vegetables-2",
+    "category": "Vegetables",
+    "name": "Cruciferous Vegetables",
+    "items": ["Broccoli", "Cauliflower", "Brussels sprouts"],
+    "benefits": ["Contain anti-cancer compounds", "Support liver detoxification", "Rich in fiber"],
+    "reason": "Your liver enzyme tests indicate mild strain that could benefit from detox-supporting foods.",
+    "priority": "high",
+    "preparation_tips": "Steam lightly to preserve nutrients or roast with olive oil for better flavor."
+  },
+  {
+    "id": "proteins-1",
+    "category": "Proteins",
+    "name": "Fatty Fish",
+    "items": ["Salmon", "Mackerel", "Sardines"],
+    "benefits": ["High in omega-3 fatty acids", "Support brain health", "Anti-inflammatory properties"],
+    "reason": "Your omega-3 to omega-6 ratio is suboptimal and inflammatory markers are elevated.",
+    "priority": "high",
+    "preparation_tips": "Bake or grill with herbs. Aim for 2-3 servings per week."
+  },
+  {
+    "id": "proteins-2",
+    "category": "Proteins",
+    "name": "Plant-Based Proteins",
+    "items": ["Lentils", "Chickpeas", "Black beans"],
+    "benefits": ["High in fiber and protein", "Support healthy cholesterol levels", "Provide steady energy"],
+    "reason": "Your LDL cholesterol is slightly elevated and fiber intake appears low based on microbiome analysis.",
+    "priority": "medium",
+    "preparation_tips": "Pre-soak to reduce cooking time and improve digestibility. Add to soups, salads, or make hummus."
+  },
+  {
+    "id": "grains-1",
+    "category": "Grains",
+    "name": "Whole Grains",
+    "items": ["Quinoa", "Brown rice", "Oats"],
+    "benefits": ["Provide B vitamins", "Support digestive health", "Stabilize blood sugar"],
+    "reason": "Your glucose metabolism shows some irregularities that may benefit from complex carbohydrates.",
+    "priority": "medium",
+    "preparation_tips": "Batch cook and refrigerate for quick meals throughout the week."
+  },
+  {
+    "id": "grains-2",
+    "category": "Grains",
+    "name": "Ancient Grains",
+    "items": ["Farro", "Amaranth", "Millet"],
+    "benefits": ["Higher protein content than common grains", "Rich in minerals", "Support gut health"],
+    "reason": "Your microbiome diversity could benefit from varied fiber sources.",
+    "priority": "low",
+    "preparation_tips": "Cook similar to rice. Can be added to soups or used as a base for grain bowls."
+  },
+  {
+    "id": "nuts-seeds-1",
+    "category": "Nuts & Seeds",
+    "name": "Seeds",
+    "items": ["Flaxseeds", "Chia seeds", "Pumpkin seeds"],
+    "benefits": ["High in omega-3 fatty acids", "Provide zinc and magnesium", "Support hormone balance"],
+    "reason": "Your omega-3 levels and magnesium are below optimal ranges.",
+    "priority": "high",
+    "preparation_tips": "Grind flaxseeds before eating. Add to smoothies, yogurt, or oatmeal."
+  },
+  {
+    "id": "nuts-seeds-2",
+    "category": "Nuts & Seeds",
+    "name": "Tree Nuts",
+    "items": ["Walnuts", "Almonds", "Brazil nuts"],
+    "benefits": ["Support brain health", "Provide healthy fats", "Brazil nuts are high in selenium"],
+    "reason": "Your cognitive assessment indicates potential benefit from increased nut consumption.",
+    "priority": "medium",
+    "preparation_tips": "Eat raw or lightly toasted. Avoid nuts with added oils, salt, or sugar."
+  },
+  {
+    "id": "herbs-spices-1",
+    "category": "Herbs & Spices",
+    "name": "Anti-inflammatory Spices",
+    "items": ["Turmeric", "Ginger", "Cinnamon"],
+    "benefits": ["Reduce inflammation", "Support digestion", "May help regulate blood sugar"],
+    "reason": "Your inflammatory markers are elevated and blood glucose shows irregular patterns.",
+    "priority": "high",
+    "preparation_tips": "Add turmeric with black pepper to increase absorption. Use ginger in teas or stir-fries."
+  },
+  {
+    "id": "herbs-spices-2",
+    "category": "Herbs & Spices",
+    "name": "Fresh Herbs",
+    "items": ["Cilantro", "Parsley", "Basil"],
+    "benefits": ["Support detoxification", "Rich in vitamins", "Add flavor without sodium"],
+    "reason": "Your tests indicate mild heavy metal exposure that could benefit from chelating herbs.",
+    "priority": "medium",
+    "preparation_tips": "Add at the end of cooking to preserve flavors and nutrients."
+  }
+] 

@@ -1,0 +1,9 @@
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard-link {
+  text-decoration: none;
+} 

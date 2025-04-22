@@ -1,0 +1,591 @@
+{
+  "doctorRecommendations": [
+    {
+      "id": "dr-rec-001",
+      "reportId": "report-001",
+      "specialistType": "Cardiologist",
+      "reason": "Elevated cholesterol levels and cardiac risk factors",
+      "urgency": "moderate",
+      "timeframe": "Within 3 months",
+      "specialists": [
+        {
+          "id": "doc-001",
+          "name": "Dr. Sarah Chen",
+          "specialty": "Cardiology",
+          "hospital": "Heart Health Center",
+          "address": "123 Medical Plaza, San Francisco, CA",
+          "distance": "2.3 miles",
+          "availability": "Next available: May 12, 2023",
+          "rating": 4.8,
+          "reviews": 128,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+          "id": "doc-002",
+          "name": "Dr. Michael Reynolds",
+          "specialty": "Preventive Cardiology",
+          "hospital": "Bay Area Medical Center",
+          "address": "456 Healthcare Drive, San Francisco, CA",
+          "distance": "3.8 miles",
+          "availability": "Next available: May 5, 2023",
+          "rating": 4.6,
+          "reviews": 95,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+          "id": "doc-003",
+          "name": "Dr. Leila Washington",
+          "specialty": "Cardiology",
+          "hospital": "University Medical Center",
+          "address": "789 Academic Way, San Francisco, CA",
+          "distance": "5.2 miles",
+          "availability": "Next available: May 15, 2023",
+          "rating": 4.9,
+          "reviews": 210,
+          "acceptsInsurance": true,
+          "telehealth": false,
+          "image": "https://randomuser.me/api/portraits/women/45.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dr-rec-002",
+      "reportId": "report-001",
+      "specialistType": "Endocrinologist",
+      "reason": "Slightly elevated blood glucose levels",
+      "urgency": "low",
+      "timeframe": "Within 6 months",
+      "specialists": [
+        {
+          "id": "doc-004",
+          "name": "Dr. James Wilson",
+          "specialty": "Endocrinology",
+          "hospital": "Diabetes & Hormone Center",
+          "address": "567 Wellness Road, San Francisco, CA",
+          "distance": "1.9 miles",
+          "availability": "Next available: May 20, 2023",
+          "rating": 4.7,
+          "reviews": 86,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/men/45.jpg"
+        },
+        {
+          "id": "doc-005",
+          "name": "Dr. Emily Patel",
+          "specialty": "Endocrinology & Metabolism",
+          "hospital": "Metabolic Health Institute",
+          "address": "890 Research Blvd, San Francisco, CA",
+          "distance": "4.5 miles",
+          "availability": "Next available: May 8, 2023",
+          "rating": 4.5,
+          "reviews": 72,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/women/28.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dr-rec-003",
+      "reportId": "report-001",
+      "specialistType": "Dietitian",
+      "reason": "Nutrition counseling for cholesterol management",
+      "urgency": "moderate",
+      "timeframe": "Within 1 month",
+      "specialists": [
+        {
+          "id": "doc-006",
+          "name": "Lisa Hernandez, RD",
+          "specialty": "Clinical Nutrition",
+          "hospital": "Nutrition Services Center",
+          "address": "321 Healthy Living St, San Francisco, CA",
+          "distance": "2.1 miles",
+          "availability": "Next available: May 3, 2023",
+          "rating": 4.9,
+          "reviews": 112,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/women/66.jpg"
+        },
+        {
+          "id": "doc-007",
+          "name": "Robert Kim, RD",
+          "specialty": "Cardiac Nutrition",
+          "hospital": "Heart Health Center",
+          "address": "123 Medical Plaza, San Francisco, CA",
+          "distance": "2.3 miles",
+          "availability": "Next available: May 7, 2023",
+          "rating": 4.8,
+          "reviews": 64,
+          "acceptsInsurance": true,
+          "telehealth": true,
+          "image": "https://randomuser.me/api/portraits/men/67.jpg"
+        }
+      ]
+    }
+  ],
+  "dietaryRecommendations": [
+    {
+      "id": "diet-rec-001",
+      "reportId": "report-001",
+      "title": "Heart-Healthy Diet Plan",
+      "description": "A nutrition plan to help lower cholesterol and improve cardiovascular health.",
+      "targetParameters": ["Total Cholesterol", "LDL Cholesterol", "Triglycerides"],
+      "keyPrinciples": [
+        "Reduce saturated and trans fats",
+        "Increase fiber intake",
+        "Incorporate heart-healthy fats",
+        "Limit sodium and added sugars",
+        "Focus on whole, unprocessed foods"
+      ],
+      "foodsToIncrease": [
+        {
+          "name": "Oatmeal and high-fiber foods",
+          "benefits": "Soluble fiber helps reduce LDL cholesterol",
+          "servingSuggestion": "Start your day with a bowl of steel-cut oats topped with berries",
+          "frequency": "Daily"
+        },
+        {
+          "name": "Fatty fish (salmon, mackerel, sardines)",
+          "benefits": "Rich in omega-3 fatty acids that can lower triglycerides and reduce inflammation",
+          "servingSuggestion": "3-4oz serving, grilled or baked with herbs",
+          "frequency": "2-3 times per week"
+        },
+        {
+          "name": "Nuts and seeds",
+          "benefits": "Contain heart-healthy fats, fiber, and plant sterols that can help lower cholesterol",
+          "servingSuggestion": "Small handful (about 1.5oz) as a snack or added to meals",
+          "frequency": "Daily in moderation"
+        },
+        {
+          "name": "Beans and legumes",
+          "benefits": "High in fiber and protein, low in fat, and can help lower cholesterol",
+          "servingSuggestion": "1/2 cup serving added to salads, soups, or as a side dish",
+          "frequency": "3-4 times per week"
+        },
+        {
+          "name": "Fruits and vegetables",
+          "benefits": "Rich in antioxidants, fiber, and nutrients that support heart health",
+          "servingSuggestion": "Fill half your plate with colorful vegetables and fruits",
+          "frequency": "At every meal"
+        }
+      ],
+      "foodsToAvoid": [
+        {
+          "name": "Red meat and processed meats",
+          "impact": "High in saturated fat which can raise cholesterol levels",
+          "alternatives": "Lean poultry, fish, or plant-based proteins like tofu and tempeh"
+        },
+        {
+          "name": "Full-fat dairy products",
+          "impact": "Contain saturated fats that can raise LDL cholesterol",
+          "alternatives": "Low-fat or plant-based milk, yogurt, and cheese options"
+        },
+        {
+          "name": "Fried foods",
+          "impact": "Often high in trans fats and calories, can raise cholesterol and contribute to weight gain",
+          "alternatives": "Baked, grilled, or air-fried versions of your favorite foods"
+        },
+        {
+          "name": "Baked goods and sweets",
+          "impact": "Often contain trans fats, refined flour, and added sugars",
+          "alternatives": "Fresh fruit, dark chocolate in moderation, or homemade treats with healthier ingredients"
+        }
+      ],
+      "sampleMealPlan": {
+        "breakfast": "Steel-cut oatmeal topped with berries, walnuts, and a sprinkle of cinnamon",
+        "lunch": "Mediterranean salad with chickpeas, vegetables, olive oil, and lemon dressing",
+        "dinner": "Baked salmon with roasted vegetables and quinoa",
+        "snacks": ["Apple with almond butter", "Greek yogurt with berries", "Small handful of unsalted nuts"]
+      }
+    },
+    {
+      "id": "diet-rec-002",
+      "reportId": "report-001",
+      "title": "Blood Sugar Balancing Diet",
+      "description": "A nutrition plan to help stabilize blood glucose levels and prevent prediabetes progression.",
+      "targetParameters": ["Glucose", "HbA1c"],
+      "keyPrinciples": [
+        "Focus on balanced meals with protein, healthy fats, and complex carbohydrates",
+        "Emphasize low glycemic index foods",
+        "Maintain consistent meal timing",
+        "Control portion sizes",
+        "Stay well hydrated"
+      ],
+      "foodsToIncrease": [
+        {
+          "name": "Non-starchy vegetables",
+          "benefits": "High in fiber and nutrients, low in carbohydrates that affect blood sugar",
+          "servingSuggestion": "Fill half your plate with colorful vegetables like leafy greens, broccoli, peppers",
+          "frequency": "At every meal"
+        },
+        {
+          "name": "Lean proteins",
+          "benefits": "Helps stabilize blood sugar levels and provides sustained energy",
+          "servingSuggestion": "Palm-sized portion (about 4-6oz) of chicken, fish, tofu, or legumes",
+          "frequency": "At every meal"
+        },
+        {
+          "name": "Healthy fats",
+          "benefits": "Slows digestion and helps prevent blood sugar spikes",
+          "servingSuggestion": "1-2 tablespoons of olive oil, avocado, or nuts/seeds",
+          "frequency": "At most meals"
+        },
+        {
+          "name": "Whole grains",
+          "benefits": "Provide fiber and nutrients without the blood sugar spike of refined grains",
+          "servingSuggestion": "1/3-1/2 cup cooked quinoa, brown rice, or oats",
+          "frequency": "In moderation with meals"
+        }
+      ],
+      "foodsToAvoid": [
+        {
+          "name": "Sugary beverages",
+          "impact": "Causes rapid blood sugar spikes with no nutritional benefit",
+          "alternatives": "Water, unsweetened tea, or water infused with fruit/herbs"
+        },
+        {
+          "name": "Refined carbohydrates",
+          "impact": "Quickly convert to sugar in the bloodstream",
+          "alternatives": "Whole grains like brown rice, quinoa, and whole wheat products in moderation"
+        },
+        {
+          "name": "Processed snack foods",
+          "impact": "Often high in refined carbs, unhealthy fats, and sodium",
+          "alternatives": "Nuts, seeds, vegetable sticks with hummus, or a piece of fruit with nut butter"
+        },
+        {
+          "name": "Large fruit servings",
+          "impact": "Can contain significant natural sugars that affect blood glucose",
+          "alternatives": "Smaller portions of lower-glycemic fruits like berries, paired with protein or fat"
+        }
+      ],
+      "sampleMealPlan": {
+        "breakfast": "Vegetable omelette with avocado and a small serving of berries",
+        "lunch": "Grilled chicken salad with olive oil dressing and a small serving of quinoa",
+        "dinner": "Baked fish with roasted non-starchy vegetables and a side salad",
+        "snacks": ["Celery with almond butter", "Small handful of mixed nuts", "Greek yogurt with cinnamon"]
+      }
+    }
+  ],
+  "groceryRecommendations": [
+    {
+      "id": "grocery-rec-001",
+      "reportId": "report-001",
+      "title": "Heart-Healthy Grocery List",
+      "description": "A shopping guide focused on foods that can help improve cholesterol levels and cardiovascular health.",
+      "categories": [
+        {
+          "name": "Produce",
+          "items": [
+            {
+              "name": "Leafy greens (spinach, kale, arugula)",
+              "benefits": "Rich in antioxidants and nutrients that support heart health",
+              "tips": "Look for dark, vibrant colors which indicate higher nutrient content"
+            },
+            {
+              "name": "Berries (blueberries, strawberries, raspberries)",
+              "benefits": "High in antioxidants and fiber that can help lower cholesterol",
+              "tips": "Choose organic when possible or rinse thoroughly"
+            },
+            {
+              "name": "Avocados",
+              "benefits": "Contains heart-healthy monounsaturated fats",
+              "tips": "Select firm avocados for later use, or softer ones for immediate consumption"
+            },
+            {
+              "name": "Citrus fruits (oranges, grapefruit)",
+              "benefits": "Rich in pectin fiber which can help lower cholesterol",
+              "tips": "Choose fruits that feel heavy for their size, indicating juiciness"
+            },
+            {
+              "name": "Cruciferous vegetables (broccoli, cauliflower, Brussels sprouts)",
+              "benefits": "Contain compounds that may help reduce inflammation",
+              "tips": "Look for compact, firm heads with vibrant colors"
+            }
+          ]
+        },
+        {
+          "name": "Grains",
+          "items": [
+            {
+              "name": "Steel-cut or rolled oats",
+              "benefits": "Rich in soluble fiber that can help lower LDL cholesterol",
+              "tips": "Choose less processed varieties for more fiber and nutrients"
+            },
+            {
+              "name": "Brown rice",
+              "benefits": "Whole grain with fiber and nutrients that white rice lacks",
+              "tips": "Store in airtight containers to maintain freshness"
+            },
+            {
+              "name": "Quinoa",
+              "benefits": "Complete protein with fiber and heart-healthy nutrients",
+              "tips": "Rinse before cooking to remove bitter coating"
+            },
+            {
+              "name": "Whole grain bread",
+              "benefits": "More fiber and nutrients than refined white bread",
+              "tips": "Check ingredient list to ensure whole grains are listed first"
+            }
+          ]
+        },
+        {
+          "name": "Proteins",
+          "items": [
+            {
+              "name": "Fatty fish (salmon, mackerel, sardines)",
+              "benefits": "Rich in omega-3 fatty acids that support heart health",
+              "tips": "Choose wild-caught when possible for higher omega-3 content"
+            },
+            {
+              "name": "Beans and lentils",
+              "benefits": "Excellent source of fiber and plant-based protein",
+              "tips": "Canned varieties are convenient; look for low-sodium options and rinse before using"
+            },
+            {
+              "name": "Skinless poultry",
+              "benefits": "Lean protein source lower in saturated fat than red meat",
+              "tips": "Choose organic or antibiotic-free when possible"
+            },
+            {
+              "name": "Tofu and tempeh",
+              "benefits": "Plant proteins that may help lower cholesterol",
+              "tips": "Extra firm tofu works best for stir-fries, while softer varieties are good for smoothies"
+            }
+          ]
+        },
+        {
+          "name": "Nuts and Seeds",
+          "items": [
+            {
+              "name": "Walnuts",
+              "benefits": "One of the best nut sources of omega-3 fatty acids",
+              "tips": "Store in the refrigerator to prevent rancidity"
+            },
+            {
+              "name": "Almonds",
+              "benefits": "Contain heart-healthy monounsaturated fats and vitamin E",
+              "tips": "Buy raw or dry roasted without added oils or salt"
+            },
+            {
+              "name": "Flaxseeds",
+              "benefits": "Excellent source of omega-3 fatty acids and fiber",
+              "tips": "Grind before eating to improve nutrient absorption"
+            },
+            {
+              "name": "Chia seeds",
+              "benefits": "Rich in omega-3s, fiber, and antioxidants",
+              "tips": "Add to smoothies, yogurt, or make chia pudding"
+            }
+          ]
+        },
+        {
+          "name": "Healthy Fats",
+          "items": [
+            {
+              "name": "Extra virgin olive oil",
+              "benefits": "Rich in monounsaturated fats and antioxidants",
+              "tips": "Use for low to medium-heat cooking and salad dressings"
+            },
+            {
+              "name": "Avocado oil",
+              "benefits": "High smoke point and heart-healthy monounsaturated fats",
+              "tips": "Good for higher-heat cooking methods"
+            }
+          ]
+        },
+        {
+          "name": "Dairy and Alternatives",
+          "items": [
+            {
+              "name": "Low-fat Greek yogurt",
+              "benefits": "High in protein and probiotics with less fat than regular yogurt",
+              "tips": "Choose plain varieties and add your own fruit to avoid added sugars"
+            },
+            {
+              "name": "Unsweetened almond or oat milk",
+              "benefits": "Lower in calories and saturated fat than whole milk",
+              "tips": "Check for added calcium and vitamin D to ensure nutrient adequacy"
+            }
+          ]
+        }
+      ],
+      "mealDeliveryServices": [
+        {
+          "name": "Green Chef",
+          "specialty": "Organic ingredients with heart-healthy meal options",
+          "priceRange": "$$$",
+          "dietaryOptions": ["Keto", "Paleo", "Balanced Living", "Plant-Powered"],
+          "website": "https://www.greenchef.com",
+          "rating": 4.5
+        },
+        {
+          "name": "Sunbasket",
+          "specialty": "Organic produce and clean ingredients with Mediterranean diet options",
+          "priceRange": "$$$",
+          "dietaryOptions": ["Mediterranean", "Vegetarian", "Pescatarian", "Diabetes-Friendly"],
+          "website": "https://www.sunbasket.com",
+          "rating": 4.7
+        },
+        {
+          "name": "Blue Apron",
+          "specialty": "Balanced meals with portion control",
+          "priceRange": "$$",
+          "dietaryOptions": ["Wellness", "Vegetarian", "Family Friendly"],
+          "website": "https://www.blueapron.com",
+          "rating": 4.3
+        }
+      ]
+    },
+    {
+      "id": "grocery-rec-002",
+      "reportId": "report-001",
+      "title": "Blood Sugar Friendly Grocery List",
+      "description": "A shopping guide focused on foods that help maintain stable blood glucose levels.",
+      "categories": [
+        {
+          "name": "Produce",
+          "items": [
+            {
+              "name": "Non-starchy vegetables (broccoli, bell peppers, zucchini)",
+              "benefits": "Low in carbohydrates and high in fiber and nutrients",
+              "tips": "Aim for at least 3 different colors to ensure nutrient variety"
+            },
+            {
+              "name": "Leafy greens (spinach, kale, arugula)",
+              "benefits": "Minimal impact on blood sugar with maximum nutrient density",
+              "tips": "Pre-wash and store with paper towels to extend freshness"
+            },
+            {
+              "name": "Low-glycemic fruits (berries, apples, pears)",
+              "benefits": "Less impact on blood sugar than tropical fruits",
+              "tips": "Pair with a protein source to minimize blood sugar impact"
+            },
+            {
+              "name": "Avocados",
+              "benefits": "Healthy fats that don't impact blood sugar and promote satiety",
+              "tips": "Refrigerate ripe avocados to extend shelf life"
+            }
+          ]
+        },
+        {
+          "name": "Proteins",
+          "items": [
+            {
+              "name": "Eggs",
+              "benefits": "Complete protein with minimal impact on blood sugar",
+              "tips": "Hard boil a batch for quick, protein-rich snacks"
+            },
+            {
+              "name": "Chicken and turkey",
+              "benefits": "Lean proteins that help stabilize blood sugar",
+              "tips": "Buy in bulk and freeze portions for convenience"
+            },
+            {
+              "name": "Wild-caught fish",
+              "benefits": "Protein with healthy omega-3 fats",
+              "tips": "Frozen fish fillets are convenient and often more affordable"
+            },
+            {
+              "name": "Tofu and tempeh",
+              "benefits": "Plant proteins with minimal impact on blood sugar",
+              "tips": "Firm tofu works well in stir-fries; tempeh has a nuttier flavor"
+            }
+          ]
+        },
+        {
+          "name": "Healthy Fats",
+          "items": [
+            {
+              "name": "Nuts and seeds (almonds, walnuts, chia, flax)",
+              "benefits": "Healthy fats and protein that help slow digestion and prevent blood sugar spikes",
+              "tips": "Portion into small containers for easy grab-and-go snacks"
+            },
+            {
+              "name": "Olive oil and avocado oil",
+              "benefits": "Healthy fats that don't impact blood sugar",
+              "tips": "Use olive oil for low-heat cooking and avocado oil for higher-heat methods"
+            },
+            {
+              "name": "Olives",
+              "benefits": "Healthy fats and antioxidants with minimal carbs",
+              "tips": "Look for varieties without added sugars"
+            }
+          ]
+        },
+        {
+          "name": "Dairy and Alternatives",
+          "items": [
+            {
+              "name": "Plain Greek yogurt",
+              "benefits": "High protein content helps balance blood sugar impact",
+              "tips": "Choose full-fat or 2% varieties which are more satiating"
+            },
+            {
+              "name": "Unsweetened almond milk",
+              "benefits": "Very low in carbs compared to regular milk",
+              "tips": "Check labels to ensure no added sugars"
+            },
+            {
+              "name": "Cheese",
+              "benefits": "Protein and fat with minimal impact on blood sugar",
+              "tips": "Aged cheeses like cheddar and parmesan have less lactose"
+            }
+          ]
+        },
+        {
+          "name": "Pantry Staples",
+          "items": [
+            {
+              "name": "Apple cider vinegar",
+              "benefits": "May help improve insulin sensitivity when consumed before meals",
+              "tips": "Mix 1-2 tablespoons with water before meals"
+            },
+            {
+              "name": "Canned beans",
+              "benefits": "Fiber and protein to help slow carbohydrate absorption",
+              "tips": "Rinse thoroughly to reduce sodium content"
+            },
+            {
+              "name": "Whole grains (quinoa, brown rice)",
+              "benefits": "More fiber and nutrients than refined grains, with less impact on blood sugar",
+              "tips": "Cook in batches and refrigerate or freeze portions"
+            }
+          ]
+        }
+      ],
+      "mealDeliveryServices": [
+        {
+          "name": "Factor",
+          "specialty": "Fresh, fully prepared meals with low-carb options",
+          "priceRange": "$$$",
+          "dietaryOptions": ["Keto", "Calorie-Smart", "Protein Plus"],
+          "website": "https://www.factor75.com",
+          "rating": 4.6
+        },
+        {
+          "name": "Diet-to-Go",
+          "specialty": "Portion-controlled meals with diabetes-friendly options",
+          "priceRange": "$$",
+          "dietaryOptions": ["Balance-Diabetes", "Keto-Carb30", "Vegetarian"],
+          "website": "https://diettogo.com",
+          "rating": 4.2
+        },
+        {
+          "name": "Trifecta Nutrition",
+          "specialty": "Organic ingredients with macro-balanced meals",
+          "priceRange": "$$$",
+          "dietaryOptions": ["Keto", "Paleo", "Clean", "Classic Meals"],
+          "website": "https://www.trifectanutrition.com",
+          "rating": 4.5
+        }
+      ]
+    }
+  ]
+} 

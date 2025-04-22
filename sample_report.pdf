@@ -1,0 +1,4 @@
+This is a placeholder for a sample medical report PDF file. 
+In a real testing scenario, this would be replaced with an actual PDF medical report.
+
+For the integration test, the script will automatically create a text file if this PDF is not available. 
