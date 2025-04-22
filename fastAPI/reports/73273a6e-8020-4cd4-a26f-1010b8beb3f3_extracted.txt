@@ -1,0 +1,1069 @@
+Estimated Glomerular Filtration Rate (eGFR):
+GFR by MDRD Formula
+(Method: Calculated)
+103
+mL/min/1.73m2 74 - 138
+BUN/Creatinine Ratio
+BUN / Creatinine Ratio
+11.22
+Ratio
+6 - 22
+Urea/Creatinine Ratio
+Urea / Creatinine Ratio
+24.08
+Ratio
+20-35
+ITDOSE INFOSYSTEMS PVT. LTD.
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Serum
+Reported On
+: 22-Jan-2025 01:37 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 1 of 12
+COMPLETE BLOOD COUNT (CBC)
+Haemoglobin (Hb)
+(Method: Cynmeth Method)
+15.5
+g/dL
+13-17
+RBC Count
+(Method: Cell Impedence)
+4.98
+10^12/L
+4.5-5.5
+Haematocrit (HCT)
+(Method: Calculated)
+42.5 40-50
+MCV
+(Method: Calculated)
+85
+fl
+81-101
+MCH
+(Method: Calculated)
+31.2
+pg
+27-32
+MCHC
+(Method: Calculated)
+32.0
+g/dL
+32.5-34.5
+RDW-CV
+(Method: Calculated)
+13.0 11.6-14.0
+Platelet Count (PLT)
+(Method: Cell Impedance )
+252
+10^9/L
+150-410
+Total WBC Count
+(Method: Impedance)
+7.7
+10^9/L
+4.0-10.0
+Neutrophils
+(Method: Cell Impedence)
+62 40-70
+Absolute Neutrophils Count
+(Method: Impedence)
+4.77
+10^9/L
+2.0-7.0
+Lymphocytes
+(Method: Cell Impedence)
+30 20-40
+Absolute Lymphocyte Count
+(Method: Impedence)
+2.31
+10^9/L
+1.0-3.0
+Monocytes
+(Method: Microscopy)
+06 2-10
+Absolute Monocyte Count
+(Method: Calculated)
+0.46
+10^9/L
+0.2-1.0
+Eosinophils
+(Method: Microscopy)
+02 1-6
+Absolute Eosinophils Count
+(Method: Calculated)
+0.15
+10^9/L
+0.02-0.5
+Basophils
+(Method: Microscopy)
+00 1-2
+Absolute Basophil lCount
+(Method: Calculated)
+0.00
+10^9/L
+0.0-0.3
+Morphology
+WBC
+Within Normal Limits
+RBC
+Normocytic normochromic blood picture.
+Platelets
+(Method: Microscopy)
+Adequate.
+ITDOSE INFOSYSTEMS PVT. LTD.
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Whole Blood EDTA
+Reported On
+: 22-Jan-2025 12:25 PM
+Client Address
+
+Report Status
+
+HAEMATOLOGY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 2 of 12
+Blood Picture - Peripheral Smear Examination
+Red Blood Cells
+(Method: Microscopy)
+Normocytic normochromic
+White Blood Cells
+(Method: Microscopy)
+Within normal limits
+Platelets
+(Method: Microscopy)
+Adequate
+Hemoparasites
+(Method: Microscopy)
+Not seen.
+Impression
+Normocytic normochromic blood picture.
+Advice
+Correlate clinically
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Whole Blood EDTA
+Reported On
+: 22-Jan-2025 12:25 PM
+Client Address
+
+Report Status
+
+HAEMATOLOGY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 3 of 12
+Complete Urine Analysis (CUE)
+Physical Examination
+Colour
+Pale Yellow
+Straw to light amber
+Appearance
+Clear
+Clear
+Chemical Examination
+Glucose
+(Method: Strip Reflectance)
+Negative
+Negative
+Protein
+(Method: Strip Reflectance)
+Negative
+Negative
+Bilirubin (Bile)
+(Method: Strip Reflectance )
+Negative
+Negative
+Urobilinogen
+(Method: Ehrlichs reagent)
+Negative
+Negative
+Ketone Bodies
+(Method: Strip Reflectance)
+Negative
+Negative
+Specific Gravity
+(Method: Strip Reflectance)
+1.025
+1.000 - 1.030
+Blood
+(Method: Strip Reflectance)
+Negative
+Negative
+Reaction (pH)
+(Method: Reagent Strip Reflectance)
+5.5
+5.0 - 8.5
+Nitrites
+(Method: Strip Reflectance)
+Negative
+Negative
+Leukocyte esterase
+(Method: Reagent Strip Reflectance)
+Negative
+Negative
+Microscopic Examination (Microscopy)
+PUS(WBC) Cells
+(Method: Microscopy)
+03-04
+/hpf
+00-05
+R.B.C.
+(Method: Microscopic)
+Nil
+/hpf
+Nil
+Epithelial Cells
+(Method: Microscopic)
+02-03
+/hpf
+00-05
+Casts
+(Method: Microscopic)
+Absent
+Absent
+Crystals
+(Method: Microscopic)
+Absent
+Absent
+Bacteria
+Nil
+Nil
+Budding Yeast Cells
+(Method: Microscopy)
+Nil
+Absent
+ITDOSE INFOSYSTEMS PVT. LTD.
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Urine
+Reported On
+: 22-Jan-2025 01:08 PM
+Client Address
+
+Report Status
+
+CLINICAL PATHOLOGY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 4 of 12
+Glucose Fasting (F)
+(Method: Hexokinase)
+93
+mg/dL
+70-100
+Interpretation of Plasma Glucose based on ADA guidelines 2018
+Diagnosis
+FastingPlasma Glucose(mg/dL)
+2hrsPlasma Glucose(mg/dL)
+HbA1c(%)
+RBS(mg/dL)
+Prediabetes
+100-125
+140-199
+5.7-6.4
+NA
+Diabetes
+= 126
+= 200
+= 6.5
+>=200(with symptoms)
+
+Reference: Diabetes care 2018:41(suppl.1):S13-S27
+Blood Urea Nitrogen (BUN)-Serum
+Blood Urea Nitrogen (BUN)
+(Method: Calculated )
+11.0
+mg/dL
+7.0-18.0
+Urea-Serum
+(Method: Calculated)
+23.6
+mg/dL
+12.8-42.8
+Interpretation:
+BUN stands for blood urea nitrogen. Urea nitrogen is what forms when protein breaks down. The BUN test is often done to check kidney function
+Higher-than-normal level may be due to:
+Congestive heart failure
+Excessive protein level in the gastrointestinal tract
+Gastrointestinal bleeding
+Hypovolemia (dehydration)
+Kidney disease, including glomerulonephritis, pyelonephritis, and acute tubular necrosis
+Lower-than-normal level may be due to:
+Liver failure
+Low protein diet
+Malnutrition
+
+Creatinine
+(Method: Jaffes Kinetic)
+0.98
+mg/dL
+0.70-1.30
+Interpretation:
+This test is done to see how well your kidneys are working.Creatinine is a chemical waste product of creatine. Creatine is a chemical made by the body and is used to supply energy mainly to
+muscles.
+A higher than normal level may be due to:
+Renal diseases and insufficiency with decreased glomerular filtration, urinary tract obstruction, reduced renal blood flow including congestive heart failure, shock, and dehydration; rhabdomyolysis
+can cause elevated serum creatinine.
+A lower than normal level may be due to:
+Small stature, debilitation, decreased muscle mass; some complex cases of severe hepatic disease can cause low serum creatinine levels. In advanced liver disease, low creatinine may result
+from decreased hepatic production of creatinine and inadequate dietary protein as well as reduced musle mass.
+
+ITDOSE INFOSYSTEMS PVT. LTD.
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Plasma-NaF(F), Serum
+Reported On
+: 22-Jan-2025 01:34 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 5 of 12
+Glycated Hemoglobin (HbA1c)
+(Method: HPLC)
+5.1 Non Diabetic:< 5.7
+Pre diabetic: 5.7-6.4
+Diabetic:>= 6.5
+Mean Plasma Glucose
+(Method: Calculated)
+99.67
+mg/dL
+Glycated hemoglobins (GHb), also called glycohemoglobins, are substances formed when glucose binds to hemoglobin, and occur in amounts proportional to the
+concentration of serum glucose. Since red blood cells survive an average of 120 days, the measurement of GHb provides an index of a person's average blood glucose
+concentration (glycemia) during the preceding 2-3 months. Normally, only 4% to 6% of hemoglobin is bound to glucose, while elevated glycohemoglobin levels are seen in
+diabetes and other hyperglycemic states Mean Plasma Glucose(MPG):This Is Mathematical Calculations Where Glycated Hb Can Be Correlated With Daily Mean Plasma
+Glucose Level
+ITDOSE INFOSYSTEMS PVT. LTD.
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Whole Blood EDTA, Serum
+Reported On
+: 22-Jan-2025 01:27 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 6 of 12
+Uric Acid
+(Method: Uricase)
+5.5
+mg/dL
+3.5-7.2
+Interpretation:
+Uric acid is a chemical created when the body breaks down substances called purines. Purines are normally produced in the body and are also found in some foods and drinks. Foods with
+high content of purines include liver, anchovies, mackerel, dried beans and peas, and beer. Most uric acid dissolves in blood and travels to the kidneys. From there, it passes out in urine.
+If your body produces too much uric acid or does not remove enough if it, you can get sick. A high level of uric acid in the blood is called hyperuricemia.This test checks to see how much
+uric acid you have in your blood.Investigation and monitoring of inflammatory arthritis pain, particularly in big toe (gout)
+Useful in the investigation of kidney stones
+Aid in diagnosis, treatment, and monitoring of renal failure/disease
+Monitor patients receiving cytotoxic drugs (high nucleic acid turnover)
+Monitor diseases with nucleic acid metabolism and turnover (eg, leukemia, lymphoma, polycythemia)
+
+25 - Hydroxy Vitamin D
+(Method: CLIA)
+9.00
+ng/mL
+<20.0-Deficiency
+20.0-30.0-Insufficiency
+30.0-100.0-Sufficiency
+>100.0-Potential Intoxication
+Interpretation:
+1.Vitamin D helps your body absorb calcium and maintain strong bones throughout your entire life. Your body produces vitamin D when the sun’s UV
+rays contact your skin. Other good sources of the vitamin include fish, eggs, and fortified dairy products. It’s also available as a dietary supplement.
+2.Vitamin D must go through several processes in your body before your body can use it. The first transformation occurs in the liver. Here, your
+body converts vitamin D to a chemical known as 25-hydroxyvitamin D, also called calcidiol.
+3.The 25-hydroxy vitamin D test is the best way to monitor vitamin D levels. The amount of 25-hydroxyvitamin D in your blood is a good indication of
+how much vitamin D your body has. The test can determine if your vitamin D levels are too high or too low.
+4.The test is also known as the 25-OH vitamin D test and the calcidiol 25-hydroxycholecalcifoerol test. It can be an important indicator of
+osteoporosis (bone weakness) and rickets (bone malformation).
+Those who are at high risk of having low levels of vitamin D include:
+1.people who don’t get much exposure to the sun
+2.older adults
+3.people with obesity.
+4.dietary deficiency
+Increased Levels: Vitamin D Intoxication
+
+Method : CLIA
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Whole Blood EDTA, Serum
+Reported On
+: 22-Jan-2025 01:27 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 7 of 12
+Vitamin- B12 (cyanocobalamin)
+(Method: CLIA)
+218
+pg/mL
+211-911
+Interpretation:
+This test is most often done when other blood tests suggest a condition called megaloblastic anemia. Pernicious anemia is a form of megaloblastic anemia caused by
+poor vitamin B12 absorption. This can occur when the stomach makes less of the substance the body needs to properly absorb vitamin B12.
+Causes of vitamin B12 deficiency include:Diseases that cause malabsorption
+Lack of intrinsic factor, a protein that helps the intestine absorb vitamin B12
+Above normal heat production (for example, with hyperthyroidism)
+An increased vitamin B12 level is uncommon in:
+Liver disease (such as cirrhosis or hepatitis)
+Myeloproliferative disorders (for example, polycythemia vera and chronic myelogenous leukemia)
+
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Whole Blood EDTA, Serum
+Reported On
+: 22-Jan-2025 01:27 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 8 of 12
+Lipid Profile
+Cholesterol Total
+(Method: CHOD-POD)
+201
+mg/dL 200
+Triglycerides-TGL
+(Method: GPO-POD)
+105
+mg/dL 150
+Cholesterol-HDL
+(Method: Direct)
+46
+mg/dL
+40-60
+Cholesterol-LDL
+(Method: Calculated)
+134
+mg/dL 100
+Cholesterol- VLDL
+(Method: Calculated)
+21
+mg/dL
+7-35
+Non HDL Cholesterol
+(Method: Calculated)
+155
+mg/dL 130
+Cholesterol Total /HDL Ratio
+(Method: Calculated)
+4.37
+Ratio
+0-4.0
+LDL/HDL Ratio
+(Method: Calculated)
+2.91
+Ratio
+0-3.5
+The National Cholesterol Education program’s third Adult Treatment Panel (ATPIII) has issued its recommendations on evaluating  and treating lipid discorders for
+primary and secondary.
+NCEP
+Recommendations
+Cholesterol Total
+in (mg/dL)
+Triglycerides
+in (mg/dL)
+HDL
+Cholesterol
+(mg/dL)
+LDL Cholesterol
+in (mg/dL)
+Non HDL
+Cholesterol in
+(mg/dL)
+Optimal
+Adult: 200
+Children: 170
+150
+40-59
+Adult:<100
+Children: <110
+<130
+Above Optimal
+
+100-129
+130 - 159
+Borderline High
+Adult: 200-239
+Children:171-199
+150-199
+
+Adult: 130-159
+Children: 111-129 160 - 189
+High
+Adult:>or=240
+Children:>or=200
+200-499
+≥ 60
+Adult:160-189
+Children:>or=130 190 - 219
+Very High
+
+>or=500
+
+Adult: >or=190
+
+>=220
+Note: LDL cholesterol cannot be calculated if triglyceride is >400 mg/dL (Friedewald's formula). Calculated values not provided for LDL and VLDL
+ITDOSE INFOSYSTEMS PVT. LTD.
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Serum
+Reported On
+: 22-Jan-2025 01:34 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 9 of 12
+Liver Function Test (LFT)
+Bilirubin(Total)
+(Method: Diazo)
+0.3
+mg/dL
+0.1-1.2
+Bilirubin (Direct)
+(Method: Diazo)
+0.1
+mg/dL
+0.0 - 0.3
+Bilirubin (Indirect)
+(Method: Calculated)
+0.2
+mg/dL
+0.2-1.0
+Aspartate Aminotransferase (AST/SGOT)
+(Method: IFCC UV Assay)
+22
+U/L
+15-37
+Alanine Aminotransferase (ALT/SGPT)
+(Method: IFCC with out (P-5-P))
+23
+U/L
+0-55
+Alkaline Phosphatase(ALP)
+(Method: Kinetic PNPP-AMP)
+68
+U/L
+30-120
+Gamma Glutamyl Transpeptidase (GGTP)
+(Method: IFCC)
+15
+U/L
+15-85
+Protein - Total
+(Method: Βiuret)
+7.2
+g/dL
+6.4-8.2
+Albumin
+(Method: Bromocresol Green (BCG) )
+4.5
+g/dL
+3.4-5.0
+Globulin
+(Method: Calculated)
+2.7
+g/dL
+2.0-4.2
+A:G Ratio
+(Method: Calculated)
+1.67
+Ratio
+0.8-2.0
+SGOT/SGPT Ratio
+(Method: Calculated )
+0.96
+Ratio
+<1.0
+Alanine Aminotransferase(ALT) is an enzyme found in liver and kidneys cells. ALT helps create energy for liver cells. Damaged liver cells release ALT into the bloodstream, which can elevate
+ALT levels in the blood.
+Aspartate Aminotransferase (AST) is an enzyme in the liver and muscles that helps metabolizes amino acids. Similarly to ALT, elevated AST levels may be a sign of liver damage or liver
+disease.
+Alkaline phosphate (ALP) is an enzyme present in the blood. ALP contributes to numerous vital bodily functions, such as supplying nutrients to the liver, promoting bone growth, and
+metabolizing fat in the intestines.
+Gamma-glutamyl Transpeptidase (GGTP) is an enzyme that occurs primarily in the liver, but it is also present in the kidneys, pancreas, gallbladder, and spleen. Higher than normal
+concentrations of GGTP in the blood may indicate alcohol-related liver damage. Elevated GGTP levels can also increase the risk of developing certain types of cancer.
+Bilirubin is a waste product that forms when the liver breaks down red blood cells. Bilirubin exits the body as bile in stool. High levels of bilirubin can cause jaundice - a condition in which the
+skin and whites of the eyes turn yellow- and may indicate liver damage.
+Albumin is a protein that the liver produces. The liver releases albumin into the bloodstream, where it helps fight infections and transport vitamins, hormones, and enzymes throughout the body.
+Liver damage can cause abnormally low albumin levels.
+ITDOSE INFOSYSTEMS PVT. LTD.
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Serum
+Reported On
+: 22-Jan-2025 01:34 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 10 of 12
+Iron Profile-I
+Iron(Fe)
+(Method: Ferrozine)
+81
+μg/dL
+65-175
+Total Iron Binding Capacity (TIBC)
+(Method: Ferrozine)
+415
+µg/dL
+250-450
+Transferrin
+(Method: Calculated)
+290.21
+mg/dL
+215-365
+Iron Saturation((% Transferrin Saturation)
+(Method: Calculated)
+19.52 20-50
+Unsaturated Iron Binding Capacity (UIBC)
+(Method: FerroZine)
+334
+µg/dL
+110 - 370
+Interpretation:
+Serum transferrin (and TIBC) high, serum iron low, saturation low. Usual causes of depleted iron stores include blood loss, inadequate dietary iron. RBCs in moderately severe iron
+deficiency are hypochromic and microcytic. Stainable marrow iron is absent. Serum ferritin decrease is the earliest indicator of iron deficiency if inflammation is absent.
+Anemia of chronic disease: Serum transferrin (and TIBC) low to normal, serum iron low, saturation low or normal. Transferrin decreases with many inflammatory diseases. With
+chronic disease there is a block in movement to and utilization of iron by marrow. This leads to low serum iron and decreased erythropoiesis. Examples include acute and chronic
+infections, malignancy and renal failure.
+Sideroblastic Anemia: Serum transferrin (and TIBC) normal to low, serum iron normal to high, saturation high.
+Hemolytic Anemia: Serum transferrin (and TIBC) normal to low, serum iron high, saturation high.
+Hemochromatosis: Serum transferrin (and TIBC) slightly low, serum iron high, saturation very high.
+Protein depletion: Serum transferrin (and TIBC) may be low, serum iron normal or low (if patient also is iron deficient). This may occur as a result of malnutrition, liver disease, renal
+disease.
+Liver disease: Serum transferrin variable; with acute viral hepatitis, high along with serum iron and ferritin. With chronic liver disease (eg, cirrhosis), transferrin may be low. Patients who
+have cirrhosis and portacaval shunting have saturated TIBC/transferrin as well as high ferritin.
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Serum
+Reported On
+: 22-Jan-2025 01:34 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 11 of 12
+Thyroid Profile-I(TFT)
+T3 (Triiodothyronine)
+(Method: CLIA)
+103.60
+ng/dL
+70-204
+T4 (Thyroxine)
+(Method: CLIA)
+6.9
+µg/dL
+3.2-12.6
+TSH -Thyroid Stimulating Hormone
+(Method: CLIA)
+6.85
+µIU/mL
+0.35-5.5
+Pregnancy & Cord Blood
+T3 (Triiodothyronine):
+T4 (Thyroxine)
+TSH (Thyroid Stimulating Hormone)
+First Trimester : 81-190 ng/dL
+15 to 40 weeks:9.1-14.0 µg/dL
+First Trimester     : 0.24-2.99 µIU/mL
+Second&Third Trimester :100-260 ng/dL
+
+Second Trimester: 0.46-2.95 µIU/mL
+
+Third Trimester    : 0.43-2.78 µIU/mL
+Cord Blood: 30-70 ng/dL
+Cord Blood: 7.4-13.0 µg/dL
+Cord Blood:         : 2.3-13.2   µIU/mL
+Interpretation:
+Thyroid gland is a butterfly-shaped endocrine gland that is normally located in the lower front of the neck. The thyroid’s job is to make thyroid hormones, which are
+secreted into the blood and then carried to every tissue in the body. Thyroid hormones help the body use energy, stay warm and keep the brain, heart, muscles, and other
+organs working as they should.
+Thyroid produces two major hormones: triiodothyronine (T3) and thyroxine (T4). If thyroid gland doesn’t produce enough of these hormones, you may experience
+symptoms such as weight gain, lack of energy, and depression. This condition is called hypothyroidism.
+Thyroid gland produces too many hormones, you may experience weight loss, high levels of anxiety, tremors, and a sense of being on a high. This is called
+hyperthyroidism.
+TSH interacts with specific cell receptors on the thyroid cell surface and exerts two main actions. The first action is to stimulate cell reproduction and hypertrophy.
+Secondly, TSH stimulates the thyroid gland to synthesize and secrete T3 and T4.
+The ability to quantitate circulating levels of TSH is important in evaluating thyroid function. It is especially useful in the differential diagnosis of primary (thyroid) from
+secondary (pituitary) and tertiary (hypothalamus) hypothyroidism. In primary hypothyroidism, TSH levels are significantly elevated, while in secondary and tertiary
+hypothyroidism, TSH levels are low.
+
+ITDOSE INFOSYSTEMS PVT. LTD.
+*** End Of Report ***
+Name
+: Mr. SRIDHAR
+Sample ID
+: MB1409855
+Age/Gender
+: 37 Years/Male
+Reg. No
+: 0012501220095
+Referred by
+: Dr. Others
+SPP Code
+: SPL-STS-760
+Referring Customer
+: SELF
+Collected On
+: 22-Jan-2025 10:24 AM
+Primary Sample
+: Whole Blood
+Received On
+: 22-Jan-2025 12:12 PM
+Sample Tested In
+: Serum
+Reported On
+: 22-Jan-2025 01:27 PM
+Client Address
+
+Report Status
+
+CLINICAL BIOCHEMISTRY
+COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12
+Test Name
+Results
+Units
+Biological Reference Interval
+LABORATORY TEST REPORT
+Lab Address:- Plot No. 564 , 1st floor , Buddhanagar , Near Sai
+Baba Temple Peerzadiguda Boduppal Hyderabad, Telangana.
+ICMR Reg .No. SAPALAPVLHT (Covid -19)
+Final Report
+Page 12 of 12

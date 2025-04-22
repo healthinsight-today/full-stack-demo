@@ -1,0 +1,242 @@
+Right now my mcp is more llm parsing raw text for pdf of images and gives insights and recommendations so I want to pretty much build the whole fastapi with mcp I already have endpoints but like /doctors /diet and all these should build by mcp not me haha
+
+Edit
+
+
+I understand you want to use your MCP service to automatically generate additional API endpoints like /doctors and /diet rather than manually coding them. This is a clever approach to leverage the LLM capabilities you already have in place.
+
+Here's how you could implement this dynamic endpoint generation using your existing MCP infrastructure:
+
+Create a Dynamic Router Factory:
+python
+# app/routes/dynamic_routes.py
+from fastapi import APIRouter, Depends, HTTPException, Request
+from app.services.mcp_service import create_context, generate_response
+from app.config import get_settings
+import json
+
+# Create a router with dynamic routes
+router = APIRouter(tags=["ai-generated-endpoints"])
+
+async def process_dynamic_endpoint(request: Request, endpoint_path: str):
+    """Generic handler for dynamically generated endpoints"""
+    # Extract body content
+    body = await request.json() if request.method == "POST" else {}
+    
+    # Get query parameters
+    query_params = dict(request.query_params)
+    
+    # Create MCP context with system prompt for this specific endpoint
+    system_message = f"""
+    You are the API backend for Health Insight Today. 
+    You are handling a request to the /{endpoint_path} endpoint.
+    Respond with valid JSON data that would be appropriate for this endpoint.
+    """
+    
+    # Add context about what this endpoint should return
+    endpoint_context = {
+        "doctors": "Return a list of doctors specialized in treating conditions related to the abnormalities found in the blood test.",
+        "diet": "Return personalized dietary recommendations based on blood test abnormalities.",
+        "restaurants": "Return restaurant suggestions that serve foods addressing nutritional needs.",
+        "grocery": "Return a grocery shopping list with foods that address deficiencies."
+    }
+    
+    if endpoint_path in endpoint_context:
+        system_message += f"\n\n{endpoint_context[endpoint_path]}"
+    
+    # Create context and add request data
+    context = create_context(system_message)
+    
+    # Add any prior analysis data if included in the request
+    if "analysis" in body:
+        context["messages"].append({
+            "role": "user",
+            "content": f"Here is the blood test analysis to base recommendations on: {json.dumps(body['analysis'])}"
+        })
+    
+    # Add the actual request
+    context["messages"].append({
+        "role": "user",
+        "content": f"Generate appropriate data for the /{endpoint_path} endpoint with parameters: {query_params}"
+    })
+    
+    # Use MCP to generate the response
+    settings = get_settings()
+    response_data = generate_response(
+        context=context,
+        provider=body.get("provider", settings.LLM_PROVIDER),
+        temperature=0.1  # Low temperature for consistent JSON formatting
+    )
+    
+    # Extract and parse the JSON response
+    try:
+        content = response_data["response"]["content"]
+        
+        # Parse the response as JSON
+        try:
+            # Try direct parsing first
+            result = json.loads(content)
+        except json.JSONDecodeError:
+            # If direct parsing fails, try to extract JSON
+            if "```json" in content:
+                json_str = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                json_str = content.split("```")[1].split("```")[0].strip()
+            else:
+                # Try to find JSON object boundaries
+                start_idx = content.find('{')
+                end_idx = content.rfind('}') + 1
+                if start_idx >= 0 and end_idx > start_idx:
+                    json_str = content[start_idx:end_idx]
+                else:
+                    raise ValueError("Could not extract JSON from response")
+                
+            result = json.loads(json_str)
+            
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate endpoint response: {str(e)}")
+Register Dynamic Routes in your main.py:
+python
+# In app/main.py
+from app.routes import dynamic_routes
+
+# Define the dynamic endpoints you want
+dynamic_endpoints = ["doctors", "diet", "restaurants", "grocery"]
+
+# Register each dynamic endpoint
+for endpoint in dynamic_endpoints:
+    app.add_api_route(
+        f"/{endpoint}",
+        lambda request, ep=endpoint: dynamic_routes.process_dynamic_endpoint(request, ep),
+        methods=["POST"],
+        response_model=None  # Allow dynamic response structure
+    )
+This approach allows your FastAPI application to:
+
+Accept requests to endpoints like /doctors and /diet
+Use your MCP service to dynamically generate appropriate responses
+Structure the responses as JSON based on the context of each endpoint
+Each dynamic endpoint would accept a POST request with the blood test analysis JSON, and your MCP would generate the appropriate recommendations based on that analysis. You can expand this to handle any number of endpoints without having to manually code each one.
+
+The beauty of this approach is that as your LLM capabilities improve, your API endpoints automatically get better without any code changes.
+
+
+
+
+So we need to change model context every time according to our logic?
+
+Edit
+Yes, you would need to adapt the model context for each endpoint according to the specific logic required. This is the key to making your dynamic endpoints useful and relevant.
+
+Here's how the context adaptation works for different endpoints:
+
+Base Context: Each endpoint starts with a base system message that identifies it as a Health Insight Today API endpoint.
+Endpoint-Specific Instructions: The system message is then augmented with specific instructions based on which endpoint is being called:
+For /doctors: Instructions to generate doctor recommendations based on abnormalities
+For /diet: Instructions to create dietary recommendations addressing deficiencies
+For /restaurants: Guidelines to suggest restaurants with appropriate menu items
+For /grocery: Directions to create shopping lists for needed nutrients
+Input Data Context: The blood test analysis JSON is added to the context to provide the factual basis for recommendations.
+This approach gives you several benefits:
+
+You don't need to manually code each endpoint's logic
+You maintain consistent formatting across endpoints
+Your endpoints can evolve as your LLM capabilities improve
+You can easily add new endpoints just by updating the list
+The MCP framework you've built is perfect for this because it already handles the complexities of managing these contexts and interactions with different LLM providers. You just need to focus on crafting appropriate instructions for each endpoint type.
+
+
+
+
+Mcp framework will be changed based on my purpose?
+
+Edit
+Yes, you'll need to adapt your MCP framework based on your specific purpose, but the core infrastructure can remain mostly unchanged.
+
+Your existing MCP framework already handles the fundamental tasks of:
+
+Creating contexts with system messages
+Managing message history
+Interacting with different LLM providers
+Processing responses and extracting JSON
+For your Health Insight Today application, you would primarily need to customize:
+
+System Messages: Create specialized system prompts for each endpoint type (doctors, diet, restaurants, etc.)
+JSON Schemas: Define the expected output structure for each endpoint type to ensure consistent formatting
+Context Management: Determine what information from blood test analyses needs to be carried forward to each recommendation endpoint
+The beauty of your MCP approach is that the underlying infrastructure stays the same, while the specialized knowledge and instructions change based on the endpoint. This is much more efficient than building separate logic for each endpoint.
+
+For example, both /doctors and /diet would use the same MCP infrastructure, but with different system prompts and expected output formats. This gives you a consistent architecture while allowing specialized functionality for each endpoint.
+
+
+
+
+I see now how is it helpful rather that rest API interactions
+
+Edit
+Yes, I can now see you understand how the MCP framework provides significant advantages over traditional REST API interactions. Here's why it's particularly valuable for your Health Insight Today application:
+
+Unified Context Management: Rather than building separate logic for each endpoint, MCP lets you maintain context across the entire user journey - from blood test analysis to dietary recommendations to doctor referrals.
+AI-Powered Dynamic Endpoints: Instead of hardcoding business logic for each endpoint, you can leverage the LLM's intelligence to generate appropriate responses based on contextual instructions.
+Consistent Output Formatting: By using structured system prompts, you ensure all endpoints return properly formatted JSON regardless of which LLM provider you're using.
+Provider Flexibility: You can easily switch between OpenAI, Anthropic, or Google's models based on performance or pricing without changing your API structure.
+Simplified Architecture: Your application can focus on routing and data flow while the LLM handles the complex medical analysis and recommendation generation.
+For your blood test analysis application, this means you can rapidly deploy new capabilities (like restaurant recommendations or grocery lists) by simply defining new system prompts rather than implementing complex business logic for each feature.
+
+The MCP approach essentially transforms your traditional REST API into an AI-powered intelligent system that can adapt and expand its capabilities with minimal code changes.
+
+
+
+
+How is it different if I didn’t use mcp
+
+Edit
+Without using the Model Context Protocol (MCP), your Health Insight Today API would need to be built very differently:
+
+Traditional API Implementation: You would need to implement explicit business logic for each endpoint:
+python
+@router.post("/doctors")
+async def recommend_doctors(analysis: BloodTestAnalysis):
+    # Hard-coded logic to match blood abnormalities to medical specialties
+    doctors = []
+    if any(param["name"] == "Hemoglobin" and param["status"] == "low" for param in analysis.blood_parameters):
+        doctors.append({"specialty": "Hematologist", "reason": "Low hemoglobin levels"})
+    # Many more such rules...
+    return {"recommended_doctors": doctors}
+Multiple LLM Integrations: Without MCP, you'd need separate code paths for each LLM provider:
+python
+if provider == "openai":
+    response = call_openai_api(prompt, model, temperature)
+elif provider == "anthropic":
+    response = call_anthropic_api(prompt, model, temperature)
+# Different formats for each provider
+No Context Persistence: Each endpoint would operate in isolation, requiring users to re-upload or re-reference their blood test data with each request:
+python
+@router.post("/diet")
+async def diet_recommendations(analysis: BloodTestAnalysis):
+    # Start from scratch each time
+    prompt = f"Create dietary recommendations for these results: {analysis}"
+    # No ability to reference previous insights
+Manual JSON Extraction: You would need custom parsing for each LLM response format:
+python
+# Different parsing logic for each endpoint
+def parse_diet_response(response_text):
+    # Custom regex and extraction specific to diet responses
+
+def parse_doctor_response(response_text):
+    # Different extraction logic for doctor format
+Rigid Schemas: Adding new features would require coding new endpoints from scratch:
+python
+# To add a new feature like /supplements
+@router.post("/supplements")
+async def supplement_recommendations(analysis: BloodTestAnalysis):
+    # All-new business logic
+    # New prompt engineering
+    # New response parsing
+The MCP framework streamlines all of this, making your API more flexible, maintainable, and powerful by leveraging AI capabilities consistently across all endpoints while maintaining context between interactions.
+
+
+
+
+

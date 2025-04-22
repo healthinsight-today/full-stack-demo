@@ -1,0 +1,89 @@
+This code is a comprehensive implementation of a FastAPI-based backend for processing medical PDFs, extracting text, and generating health insights using various Large Language Models (LLMs). The code is structured into several components, including configuration settings, API routes, and service classes for handling different types of processing. Below is an overview of the key components and functionalities:
+
+### Key Components
+
+1. **Configuration (`config.py`)**:
+   - Contains settings for API keys, default models, and other configuration parameters.
+   - Uses environment variables to manage sensitive information like API keys.
+
+2. **Main Application (`main.py`)**:
+   - Initializes the FastAPI app and includes routers for different API endpoints.
+   - Sets up CORS middleware and ensures required directories exist.
+   - Verifies API keys at startup and logs relevant information.
+
+3. **Routers**:
+   - **Base Router (`base.py`)**: Basic health check endpoint.
+   - **PDF Router (`pdf.py`)**: Endpoints for uploading and managing PDF files.
+   - **OCR Router (`ocr.py`)**: Endpoints for extracting text from PDFs and images using OCR.
+   - **MCP Router (`mcp.py`)**: Endpoints for managing Model Context Protocol (MCP) contexts.
+   - **Health Analysis Router (`health_analysis.py`)**: Endpoints for analyzing health reports and generating insights.
+
+4. **Services**:
+   - **PDF Processor (`pdf_processor.py`)**: Handles PDF processing and text extraction.
+   - **Image Processor (`image_processor.py`)**: Handles image processing and OCR.
+   - **MCP Service (`mcp_service.py`)**: Manages contexts for MCP.
+   - **LLM Processor (`llm_advanced_processor.py`)**: Processes text using various LLM providers and extracts structured data.
+   - **Basic Analyzer (`basic_analyzer.py`)**: Provides basic health insights as a fallback.
+
+5. **Models**:
+   - **Schemas (`schemas.py`)**: Pydantic models for request and response validation.
+
+### Functionalities
+
+1. **PDF and Image Processing**:
+   - Upload PDFs and images.
+   - Extract text from PDFs and images using OCR.
+   - List and download uploaded files.
+
+2. **Health Analysis**:
+   - Analyze medical reports to extract structured data.
+   - Generate health insights using LLMs.
+   - Support for multiple LLM providers (OpenAI, Anthropic, Grok, xAI).
+   - Save and retrieve analysis results.
+
+3. **Model Context Protocol (MCP)**:
+   - Create and manage contexts for LLM interactions.
+   - Generate responses based on context.
+
+4. **Error Handling and Logging**:
+   - Comprehensive error handling with HTTP exceptions.
+   - Logging for API key verification, file processing, and analysis.
+
+### Example Endpoints
+
+- **Health Analysis**:
+  - `POST /health/analyze`: Analyze a health report and generate insights.
+  - `POST /health/analyze/advanced`: Advanced analysis with more configurability.
+  - `GET /health/providers`: Get available LLM providers and their status.
+
+- **OCR**:
+  - `POST /ocr/extract-text`: Extract text from a PDF or image file.
+  - `GET /ocr/get-text/{filename}`: Get previously extracted text by filename.
+
+- **PDF Processing**:
+  - `POST /pdf/upload`: Upload a PDF file.
+  - `GET /pdf/list`: List all uploaded PDF files.
+
+- **MCP**:
+  - `POST /mcp/create-context`: Create a new conversation context.
+  - `POST /mcp/generate`: Generate a response from a context.
+
+### Directory Structure
+
+- `app/`: Main application code.
+  - `main.py`: FastAPI application entry point.
+  - `config.py`: Application configuration.
+  - `routes/`: API routes.
+  - `services/`: Business logic.
+  - `utils/`: Utility functions.
+  - `templates/`: HTML templates.
+- `uploads/`: Storage for uploaded PDFs and images.
+- `processed/`: Storage for extracted text and processed results.
+- `tests/`: Unit and integration tests.
+- `scripts/`: Utility scripts.
+
+### License
+
+The code is licensed under the MIT License, allowing for free use, modification, and distribution.
+
+This implementation provides a robust framework for processing medical documents and generating insights using advanced LLM techniques. The modular structure allows for easy extension and maintenance.

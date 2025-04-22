@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insight Today - OCR Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .form-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        summary {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Health Insight Today - OCR Testing</h1>
+    
+    <details>
+        <summary>Single File Processing</summary>
+        <div class="form-section">
+            <h2>Process Single File</h2>
+            <form id="singleForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="singleFile">Select PDF or Image:</label>
+                    <input type="file" id="singleFile" name="file" accept=".pdf,.png,.jpg,.jpeg,.gif,.bmp,.tiff,.webp">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="force_ocr"> Force OCR (for PDFs)
+                    </label>
+                </div>
+                <button type="submit">Process File</button>
+            </form>
+            <div id="singleResult" class="result" style="display: none;"></div>
+        </div>
+    </details>
+    
+    <details>
+        <summary>Multi-page Document Processing</summary>
+        <div class="form-section">
+            <h2>Process Multi-page Document (up to 6 pages)</h2>
+            <form id="multipageForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="multipleFiles">Select Up to 6 Images:</label>
+                    <input type="file" id="multipleFiles" name="files" accept=".png,.jpg,.jpeg,.gif,.bmp,.tiff,.webp" multiple>
+                    <small>Hold Ctrl (or Cmd on Mac) to select multiple files.</small>
+                </div>
+                <div class="form-group">
+                    <label for="documentName">Document Name:</label>
+                    <input type="text" id="documentName" name="document_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pageOrder">Page Order (optional):</label>
+                    <input type="text" id="pageOrder" name="page_order" placeholder="e.g., 3,1,2,4">
+                    <small>Comma-separated list of page numbers (1-based)</small>
+                </div>
+                <button type="submit">Process Pages</button>
+            </form>
+            <div id="multipageResult" class="result" style="display: none;"></div>
+        </div>
+    </details>
+    
+    <details>
+        <summary>Batch Processing</summary>
+        <div class="form-section">
+            <h2>Process Multiple Files</h2>
+            <form id="batchForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="batchFiles">Select Multiple Files:</label>
+                    <input type="file" id="batchFiles" name="files" accept=".pdf,.png,.jpg,.jpeg,.gif,.bmp,.tiff,.webp" multiple>
+                    <small>Hold Ctrl (or Cmd on Mac) to select multiple files.</small>
+                </div>
+                <div class="form-group">
+                    <label for="outputFilename">Output Filename:</label>
+                    <input type="text" id="outputFilename" name="output_filename" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="force_ocr"> Force OCR (for PDFs)
+                    </label>
+                </div>
+                <button type="submit">Process Files</button>
+            </form>
+            <div id="batchResult" class="result" style="display: none;"></div>
+        </div>
+    </details>
+
+    <script>
+        document.getElementById('singleForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = new FormData(this);
+            const resultDiv = document.getElementById('singleResult');
+            
+            resultDiv.textContent = 'Processing...';
+            resultDiv.style.display = 'block';
+            
+            try {
+                const response = await fetch('/ocr/extract-text', {
+                    method: 'POST',
+                    body: form
+                });
+                
+                const text = await response.text();
+                resultDiv.textContent = text;
+            } catch (error) {
+                resultDiv.textContent = `Error: ${error.message}`;
+            }
+        });
+        
+        document.getElementById('multipageForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = new FormData(this);
+            const resultDiv = document.getElementById('multipageResult');
+            const files = document.getElementById('multipleFiles').files;
+            
+            if (files.length > 6) {
+                resultDiv.textContent = 'Error: Maximum 6 files allowed';
+                resultDiv.style.display = 'block';
+                return;
+            }
+            
+            resultDiv.textContent = 'Processing...';
+            resultDiv.style.display = 'block';
+            
+            try {
+                const response = await fetch('/ocr/extract-text-multipage', {
+                    method: 'POST',
+                    body: form
+                });
+                
+                const text = await response.text();
+                resultDiv.textContent = text;
+            } catch (error) {
+                resultDiv.textContent = `Error: ${error.message}`;
+            }
+        });
+        
+        document.getElementById('batchForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = new FormData(this);
+            const resultDiv = document.getElementById('batchResult');
+            
+            resultDiv.textContent = 'Processing...';
+            resultDiv.style.display = 'block';
+            
+            try {
+                const response = await fetch('/ocr/extract-text-batch', {
+                    method: 'POST',
+                    body: form
+                });
+                
+                const text = await response.text();
+                resultDiv.textContent = text;
+            } catch (error) {
+                resultDiv.textContent = `Error: ${error.message}`;
+            }
+        });
+
+        // Add file count display
+        document.getElementById('multipleFiles').addEventListener('change', function(e) {
+            const numFiles = this.files.length;
+            this.nextElementSibling.textContent = numFiles > 6 
+                ? `Error: You selected ${numFiles} files. Maximum 6 files allowed.` 
+                : `Selected ${numFiles} file(s). Hold Ctrl (or Cmd on Mac) to select multiple files.`;
+        });
+    </script>
+</body>
+</html> 

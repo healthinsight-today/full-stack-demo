@@ -1,0 +1,753 @@
+{
+  "report_information": {
+    "report_date": "22-Jan-2025",
+    "laboratory_name": "ITDOSE INFOSYSTEMS PVT. LTD.",
+    "laboratory_address": "Plot No. 564, 1st floor, Buddhanagar, Near Sai Baba Temple, Peerzadiguda, Boduppal, Hyderabad, Telangana",
+    "icmr_reg_no": "SAPALAPVLHT (Covid-19)",
+    "report_status": "Final Report",
+    "referred_by": "Dr. Others",
+    "collected_on": "22-Jan-2025 10:24 AM",
+    "received_on": "22-Jan-2025 12:12 PM",
+    "reported_on": "22-Jan-2025 01:37 PM"
+  },
+  "patient_information": {
+    "name": "Mr. SRIDHAR",
+    "age": 37,
+    "gender": "Male",
+    "patient_id": "MB1409855",
+    "registration_no": "0012501220095",
+    "spp_code": "SPL-STS-760",
+    "referring_customer": "SELF"
+  },
+  "test_sections": [
+    {
+      "section_name": "COMPLETE BLOOD COUNT (CBC)",
+      "tests": [
+        {
+          "test_name": "Haemoglobin (Hb)",
+          "method": "Cynmeth Method",
+          "result": 15.5,
+          "unit": "g/dL",
+          "reference_range": "13-17"
+        },
+        {
+          "test_name": "RBC Count",
+          "method": "Cell Impedence",
+          "result": 4.98,
+          "unit": "10^12/L",
+          "reference_range": "4.5-5.5"
+        },
+        {
+          "test_name": "Haematocrit (HCT)",
+          "method": "Calculated",
+          "result": 42.5,
+          "unit": "",
+          "reference_range": "40-50"
+        },
+        {
+          "test_name": "MCV",
+          "method": "Calculated",
+          "result": 85,
+          "unit": "fl",
+          "reference_range": "81-101"
+        },
+        {
+          "test_name": "MCH",
+          "method": "Calculated",
+          "result": 31.2,
+          "unit": "pg",
+          "reference_range": "27-32"
+        },
+        {
+          "test_name": "MCHC",
+          "method": "Calculated",
+          "result": 32.0,
+          "unit": "g/dL",
+          "reference_range": "32.5-34.5"
+        },
+        {
+          "test_name": "RDW-CV",
+          "method": "Calculated",
+          "result": 13.0,
+          "unit": "",
+          "reference_range": "11.6-14.0"
+        },
+        {
+          "test_name": "Platelet Count (PLT)",
+          "method": "Cell Impedance",
+          "result": 252,
+          "unit": "10^9/L",
+          "reference_range": "150-410"
+        },
+        {
+          "test_name": "Total WBC Count",
+          "method": "Impedance",
+          "result": 7.7,
+          "unit": "10^9/L",
+          "reference_range": "4.0-10.0"
+        },
+        {
+          "test_name": "Neutrophils",
+          "method": "Cell Impedence",
+          "result": 62,
+          "unit": "",
+          "reference_range": "40-70"
+        },
+        {
+          "test_name": "Absolute Neutrophils Count",
+          "method": "Impedence",
+          "result": 4.77,
+          "unit": "10^9/L",
+          "reference_range": "2.0-7.0"
+        },
+        {
+          "test_name": "Lymphocytes",
+          "method": "Cell Impedence",
+          "result": 30,
+          "unit": "",
+          "reference_range": "20-40"
+        },
+        {
+          "test_name": "Absolute Lymphocyte Count",
+          "method": "Impedence",
+          "result": 2.31,
+          "unit": "10^9/L",
+          "reference_range": "1.0-3.0"
+        },
+        {
+          "test_name": "Monocytes",
+          "method": "Microscopy",
+          "result": 6,
+          "unit": "",
+          "reference_range": "2-10"
+        },
+        {
+          "test_name": "Absolute Monocyte Count",
+          "method": "Calculated",
+          "result": 0.46,
+          "unit": "10^9/L",
+          "reference_range": "0.2-1.0"
+        },
+        {
+          "test_name": "Eosinophils",
+          "method": "Microscopy",
+          "result": 2,
+          "unit": "",
+          "reference_range": "1-6"
+        },
+        {
+          "test_name": "Absolute Eosinophils Count",
+          "method": "Calculated",
+          "result": 0.15,
+          "unit": "10^9/L",
+          "reference_range": "0.02-0.5"
+        },
+        {
+          "test_name": "Basophils",
+          "method": "Microscopy",
+          "result": 0,
+          "unit": "",
+          "reference_range": "1-2"
+        },
+        {
+          "test_name": "Absolute Basophil Count",
+          "method": "Calculated",
+          "result": 0.0,
+          "unit": "10^9/L",
+          "reference_range": "0.0-0.3"
+        }
+      ]
+    },
+    {
+      "section_name": "Blood Picture - Peripheral Smear Examination",
+      "tests": [
+        {
+          "test_name": "Red Blood Cells",
+          "method": "Microscopy",
+          "result": "Normocytic normochromic",
+          "unit": "",
+          "reference_range": ""
+        },
+        {
+          "test_name": "White Blood Cells",
+          "method": "Microscopy",
+          "result": "Within normal limits",
+          "unit": "",
+          "reference_range": ""
+        },
+        {
+          "test_name": "Platelets",
+          "method": "Microscopy",
+          "result": "Adequate",
+          "unit": "",
+          "reference_range": ""
+        },
+        {
+          "test_name": "Hemoparasites",
+          "method": "Microscopy",
+          "result": "Not seen",
+          "unit": "",
+          "reference_range": ""
+        }
+      ]
+    },
+    {
+      "section_name": "Complete Urine Analysis (CUE)",
+      "tests": [
+        {
+          "test_name": "Colour",
+          "method": "",
+          "result": "Pale Yellow",
+          "unit": "",
+          "reference_range": "Straw to light amber"
+        },
+        {
+          "test_name": "Appearance",
+          "method": "",
+          "result": "Clear",
+          "unit": "",
+          "reference_range": "Clear"
+        },
+        {
+          "test_name": "Glucose",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Protein",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Bilirubin (Bile)",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Urobilinogen",
+          "method": "Ehrlichs reagent",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Ketone Bodies",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Specific Gravity",
+          "method": "Strip Reflectance",
+          "result": 1.025,
+          "unit": "",
+          "reference_range": "1.000-1.030"
+        },
+        {
+          "test_name": "Blood",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Reaction (pH)",
+          "method": "Reagent Strip Reflectance",
+          "result": 5.5,
+          "unit": "",
+          "reference_range": "5.0-8.5"
+        },
+        {
+          "test_name": "Nitrites",
+          "method": "Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "Leukocyte esterase",
+          "method": "Reagent Strip Reflectance",
+          "result": "Negative",
+          "unit": "",
+          "reference_range": "Negative"
+        },
+        {
+          "test_name": "PUS(WBC) Cells",
+          "method": "Microscopy",
+          "result": "03-04",
+          "unit": "/hpf",
+          "reference_range": "00-05"
+        },
+        {
+          "test_name": "R.B.C.",
+          "method": "Microscopic",
+          "result": "Nil",
+          "unit": "/hpf",
+          "reference_range": "Nil"
+        },
+        {
+          "test_name": "Epithelial Cells",
+          "method": "Microscopic",
+          "result": "02-03",
+          "unit": "/hpf",
+          "reference_range": "00-05"
+        },
+        {
+          "test_name": "Casts",
+          "method": "Microscopic",
+          "result": "Absent",
+          "unit": "",
+          "reference_range": "Absent"
+        },
+        {
+          "test_name": "Crystals",
+          "method": "Microscopic",
+          "result": "Absent",
+          "unit": "",
+          "reference_range": "Absent"
+        },
+        {
+          "test_name": "Bacteria",
+          "method": "",
+          "result": "Nil",
+          "unit": "",
+          "reference_range": "Nil"
+        },
+        {
+          "test_name": "Budding Yeast Cells",
+          "method": "Microscopy",
+          "result": "Nil",
+          "unit": "",
+          "reference_range": "Absent"
+        }
+      ]
+    },
+    {
+      "section_name": "Clinical Biochemistry - Kidney Function",
+      "tests": [
+        {
+          "test_name": "Estimated Glomerular Filtration Rate (eGFR) by MDRD Formula",
+          "method": "Calculated",
+          "result": 103,
+          "unit": "mL/min/1.73m2",
+          "reference_range": "74-138"
+        },
+        {
+          "test_name": "BUN/Creatinine Ratio",
+          "method": "",
+          "result": 11.22,
+          "unit": "Ratio",
+          "reference_range": "6-22"
+        },
+        {
+          "test_name": "Urea/Creatinine Ratio",
+          "method": "",
+          "result": 24.08,
+          "unit": "Ratio",
+          "reference_range": "20-35"
+        },
+        {
+          "test_name": "Blood Urea Nitrogen (BUN)",
+          "method": "Calculated",
+          "result": 11.0,
+          "unit": "mg/dL",
+          "reference_range": "7.0-18.0"
+        },
+        {
+          "test_name": "Urea-Serum",
+          "method": "Calculated",
+          "result": 23.6,
+          "unit": "mg/dL",
+          "reference_range": "12.8-42.8"
+        },
+        {
+          "test_name": "Creatinine",
+          "method": "Jaffes Kinetic",
+          "result": 0.98,
+          "unit": "mg/dL",
+          "reference_range": "0.70-1.30"
+        }
+      ]
+    },
+    {
+      "section_name": "Clinical Biochemistry - Glucose and HbA1c",
+      "tests": [
+        {
+          "test_name": "Glucose Fasting (F)",
+          "method": "Hexokinase",
+          "result": 93,
+          "unit": "mg/dL",
+          "reference_range": "70-100"
+        },
+        {
+          "test_name": "Glycated Hemoglobin (HbA1c)",
+          "method": "HPLC",
+          "result": 5.1,
+          "unit": "",
+          "reference_range": "<5.7 (Non Diabetic)"
+        },
+        {
+          "test_name": "Mean Plasma Glucose",
+          "method": "Calculated",
+          "result": 99.67,
+          "unit": "mg/dL",
+          "reference_range": ""
+        }
+      ]
+    },
+    {
+      "section_name": "Clinical Biochemistry - Vitamins",
+      "tests": [
+        {
+          "test_name": "Uric Acid",
+          "method": "Uricase",
+          "result": 5.5,
+          "unit": "mg/dL",
+          "reference_range": "3.5-7.2"
+        },
+        {
+          "test_name": "25-Hydroxy Vitamin D",
+          "method": "CLIA",
+          "result": 9.0,
+          "unit": "ng/mL",
+          "reference_range": "30.0-100.0 (Sufficiency)"
+        },
+        {
+          "test_name": "Vitamin B12 (Cyanocobalamin)",
+          "method": "CLIA",
+          "result": 218,
+          "unit": "pg/mL",
+          "reference_range": "211-911"
+        }
+      ]
+    },
+    {
+      "section_name": "Lipid Profile",
+      "tests": [
+        {
+          "test_name": "Cholesterol Total",
+          "method": "CHOD-POD",
+          "result": 201,
+          "unit": "mg/dL",
+          "reference_range": "200 (Optimal)"
+        },
+        {
+          "test_name": "Triglycerides-TGL",
+          "method": "GPO-POD",
+          "result": 105,
+          "unit": "mg/dL",
+          "reference_range": "150 (Optimal)"
+        },
+        {
+          "test_name": "Cholesterol-HDL",
+          "method": "Direct",
+          "result": 46,
+          "unit": "mg/dL",
+          "reference_range": "40-60"
+        },
+        {
+          "test_name": "Cholesterol-LDL",
+          "method": "Calculated",
+          "result": 134,
+          "unit": "mg/dL",
+          "reference_range": "<100 (Optimal)"
+        },
+        {
+          "test_name": "Cholesterol-VLDL",
+          "method": "Calculated",
+          "result": 21,
+          "unit": "mg/dL",
+          "reference_range": "7-35"
+        },
+        {
+          "test_name": "Non HDL Cholesterol",
+          "method": "Calculated",
+          "result": 155,
+          "unit": "mg/dL",
+          "reference_range": "<130 (Optimal)"
+        },
+        {
+          "test_name": "Cholesterol Total/HDL Ratio",
+          "method": "Calculated",
+          "result": 4.37,
+          "unit": "Ratio",
+          "reference_range": "0-4.0"
+        },
+        {
+          "test_name": "LDL/HDL Ratio",
+          "method": "Calculated",
+          "result": 2.91,
+          "unit": "Ratio",
+          "reference_range": "0-3.5"
+        }
+      ]
+    },
+    {
+      "section_name": "Liver Function Test (LFT)",
+      "tests": [
+        {
+          "test_name": "Bilirubin (Total)",
+          "method": "Diazo",
+          "result": 0.3,
+          "unit": "mg/dL",
+          "reference_range": "0.1-1.2"
+        },
+        {
+          "test_name": "Bilirubin (Direct)",
+          "method": "Diazo",
+          "result": 0.1,
+          "unit": "mg/dL",
+          "reference_range": "0.0-0.3"
+        },
+        {
+          "test_name": "Bilirubin (Indirect)",
+          "method": "Calculated",
+          "result": 0.2,
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.0"
+        },
+        {
+          "test_name": "Aspartate Aminotransferase (AST/SGOT)",
+          "method": "IFCC UV Assay",
+          "result": 22,
+          "unit": "U/L",
+          "reference_range": "15-37"
+        },
+        {
+          "test_name": "Alanine Aminotransferase (ALT/SGPT)",
+          "method": "IFCC without (P-5-P)",
+          "result": 23,
+          "unit": "U/L",
+          "reference_range": "0-55"
+        },
+        {
+          "test_name": "Alkaline Phosphatase (ALP)",
+          "method": "Kinetic PNPP-AMP",
+          "result": 68,
+          "unit": "U/L",
+          "reference_range": "30-120"
+        },
+        {
+          "test_name": "Gamma Glutamyl Transpeptidase (GGTP)",
+          "method": "IFCC",
+          "result": 15,
+          "unit": "U/L",
+          "reference_range": "15-85"
+        },
+        {
+          "test_name": "Protein - Total",
+          "method": "Biuret",
+          "result": 7.2,
+          "unit": "g/dL",
+          "reference_range": "6.4-8.2"
+        },
+        {
+          "test_name": "Albumin",
+          "method": "Bromocresol Green (BCG)",
+          "result": 4.5,
+          "unit": "g/dL",
+          "reference_range": "3.4-5.0"
+        },
+        {
+          "test_name": "Globulin",
+          "method": "Calculated",
+          "result": 2.7,
+          "unit": "g/dL",
+          "reference_range": "2.0-4.2"
+        },
+        {
+          "test_name": "A:G Ratio",
+          "method": "Calculated",
+          "result": 1.67,
+          "unit": "Ratio",
+          "reference_range": "0.8-2.0"
+        },
+        {
+          "test_name": "SGOT/SGPT Ratio",
+          "method": "Calculated",
+          "result": 0.96,
+          "unit": "Ratio",
+          "reference_range": "<1.0"
+        }
+      ]
+    },
+    {
+      "section_name": "Iron Profile-I",
+      "tests": [
+        {
+          "test_name": "Iron (Fe)",
+          "method": "Ferrozine",
+          "result": 81,
+          "unit": "\u03bcg/dL",
+          "reference_range": "65-175"
+        },
+        {
+          "test_name": "Total Iron Binding Capacity (TIBC)",
+          "method": "Ferrozine",
+          "result": 415,
+          "unit": "\u00b5g/dL",
+          "reference_range": "250-450"
+        },
+        {
+          "test_name": "Transferrin",
+          "method": "Calculated",
+          "result": 290.21,
+          "unit": "mg/dL",
+          "reference_range": "215-365"
+        },
+        {
+          "test_name": "Iron Saturation (% Transferrin Saturation)",
+          "method": "Calculated",
+          "result": 19.52,
+          "unit": "",
+          "reference_range": "20-50"
+        },
+        {
+          "test_name": "Unsaturated Iron Binding Capacity (UIBC)",
+          "method": "FerroZine",
+          "result": 334,
+          "unit": "\u00b5g/dL",
+          "reference_range": "110-370"
+        }
+      ]
+    },
+    {
+      "section_name": "Thyroid Profile-I (TFT)",
+      "tests": [
+        {
+          "test_name": "T3 (Triiodothyronine)",
+          "method": "CLIA",
+          "result": 103.6,
+          "unit": "ng/dL",
+          "reference_range": "70-204"
+        },
+        {
+          "test_name": "T4 (Thyroxine)",
+          "method": "CLIA",
+          "result": 6.9,
+          "unit": "\u00b5g/dL",
+          "reference_range": "3.2-12.6"
+        },
+        {
+          "test_name": "TSH - Thyroid Stimulating Hormone",
+          "method": "CLIA",
+          "result": 6.85,
+          "unit": "\u00b5IU/mL",
+          "reference_range": "0.35-5.5"
+        }
+      ]
+    }
+  ],
+  "abnormal_parameters": [
+    {
+      "test_name": "MCHC",
+      "section": "COMPLETE BLOOD COUNT (CBC)",
+      "result": 32.0,
+      "unit": "g/dL",
+      "reference_range": "32.5-34.5",
+      "status": "Below Normal"
+    },
+    {
+      "test_name": "Basophils",
+      "section": "COMPLETE BLOOD COUNT (CBC)",
+      "result": 0,
+      "unit": "",
+      "reference_range": "1-2",
+      "status": "Below Normal"
+    },
+    {
+      "test_name": "25-Hydroxy Vitamin D",
+      "section": "Clinical Biochemistry - Vitamins",
+      "result": 9.0,
+      "unit": "ng/mL",
+      "reference_range": "30.0-100.0 (Sufficiency)",
+      "status": "Below Normal (Deficiency)"
+    },
+    {
+      "test_name": "Cholesterol Total",
+      "section": "Lipid Profile",
+      "result": 201,
+      "unit": "mg/dL",
+      "reference_range": "200 (Optimal)",
+      "status": "Above Optimal"
+    },
+    {
+      "test_name": "Cholesterol-LDL",
+      "section": "Lipid Profile",
+      "result": 134,
+      "unit": "mg/dL",
+      "reference_range": "<100 (Optimal)",
+      "status": "Above Optimal"
+    },
+    {
+      "test_name": "Non HDL Cholesterol",
+      "section": "Lipid Profile",
+      "result": 155,
+      "unit": "mg/dL",
+      "reference_range": "<130 (Optimal)",
+      "status": "Above Optimal"
+    },
+    {
+      "test_name": "Cholesterol Total/HDL Ratio",
+      "section": "Lipid Profile",
+      "result": 4.37,
+      "unit": "Ratio",
+      "reference_range": "0-4.0",
+      "status": "Above Normal"
+    },
+    {
+      "test_name": "Iron Saturation (% Transferrin Saturation)",
+      "section": "Iron Profile-I",
+      "result": 19.52,
+      "unit": "",
+      "reference_range": "20-50",
+      "status": "Below Normal"
+    },
+    {
+      "test_name": "TSH - Thyroid Stimulating Hormone",
+      "section": "Thyroid Profile-I (TFT)",
+      "result": 6.85,
+      "unit": "\u00b5IU/mL",
+      "reference_range": "0.35-5.5",
+      "status": "Above Normal"
+    }
+  ],
+  "health_insights": {
+    "clinical_interpretation": "The blood test results indicate several abnormalities that require attention. Vitamin D levels are significantly low (9.0 ng/mL), indicating deficiency, which may affect bone health and immune function. Thyroid Stimulating Hormone (TSH) is elevated (6.85 \u00b5IU/mL), suggesting possible hypothyroidism, which could lead to symptoms like fatigue and weight gain. Lipid profile shows elevated Total Cholesterol (201 mg/dL), LDL Cholesterol (134 mg/dL), Non-HDL Cholesterol (155 mg/dL), and Total Cholesterol/HDL Ratio (4.37), indicating a potential risk for cardiovascular issues. Iron Saturation is slightly below normal (19.52%), which may suggest early iron deficiency. MCHC and Basophils are also below normal, though these may not be clinically significant without further context.",
+    "recommendations": [
+      "Consult a healthcare provider for further evaluation of thyroid function and possible initiation of thyroid hormone replacement therapy if hypothyroidism is confirmed.",
+      "Address Vitamin D deficiency through supplementation as prescribed by a doctor and increased sun exposure or dietary intake of Vitamin D-rich foods.",
+      "Review lipid profile with a cardiologist or general physician to assess cardiovascular risk and consider lifestyle modifications such as a heart-healthy diet and regular exercise.",
+      "Monitor iron levels and discuss with a healthcare provider if supplementation or dietary changes are needed to address potential iron deficiency.",
+      "Follow up with a complete clinical correlation of all abnormal parameters to understand underlying causes and receive personalized medical advice."
+    ]
+  },
+  "metadata": {
+    "processing_time_seconds": 77.73,
+    "model": "grok-3-latest",
+    "provider": "grok",
+    "timestamp": "2025-04-19T15:02:46.819002",
+    "processing_time": 77.78,
+    "processing_timestamp": "2025-04-19T15:02:46.819102",
+    "model_used": "grok-3-latest",
+    "direct_processing": true,
+    "attempts": 1,
+    "run_id": "73273a6e-8020-4cd4-a26f-1010b8beb3f3",
+    "tokens_in": 0,
+    "tokens_out": 0
+  },
+  "file_info": {
+    "filename": "Sri-blood report.pdf",
+    "file_id": "73273a6e-8020-4cd4-a26f-1010b8beb3f3",
+    "file_size": 787100,
+    "upload_time": "2025-04-19T15:02:46.819365",
+    "text_path": "reports/73273a6e-8020-4cd4-a26f-1010b8beb3f3_extracted.txt"
+  }
+}

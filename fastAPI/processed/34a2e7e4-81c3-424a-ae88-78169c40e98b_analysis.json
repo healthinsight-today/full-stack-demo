@@ -1,0 +1,361 @@
+{
+  "report_info": {
+    "report_id": "MB1409855",
+    "report_type": "COMPREHENSIVE FULL BODY CHECKUP WITH VITAMIN D & B12",
+    "report_date": "2025-01-22",
+    "lab_name": "ITDOSE INFOSYSTEMS PVT. LTD."
+  },
+  "patient_info": {
+    "name": "Mr. SRIDHAR",
+    "age": 37.0,
+    "gender": "Male",
+    "id": "0012501220095"
+  },
+  "test_sections": [
+    {
+      "section_name": "Complete Blood Count (CBC)",
+      "parameters": [
+        {
+          "name": "Haemoglobin (Hb)",
+          "value": 15.5,
+          "unit": "g/dL",
+          "reference_range": "13-17",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "RBC Count",
+          "value": 4.98,
+          "unit": "10^12/L",
+          "reference_range": "4.5-5.5",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Haematocrit (HCT)",
+          "value": 42.5,
+          "unit": "%",
+          "reference_range": "40-50",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "MCV",
+          "value": 85,
+          "unit": "fl",
+          "reference_range": "81-101",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "MCH",
+          "value": 31.2,
+          "unit": "pg",
+          "reference_range": "27-32",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "MCHC",
+          "value": 32.0,
+          "unit": "g/dL",
+          "reference_range": "32.5-34.5",
+          "is_abnormal": true,
+          "direction": "low"
+        },
+        {
+          "name": "RDW-CV",
+          "value": 13.0,
+          "unit": "%",
+          "reference_range": "11.6-14.0",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Platelet Count (PLT)",
+          "value": 252,
+          "unit": "10^9/L",
+          "reference_range": "150-410",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Total WBC Count",
+          "value": 7.7,
+          "unit": "10^9/L",
+          "reference_range": "4.0-10.0",
+          "is_abnormal": false,
+          "direction": null
+        }
+      ]
+    },
+    {
+      "section_name": "Clinical Biochemistry - Kidney Function",
+      "parameters": [
+        {
+          "name": "Estimated Glomerular Filtration Rate (eGFR)",
+          "value": 103,
+          "unit": "mL/min/1.73m2",
+          "reference_range": "74-138",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "BUN/Creatinine Ratio",
+          "value": 11.22,
+          "unit": "Ratio",
+          "reference_range": "6-22",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Urea/Creatinine Ratio",
+          "value": 24.08,
+          "unit": "Ratio",
+          "reference_range": "20-35",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Blood Urea Nitrogen (BUN)",
+          "value": 11.0,
+          "unit": "mg/dL",
+          "reference_range": "7.0-18.0",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Creatinine",
+          "value": 0.98,
+          "unit": "mg/dL",
+          "reference_range": "0.70-1.30",
+          "is_abnormal": false,
+          "direction": null
+        }
+      ]
+    },
+    {
+      "section_name": "Lipid Profile",
+      "parameters": [
+        {
+          "name": "Cholesterol Total",
+          "value": 201,
+          "unit": "mg/dL",
+          "reference_range": "<200",
+          "is_abnormal": true,
+          "direction": "high"
+        },
+        {
+          "name": "Triglycerides (TGL)",
+          "value": 105,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Cholesterol-HDL",
+          "value": 46,
+          "unit": "mg/dL",
+          "reference_range": "40-60",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "Cholesterol-LDL",
+          "value": 134,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "is_abnormal": true,
+          "direction": "high"
+        },
+        {
+          "name": "Non HDL Cholesterol",
+          "value": 155,
+          "unit": "mg/dL",
+          "reference_range": "<130",
+          "is_abnormal": true,
+          "direction": "high"
+        }
+      ]
+    },
+    {
+      "section_name": "Thyroid Profile",
+      "parameters": [
+        {
+          "name": "T3 (Triiodothyronine)",
+          "value": 103.6,
+          "unit": "ng/dL",
+          "reference_range": "70-204",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "T4 (Thyroxine)",
+          "value": 6.9,
+          "unit": "\u00b5g/dL",
+          "reference_range": "3.2-12.6",
+          "is_abnormal": false,
+          "direction": null
+        },
+        {
+          "name": "TSH (Thyroid Stimulating Hormone)",
+          "value": 6.85,
+          "unit": "\u00b5IU/mL",
+          "reference_range": "0.35-5.5",
+          "is_abnormal": true,
+          "direction": "high"
+        }
+      ]
+    },
+    {
+      "section_name": "Vitamin Levels",
+      "parameters": [
+        {
+          "name": "25-Hydroxy Vitamin D",
+          "value": 9.0,
+          "unit": "ng/mL",
+          "reference_range": "30.0-100.0",
+          "is_abnormal": true,
+          "direction": "low"
+        },
+        {
+          "name": "Vitamin B12 (Cyanocobalamin)",
+          "value": 218,
+          "unit": "pg/mL",
+          "reference_range": "211-911",
+          "is_abnormal": false,
+          "direction": null
+        }
+      ]
+    }
+  ],
+  "abnormal_parameters": [
+    {
+      "name": "MCHC",
+      "value": 32.0,
+      "unit": "g/dL",
+      "reference_range": "32.5-34.5",
+      "direction": "low"
+    },
+    {
+      "name": "Cholesterol Total",
+      "value": 201,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "direction": "high"
+    },
+    {
+      "name": "Cholesterol-LDL",
+      "value": 134,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "direction": "high"
+    },
+    {
+      "name": "Non HDL Cholesterol",
+      "value": 155,
+      "unit": "mg/dL",
+      "reference_range": "<130",
+      "direction": "high"
+    },
+    {
+      "name": "TSH (Thyroid Stimulating Hormone)",
+      "value": 6.85,
+      "unit": "\u00b5IU/mL",
+      "reference_range": "0.35-5.5",
+      "direction": "high"
+    },
+    {
+      "name": "25-Hydroxy Vitamin D",
+      "value": 9.0,
+      "unit": "ng/mL",
+      "reference_range": "30.0-100.0",
+      "direction": "low"
+    }
+  ],
+  "health_insights": [
+    {
+      "condition": "Vitamin D Deficiency",
+      "confidence": 0.9,
+      "parameters": [
+        "25-Hydroxy Vitamin D"
+      ],
+      "description": "Low Vitamin D levels can affect bone health and immune function, potentially leading to conditions like osteoporosis or rickets.",
+      "recommendations": [
+        {
+          "type": "dietary",
+          "text": "Increase intake of Vitamin D-rich foods such as fatty fish, egg yolks, and fortified dairy products."
+        },
+        {
+          "type": "lifestyle",
+          "text": "Get moderate sun exposure (10-30 minutes a few times a week, depending on skin tone and location)."
+        },
+        {
+          "type": "medical",
+          "text": "Consult a healthcare provider for possible Vitamin D supplementation."
+        }
+      ]
+    },
+    {
+      "condition": "Subclinical Hypothyroidism",
+      "confidence": 0.7,
+      "parameters": [
+        "TSH (Thyroid Stimulating Hormone)"
+      ],
+      "description": "Elevated TSH levels may indicate subclinical hypothyroidism, which could progress to overt hypothyroidism if untreated.",
+      "recommendations": [
+        {
+          "type": "medical",
+          "text": "Consult an endocrinologist for further evaluation of thyroid function."
+        },
+        {
+          "type": "testing",
+          "text": "Repeat thyroid function tests after 6-8 weeks to monitor TSH levels."
+        }
+      ]
+    },
+    {
+      "condition": "Dyslipidemia",
+      "confidence": 0.8,
+      "parameters": [
+        "Cholesterol Total",
+        "Cholesterol-LDL",
+        "Non HDL Cholesterol"
+      ],
+      "description": "Elevated cholesterol levels increase the risk of cardiovascular diseases such as heart attack or stroke.",
+      "recommendations": [
+        {
+          "type": "dietary",
+          "text": "Reduce intake of saturated fats and trans fats; increase fiber-rich foods like fruits, vegetables, and whole grains."
+        },
+        {
+          "type": "lifestyle",
+          "text": "Engage in regular physical activity (at least 150 minutes of moderate-intensity exercise per week)."
+        },
+        {
+          "type": "medical",
+          "text": "Discuss with a healthcare provider about lipid-lowering therapy if lifestyle changes are insufficient."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "processing_time": 36.46,
+    "processing_timestamp": "2025-04-19T15:46:13.263337",
+    "model_used": "grok-3-latest",
+    "provider": "grok",
+    "context_id": "34a2e7e4-81c3-424a-ae88-78169c40e98b",
+    "run_id": "34a2e7e4-81c3-424a-ae88-78169c40e98b",
+    "tokens_in": 0,
+    "tokens_out": 0
+  },
+  "file_info": {
+    "filename": "Sri-blood report.pdf",
+    "file_id": "34a2e7e4-81c3-424a-ae88-78169c40e98b",
+    "file_size": 787100,
+    "upload_time": "2025-04-19T15:46:13.263421",
+    "text_path": "reports/34a2e7e4-81c3-424a-ae88-78169c40e98b_extracted.txt",
+    "json_path": null
+  }
+}
