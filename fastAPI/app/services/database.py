@@ -8,9 +8,7 @@ from typing import Optional, List, Dict, Any, Annotated, ClassVar, Union
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 from pymongo import IndexModel, ASCENDING, DESCENDING
 from bson import ObjectId
-from pydantic import BaseModel, Field, GetJsonSchemaHandler, field_serializer
-from pydantic.json_schema import JsonSchemaValue
-from pydantic_core import core_schema
+from pydantic import BaseModel, Field, field_serializer
 
 from app.config import settings
 
@@ -39,27 +37,22 @@ COLLECTIONS = {
     "ANALYTICS": "analytics"
 }
 
-# PyObjectId class simplified for Pydantic v2
+# Even simpler PyObjectId implementation to avoid schema generation issues
 class PyObjectId(str):
     """ObjectId field for Pydantic models with string representation"""
     
     @classmethod
-    def __get_validators__(cls):
-        yield cls.validate
-    
-    @classmethod
-    def validate(cls, v):
-        if not isinstance(v, (str, ObjectId)):
+    def validate(cls, value):
+        """Validate ObjectId"""
+        if not isinstance(value, (str, ObjectId)):
             raise TypeError('ObjectId required')
-        if isinstance(v, str):
-            if not ObjectId.is_valid(v):
-                raise ValueError('Invalid ObjectId')
-            return str(v)
-        return str(v)
-    
-    @classmethod
-    def __get_pydantic_json_schema__(cls, schema_generator: GetJsonSchemaHandler) -> JsonSchemaValue:
-        return schema_generator.get_schema_for_type(str)
+        
+        if isinstance(value, str) and not ObjectId.is_valid(value):
+            raise ValueError('Invalid ObjectId')
+        
+        if isinstance(value, ObjectId):
+            return str(value)
+        return value
 
 # MongoDB Models for Pydantic validation
 class MongoBaseModel(BaseModel):
@@ -72,10 +65,12 @@ class MongoBaseModel(BaseModel):
             return None
         return str(id)
     
-    class Config:
-        populate_by_name = True
-        json_encoders = {ObjectId: str}
-        arbitrary_types_allowed = True
+    model_config = {
+        "arbitrary_types_allowed": True,
+        "populate_by_name": True,
+        "json_encoders": {ObjectId: str},
+        "json_schema_extra": {"example": {"_id": "6433e9e97f7b4d5f8a06c2b9"}}
+    }
 
 # Helper function to convert ObjectId to string
 def object_id_to_str(obj_id):

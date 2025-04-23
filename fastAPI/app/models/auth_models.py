@@ -34,6 +34,12 @@ class Token(BaseModel):
     token_type: str = "bearer"
     expires_in: int
     refresh_token: Optional[str] = None
+
+class TokenResponse(BaseModel):
+    """Token refresh response model"""
+    access_token: str
+    token_type: str = "bearer"
+    expires_in: int
     
 # Response models
 class UserProfile(BaseModel):
@@ -119,9 +125,27 @@ class UserAuthResponse(BaseModel):
     """User authentication response model"""
     success: bool
     message: Optional[str] = None
-    data: Optional[Dict[str, Any]] = {
-        "user": Optional[UserProfileResponse],
-        "token": Optional[TokenResponse]
+    data: Optional[Dict[str, Any]] = None
+    
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "success": True,
+                "message": "Login successful",
+                "data": {
+                    "user": {
+                        "id": "6433e9e97f7b4d5f8a06c2b9",
+                        "email": "user@example.com",
+                        "username": "username"
+                    },
+                    "token": {
+                        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
+                        "token_type": "bearer",
+                        "expires_in": 1800
+                    }
+                }
+            }
+        }
     }
 
 class StatusMessageResponse(BaseModel):
