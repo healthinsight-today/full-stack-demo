@@ -32,21 +32,77 @@ const processTestData = (): Report => {
   };
   
   // Map insights to match our app's Insight type
-  const insights: Insight[] = rawTestData.insights.map((insight, index) => ({
-    id: `insight-${index + 1}`,
-    report_id: id,
-    title: insight.condition,
-    description: insight.description,
-    severity: insight.severity as 'mild' | 'moderate' | 'severe',
-    category: insight.parameters[0], // Using the first parameter as category
-    related_parameters: insight.parameters,
-    details: insight.description,
-    recommendations: insight.recommendations.map(rec => rec.text),
-    possible_causes: [], // Initialize as empty array
-    action_required: insight.severity === 'severe' || insight.severity === 'moderate',
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString()
-  }));
+  const insights: Insight[] = [
+    {
+      id: "insight-1",
+      report_id: id,
+      title: "Vitamin D Deficiency",
+      description: "Your vitamin D levels are below the recommended range.",
+      severity: "moderate",
+      category: "Vitamin D",
+      related_parameters: ["Vitamin D"],
+      details: "Low vitamin D can affect bone health and immune function.",
+      recommendations: [
+        "Consider a vitamin D3 supplement of 1000-2000 IU daily",
+        "Increase sun exposure for 15-20 minutes daily",
+        "Add vitamin D rich foods to your diet"
+      ],
+      possible_causes: [
+        "Limited sun exposure",
+        "Diet low in vitamin D rich foods",
+        "Certain medications"
+      ],
+      action_required: true,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    },
+    {
+      id: "insight-2",
+      report_id: id,
+      title: "Elevated LDL Cholesterol",
+      description: "Your LDL cholesterol is above the recommended range.",
+      severity: "moderate",
+      category: "Cholesterol",
+      related_parameters: ["LDL Cholesterol"],
+      details: "Elevated LDL cholesterol increases risk of cardiovascular disease.",
+      recommendations: [
+        "Limit saturated and trans fats in your diet",
+        "Increase soluble fiber intake",
+        "Consider regular moderate exercise"
+      ],
+      possible_causes: [
+        "Diet high in saturated fats",
+        "Sedentary lifestyle",
+        "Genetic factors"
+      ],
+      action_required: true,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    },
+    {
+      id: "insight-3",
+      report_id: id,
+      title: "Optimal HDL Cholesterol",
+      description: "Your HDL cholesterol is within the recommended range.",
+      severity: "mild",
+      category: "Cholesterol",
+      related_parameters: ["HDL Cholesterol"],
+      details: "Healthy HDL levels help protect against heart disease.",
+      recommendations: [
+        "Maintain current healthy habits",
+        "Regular exercise helps maintain healthy HDL levels",
+        "Include healthy fats in your diet"
+      ],
+      possible_causes: [
+        "Healthy diet with adequate omega-3 fatty acids",
+        "Regular physical activity",
+        "Moderate alcohol consumption"
+      ],
+      action_required: false,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    }
+  ];
   
   // Map recommendations
   const recommendations: Recommendation[] = rawTestData.insights.flatMap((insight, insightIndex) => 

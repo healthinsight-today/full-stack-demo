@@ -8,16 +8,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: 'var(--primary-50)',
-          100: 'var(--primary-100)',
-          200: 'var(--primary-200)',
-          300: 'var(--primary-300)',
-          400: 'var(--primary-400)',
-          500: 'var(--primary-500)',
-          600: 'var(--primary-600)',
-          700: 'var(--primary-700)',
-          800: 'var(--primary-800)',
-          900: 'var(--primary-900)',
+          DEFAULT: 'var(--brand-purple)',
+          light: 'var(--brand-purple-light)',
+          dark: 'var(--brand-purple-dark)',
+        },
+        'brand-purple': {
+          DEFAULT: 'var(--brand-purple)',
+          light: 'var(--brand-purple-light)',
+          dark: 'var(--brand-purple-dark)',
         },
         secondary: {
           50: 'var(--secondary-50)',
@@ -68,16 +66,16 @@ module.exports = {
           900: 'var(--danger-900)',
         },
         neutral: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+          50: 'var(--neutral-100)',
+          100: 'var(--neutral-100)',
+          200: 'var(--neutral-200)',
+          300: 'var(--neutral-300)',
+          400: 'var(--neutral-400)',
+          500: 'var(--neutral-500)',
+          600: 'var(--neutral-600)',
+          700: 'var(--neutral-700)',
+          800: 'var(--neutral-800)',
+          900: 'var(--neutral-900)',
         },
       },
       fontFamily: {
@@ -85,31 +83,33 @@ module.exports = {
         mono: ['JetBrains Mono', 'monospace'],
       },
       boxShadow: {
-        card: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        'card-hover': '0 10px 15px rgba(0, 0, 0, 0.1)',
+        sm: 'var(--shadow-sm)',
+        DEFAULT: 'var(--shadow-md)',
+        md: 'var(--shadow-md)',
+        lg: 'var(--shadow-lg)',
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.900'),
+            color: theme('colors.neutral.900'),
             a: {
-              color: theme('colors.primary.600'),
+              color: theme('colors.brand-purple.DEFAULT'),
               '&:hover': {
-                color: theme('colors.primary.700'),
+                color: theme('colors.brand-purple.dark'),
               },
             },
             strong: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
           },
         },
         dark: {
           css: {
-            color: theme('colors.gray.100'),
+            color: theme('colors.neutral.100'),
             a: {
-              color: theme('colors.primary.400'),
+              color: theme('colors.brand-purple.light'),
               '&:hover': {
-                color: theme('colors.primary.300'),
+                color: theme('colors.brand-purple.DEFAULT'),
               },
             },
             strong: {

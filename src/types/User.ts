@@ -3,6 +3,7 @@ export interface User {
     name: string;
     email: string;
     password?: string;
+    initials?: string;
     profile: UserProfile;
     settings: UserSettings;
     preferences?: UserPreferences;

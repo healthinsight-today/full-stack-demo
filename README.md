@@ -1,121 +1,128 @@
-# Health Insights Today - Frontend
+# HealthInsightToday Full-Stack Demo
 
-A modern React application for visualizing and analyzing blood test reports with detailed insights, recommendations, and health data visualization.
+A full-stack application that helps users understand their health data through AI-powered analysis and visualization.
 
 ## Features
 
-- **Upload Blood Test Reports**: Easily upload and process medical reports
-- **Interactive Visualizations**: View your health data through interactive charts and graphs
-- **Personalized Insights**: Get AI-powered insights based on your test results
-- **Customized Recommendations**: Receive dietary and lifestyle recommendations
-- **Trend Analysis**: Track changes in your health metrics over time 
-- **Mobile-First Design**: Fully responsive across all devices
+- Modern React frontend with responsive UI
+- FastAPI backend for efficient data processing
+- Report analysis using AI
+- Interactive data visualization
+- User authentication
+- Responsive design
 
-## Tech Stack
+## Prerequisites
 
-- **React 18+**: UI development with functional components and hooks
-- **TypeScript**: Type-safe code
-- **Tailwind CSS**: Utility-first CSS framework for styling
-- **React Router**: Client-side routing
-- **React Context API**: State management
-- **Chart.js/Recharts**: Data visualization
-- **Axios**: API requests
+- Node.js v14 or higher
+- Python 3.8 or higher
+- pip
 
-## Project Structure
+## Quick Setup
 
-```
-src/
-├── assets/             # Static assets (images, icons, styles)
-├── components/         # Reusable components
-│   ├── auth/           # Authentication components
-│   ├── charts/         # Visualization components
-│   ├── common/         # Common UI components
-│   ├── insights/       # Insight-related components
-│   ├── layout/         # Layout components
-│   ├── recommendations/# Recommendation components
-│   └── reports/        # Report-related components
-├── context/            # React context providers
-├── hooks/              # Custom React hooks
-├── pages/              # Page components
-├── services/           # API services
-│   └── api/            # API client and endpoints
-├── types/              # TypeScript interfaces
-└── utils/              # Utility functions
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 16+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
+1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/healthinsighttoday-frontend.git
-cd healthinsighttoday-frontend
+git clone https://github.com/yourusername/full-stack-demo.git
+cd full-stack-demo
 ```
 
-2. Install dependencies:
+2. Run the setup script
+```bash
+./setup-env.sh
+```
+
+3. Start the development servers
+```bash
+./start-dev.sh
+```
+
+The frontend will be available at http://localhost:3000 and the backend API at http://localhost:8000.
+
+To stop the servers:
+```bash
+./stop-dev.sh
+```
+
+## Manual Setup
+
+### Frontend (React)
+
+1. Install dependencies
 ```bash
 npm install
 ```
 
-3. Set up environment variables:
-```bash
-cp .env.example .env.local
+2. Create `.env` file
 ```
-Edit the `.env.local` file to add your API endpoint:
-```
-REACT_APP_API_BASE_URL=http://localhost:8000
+REACT_APP_API_URL=http://localhost:8000/api/v1
+REACT_APP_ENV=development
+REACT_APP_API_TIMEOUT=30000
 ```
 
-### Development
-
-Run the development server:
+3. Start development server
 ```bash
 npm start
 ```
 
-The application will be available at [http://localhost:3000](http://localhost:3000).
+### Backend (FastAPI)
 
-### Building for Production
-
-To create an optimized production build:
+1. Create and activate virtual environment
 ```bash
-npm run build
+cd fastAPI
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-The build artifacts will be stored in the `build/` directory.
-
-## Testing
-
-Run the test suite:
+2. Install dependencies
 ```bash
-npm test
+pip install -r requirements.txt
 ```
 
-## API Integration
+3. Create `.env` file
+```
+ENV=development
+DEBUG=true
+PORT=8000
+HOST=0.0.0.0
+CORS_ORIGINS=["http://localhost:3000","http://127.0.0.1:3000"]
+CORS_ALLOW_CREDENTIALS=true
+LOG_LEVEL=INFO
+UPLOAD_DIR=uploads
+TEXT_DIR=text
+PROCESSED_DIR=processed
+REPORTS_DIR=reports
+```
 
-This frontend is designed to work with the HealthInsightToday API. By default, in development mode, it uses mock data from `src/services/api/sampleData.js`. 
+4. Start development server
+```bash
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
-To connect to the actual backend, make sure to set the `REACT_APP_API_BASE_URL` environment variable.
+## Project Structure
 
-## Demo Credentials
+- `src/` - Frontend React application
+  - `components/` - Reusable UI components
+  - `context/` - React context providers
+  - `hooks/` - Custom React hooks
+  - `pages/` - Application pages
+  - `services/` - API service layers
+  - `types/` - TypeScript type definitions
+  - `utils/` - Utility functions
 
-For testing purposes, you can use these demo credentials:
-- **Email**: demo@example.com
-- **Password**: password
+- `fastAPI/` - Backend FastAPI application
+  - `app/` - Main application package
+    - `routes/` - API endpoints
+    - `services/` - Business logic services
+    - `models/` - Data models
+    - `utils/` - Utility functions
+    - `config.py` - Application configuration
+    - `main.py` - Application entry point
+
+## API Documentation
+
+When the backend is running, API documentation is available at:
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Recharts](https://recharts.org/)
+MIT

@@ -17,6 +17,10 @@ import SettingsPage from './pages/SettingsPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ComponentsShowcasePage from './pages/ComponentsShowcasePage';
+import Diet from './pages/Diet';
+import Shopping from './pages/Shopping';
+import Specialists from './pages/Specialists';
 
 // New Static Pages
 import AboutPage from './pages/AboutPage';
@@ -58,6 +62,7 @@ const AppRouter: React.FC = () => {
       <Route path="/faq" element={<FaqPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/help" element={<HelpPage />} />
+      <Route path="/ui-components" element={<ComponentsShowcasePage />} />
       
       {/* Main app routes with layout - Protected */}
       <Route element={<MainLayout />}>
@@ -114,6 +119,21 @@ const AppRouter: React.FC = () => {
         <Route path="/settings" element={
           <ProtectedRoute>
             <SettingsPage />
+          </ProtectedRoute>
+        } />
+        <Route path="/diet" element={
+          <ProtectedRoute>
+            <Diet />
+          </ProtectedRoute>
+        } />
+        <Route path="/shopping" element={
+          <ProtectedRoute>
+            <Shopping />
+          </ProtectedRoute>
+        } />
+        <Route path="/specialists" element={
+          <ProtectedRoute>
+            <Specialists />
           </ProtectedRoute>
         } />
       </Route>

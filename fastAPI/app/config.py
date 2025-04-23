@@ -1,7 +1,8 @@
 import os
+import json
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
-from typing import Optional, List
+from typing import Optional, List, Union
 from pydantic import Field
 
 # Load environment variables from .env file
@@ -25,7 +26,7 @@ class Settings(BaseSettings):
     RELOAD: bool = True
     
     # CORS settings
-    CORS_ORIGINS: List[str] = ["*"]  # Allow all origins in development
+    CORS_ORIGINS: Union[List[str], str] = ["*"]  # Allow all origins in development
     CORS_ALLOW_CREDENTIALS: bool = True
     CORS_ALLOW_METHODS: List[str] = ["*"]  # Allow all methods
     CORS_ALLOW_HEADERS: List[str] = ["*"]  # Allow all headers
@@ -46,6 +47,16 @@ class Settings(BaseSettings):
     
     # Upload settings
     MAX_UPLOAD_SIZE: int = int(os.getenv("MAX_UPLOAD_SIZE", 10485760))  # 10MB
+    
+    # MongoDB settings
+    MONGO_URI: str = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+    MONGO_DB: str = os.getenv("MONGO_DB", "healthinsighttoday")
+    
+    # JWT Authentication settings
+    JWT_SECRET: str = os.getenv("JWT_SECRET", "your-super-secret-key-change-this-in-production")
+    JWT_ALGORITHM: str = os.getenv("JWT_ALGORITHM", "HS256")
+    JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("JWT_ACCESS_TOKEN_EXPIRE_MINUTES", 30))
+    JWT_REFRESH_TOKEN_EXPIRE_DAYS: int = int(os.getenv("JWT_REFRESH_TOKEN_EXPIRE_DAYS", 7))
     
     # OpenAI API settings
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
@@ -110,6 +121,15 @@ class Settings(BaseSettings):
                 self.DEFAULT_LLM_MODEL = self.ANTHROPIC_MODEL
             elif self.DEFAULT_LLM_PROVIDER == "grok" or self.DEFAULT_LLM_PROVIDER == "xai":
                 self.DEFAULT_LLM_MODEL = self.GROK_MODEL
+        
+        # Handle CORS_ORIGINS if it's a JSON string
+        if isinstance(self.CORS_ORIGINS, str):
+            try:
+                # Try to parse as JSON first
+                self.CORS_ORIGINS = json.loads(self.CORS_ORIGINS)
+            except json.JSONDecodeError:
+                # If not valid JSON, treat as comma-separated string
+                self.CORS_ORIGINS = [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
 
 # Initialize settings
 settings = Settings()

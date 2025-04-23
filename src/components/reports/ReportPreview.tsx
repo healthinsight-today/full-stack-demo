@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Report } from '../../types/Report';
+import { Report } from '../../services/api/reportsService';
 import Card from '../common/Card';
 import Button from '../common/Button';
 import Modal from '../common/Modal';
@@ -8,6 +8,7 @@ import Tabs from '../common/Tabs';
 import { formatDate } from '../../utils/formatters/dateFormatter';
 import TestInfoTooltip from '../common/TestInfoTooltip';
 import ParameterInfoTooltip from '../common/ParameterInfoTooltip';
+import { safeArrayLength, safeObjectAccess, hasItems } from '../../utils/typeUtils';
 
 interface ReportPreviewProps {
   report: Report;
@@ -28,13 +29,24 @@ const ReportPreview: React.FC<ReportPreviewProps> = ({
   // Format date using utility function
   const formattedDate = formatDate(report.report_info.report_date);
 
-  // Count parameters by status
-  const totalParameters = report.test_sections.reduce(
-    (sum, section) => sum + section.parameters.length, 
+  // Count parameters by status safely
+  const totalParameters = safeObjectAccess(
+    report,
+    'test_sections',
+    (sections) => sections.reduce((sum, section) => sum + section.parameters.length, 0),
     0
   );
-  const abnormalCount = report.abnormal_parameters.length;
+  
+  const abnormalCount = safeArrayLength(report.abnormal_parameters);
   const normalCount = totalParameters - abnormalCount;
+
+  // Get processing status safely
+  const processingStatus = safeObjectAccess(
+    report.processing,
+    'status',
+    (status) => status,
+    'pending'
+  );
 
   // Get status color
   const getStatusColor = (status: string) => {
@@ -138,9 +150,9 @@ const ReportPreview: React.FC<ReportPreviewProps> = ({
               </p>
             </div>
             <span 
-              className={`text-xs px-2 py-1 rounded-full font-medium ${getStatusColor(report.processing.status)}`}
+              className={`text-xs px-2 py-1 rounded-full font-medium ${getStatusColor(processingStatus)}`}
             >
-              {report.processing.status.charAt(0).toUpperCase() + report.processing.status.slice(1)}
+              {processingStatus.charAt(0).toUpperCase() + processingStatus.slice(1)}
             </span>
           </div>
           

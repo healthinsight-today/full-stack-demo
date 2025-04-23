@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useUser } from '../../context/UserContext';
-import { Button } from '../ui/Button';
+import Button from '../ui/Button';
 import './AuthButtons.css';
 
 export const AuthButtons: React.FC = () => {

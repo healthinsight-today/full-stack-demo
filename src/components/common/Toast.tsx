@@ -26,6 +26,7 @@ const Toast: React.FC<ToastProps> = ({
       
       return () => clearTimeout(timer);
     }
+    return undefined;
   }, [id, duration, onClose]);
 
   // Type-specific classes and icons

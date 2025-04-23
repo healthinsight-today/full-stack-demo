@@ -1,97 +1,139 @@
+import axios, { AxiosResponse } from 'axios';
 import { ApiResponse } from '../../types/Api';
+import { apiService } from '../apiService';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://api.healthinsighttoday.com';
+// Get the pre-configured API instance
+const api = apiService.getInstance();
 
-interface RequestOptions {
-  method?: string;
-  headers?: Record<string, string>;
-  body?: any;
-  params?: Record<string, string | number | boolean | undefined>;
-}
-
-// Helper function to build URL with query parameters
-const buildUrl = (endpoint: string, params?: Record<string, string | number | boolean | undefined>): string => {
-  const url = new URL(`${API_BASE_URL}${endpoint}`);
-  
-  if (params) {
-    Object.entries(params).forEach(([key, value]) => {
-      if (value !== undefined) {
-        url.searchParams.append(key, String(value));
-      }
-    });
-  }
-  
-  return url.toString();
-};
-
-// Generic API client function
-export const apiClient = async <T>(
-  endpoint: string,
-  options: RequestOptions = {}
-): Promise<ApiResponse<T>> => {
-  const { method = 'GET', headers = {}, body, params } = options;
-  
+/**
+ * Generic GET request wrapper
+ * 
+ * @param endpoint - API endpoint path
+ * @param params - Query parameters
+ * @returns Promise with typed response
+ */
+export async function get<T>(endpoint: string, params: Record<string, any> = {}): Promise<ApiResponse<T>> {
   try {
-    const url = buildUrl(endpoint, params);
-    
-    const requestOptions: RequestInit = {
-      method,
-      headers: {
-        'Content-Type': 'application/json',
-        ...headers,
-      },
-      credentials: 'include', // Include cookies for authentication
-    };
-    
-    if (body) {
-      requestOptions.body = JSON.stringify(body);
-    }
-    
-    // For development/demo, simulate network delay
-    if (process.env.NODE_ENV === 'development') {
-      await new Promise(resolve => setTimeout(resolve, 500));
-    }
-    
-    const response = await fetch(url, requestOptions);
-    const data = await response.json();
-    
-    if (!response.ok) {
-      return {
-        success: false,
-        data: null as T,
-        error: data.message || 'An error occurred',
-        status: response.status,
-      };
-    }
+    const response: AxiosResponse = await api.get(endpoint, { params });
     
     return {
       success: true,
-      data,
-      status: response.status,
+      data: response.data,
+      status: response.status
     };
-  } catch (error) {
+  } catch (error: any) {
+    // Error is already handled by interceptor but we need to format it
     return {
       success: false,
       data: null as T,
-      error: error instanceof Error ? error.message : 'An unknown error occurred',
-      status: 500,
+      error: error.message || 'An unknown error occurred',
+      status: error.response?.status || 500
     };
   }
-};
+}
 
-// Export convenience methods
-export const get = <T>(endpoint: string, params?: Record<string, string | number | boolean | undefined>): Promise<ApiResponse<T>> => {
-  return apiClient<T>(endpoint, { method: 'GET', params });
-};
+/**
+ * Generic POST request wrapper
+ * 
+ * @param endpoint - API endpoint path
+ * @param data - Request payload
+ * @returns Promise with typed response
+ */
+export async function post<T>(endpoint: string, data: any = {}): Promise<ApiResponse<T>> {
+  try {
+    const response: AxiosResponse = await api.post(endpoint, data);
+    
+    return {
+      success: true,
+      data: response.data,
+      status: response.status
+    };
+  } catch (error: any) {
+    return {
+      success: false,
+      data: null as T,
+      error: error.message || 'An unknown error occurred',
+      status: error.response?.status || 500
+    };
+  }
+}
 
-export const post = <T>(endpoint: string, body: any, params?: Record<string, string | number | boolean | undefined>): Promise<ApiResponse<T>> => {
-  return apiClient<T>(endpoint, { method: 'POST', body, params });
-};
+/**
+ * Generic PUT request wrapper
+ * 
+ * @param endpoint - API endpoint path
+ * @param data - Request payload
+ * @returns Promise with typed response
+ */
+export async function put<T>(endpoint: string, data: any = {}): Promise<ApiResponse<T>> {
+  try {
+    const response: AxiosResponse = await api.put(endpoint, data);
+    
+    return {
+      success: true,
+      data: response.data,
+      status: response.status
+    };
+  } catch (error: any) {
+    return {
+      success: false,
+      data: null as T,
+      error: error.message || 'An unknown error occurred',
+      status: error.response?.status || 500
+    };
+  }
+}
 
-export const put = <T>(endpoint: string, body: any, params?: Record<string, string | number | boolean | undefined>): Promise<ApiResponse<T>> => {
-  return apiClient<T>(endpoint, { method: 'PUT', body, params });
-};
+/**
+ * Generic PATCH request wrapper
+ * 
+ * @param endpoint - API endpoint path
+ * @param data - Request payload
+ * @returns Promise with typed response
+ */
+export async function patch<T>(endpoint: string, data: any = {}): Promise<ApiResponse<T>> {
+  try {
+    const response: AxiosResponse = await api.patch(endpoint, data);
+    
+    return {
+      success: true,
+      data: response.data,
+      status: response.status
+    };
+  } catch (error: any) {
+    return {
+      success: false,
+      data: null as T,
+      error: error.message || 'An unknown error occurred',
+      status: error.response?.status || 500
+    };
+  }
+}
 
-export const del = <T>(endpoint: string, params?: Record<string, string | number | boolean | undefined>): Promise<ApiResponse<T>> => {
-  return apiClient<T>(endpoint, { method: 'DELETE', params });
-}; 
+/**
+ * Generic DELETE request wrapper
+ * 
+ * @param endpoint - API endpoint path
+ * @returns Promise with typed response
+ */
+export async function del<T>(endpoint: string): Promise<ApiResponse<T>> {
+  try {
+    const response: AxiosResponse = await api.delete(endpoint);
+    
+    return {
+      success: true,
+      data: response.data,
+      status: response.status
+    };
+  } catch (error: any) {
+    return {
+      success: false,
+      data: null as T,
+      error: error.message || 'An unknown error occurred',
+      status: error.response?.status || 500
+    };
+  }
+}
+
+// Export delete as 'del' to avoid keyword conflict
+export { del as delete }; 

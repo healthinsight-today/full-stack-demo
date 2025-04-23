@@ -5,8 +5,8 @@ import { Recommendation } from './Recommendation';
 export interface Report {
     id: string;  // Keep as id
     user_id: string;
-    filename: string;
-    description: string;
+    filename?: string;
+    description?: string;
     created_at: string;
     updated_at: string;
     status: 'pending' | 'processing' | 'completed' | 'failed';
@@ -15,13 +15,13 @@ export interface Report {
     // Extended properties
     report_info: ReportInfo;  // Make required
     patient_info: PatientInfo;  // Make required
-    test_sections: TestSection[];  // Make required
-    abnormal_parameters: AbnormalParameter[];  // Make required
-    insights: Insight[];  // Make required
-    recommendations: Recommendation[];  // Make required
+    test_sections?: TestSection[];  // Make optional
+    abnormal_parameters?: AbnormalParameter[];  // Make optional
+    insights?: Insight[];  // Make optional
+    recommendations?: Recommendation[];  // Make optional
     diet_recommendations?: DietRecommendations;
-    processing: ProcessingInfo;  // Add processing info
-    file: FileInfo;  // Add file property to match usage
+    processing?: ProcessingInfo;  // Make optional
+    file?: FileInfo;  // Make optional
 }
 
 export interface CreateReportPayload {
@@ -51,11 +51,12 @@ export interface ReportListResponse {
 export interface ReportDetail extends Report {
     report_info: ReportInfo;
     patient_info: PatientInfo;
-    test_sections: TestSection[];
-    abnormal_parameters: AbnormalParameter[];
+    test_sections?: TestSection[];
+    abnormal_parameters?: AbnormalParameter[];
+    insights?: Insight[];
     diet_recommendations?: DietRecommendations;
-    processing: ProcessingInfo;
-    file: FileInfo;
+    processing?: ProcessingInfo;
+    file?: FileInfo;
 }
 
 export interface ReportInfo {

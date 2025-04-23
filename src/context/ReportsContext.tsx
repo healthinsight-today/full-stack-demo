@@ -1,8 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import { Report } from '../types/Report';
+import { Report, getAllReports } from '../services/api/reportsService';
 import { Recommendation } from '../types/Recommendation';
 import { FilterOptions } from '../types/Filter';
-import axios from '../services/api/axios';
 
 interface ReportsContextProps {
   reports: Report[];
@@ -42,14 +41,14 @@ export const ReportsProvider: React.FC<ReportsProviderProps> = ({ children }) =>
     setError(null);
     
     try {
-      const response = await axios.get('/reports');
+      const data = await getAllReports();
       
-      if (response.data) {
-        setReports(response.data);
+      if (data) {
+        setReports(data);
         
         // Extract recommendations from the reports
         const allRecommendations: Recommendation[] = [];
-        response.data.forEach((report: Report) => {
+        data.forEach((report) => {
           if (report.recommendations && report.recommendations.length > 0) {
             allRecommendations.push(...report.recommendations);
           }

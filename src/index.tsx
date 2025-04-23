@@ -1,15 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/index.css';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { UserProvider } from './context/UserContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { ReportsProvider } from './context/ReportsContext';
+import { ToastProvider } from './components/ui';
+// Import API service to ensure mocks are initialized
+import './services/apiService';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ThemeProvider>
+        <UserProvider>
+          <ReportsProvider>
+            <ToastProvider>
+              <App />
+            </ToastProvider>
+          </ReportsProvider>
+        </UserProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

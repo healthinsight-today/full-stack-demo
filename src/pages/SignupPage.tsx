@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
-import { Button } from '../components/ui/Button';
+import Button from '../components/ui/Button';
 import './SignupPage.css';
 
 const SignupPage: React.FC = () => {

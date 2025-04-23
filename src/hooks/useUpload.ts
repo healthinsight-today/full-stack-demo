@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { post } from '../services/api/client';
 import { Report } from '../types/Report';
 import { ApiResponse } from '../types/Api';
+import { apiService } from '../services/apiService';
 
 interface UseUploadOptions {
   endpoint?: string;
@@ -44,50 +45,23 @@ export const useUpload = (options: UseUploadOptions = {}): UseUploadResult => {
       const formData = new FormData();
       formData.append('file', file);
 
-      // Mock upload progress (since fetch doesn't support progress events easily)
-      const simulateProgress = () => {
-        let currentProgress = 0;
-        const interval = setInterval(() => {
-          if (currentProgress >= 90) {
-            clearInterval(interval);
-            return;
-          }
-          currentProgress += Math.random() * 10;
-          currentProgress = Math.min(currentProgress, 90);
-          setProgress(currentProgress);
+      // Set up real progress tracking
+      const uploadProgressCallback = (progressEvent: any) => {
+        if (progressEvent.lengthComputable) {
+          const progressPercent = (progressEvent.loaded / progressEvent.total) * 100;
+          setProgress(progressPercent);
           if (onUploadProgress) {
-            onUploadProgress(currentProgress);
+            onUploadProgress(progressPercent);
           }
-        }, 300);
-
-        return interval;
+        }
       };
 
-      const progressInterval = simulateProgress();
-
-      // In a real implementation with XMLHttpRequest:
-      // const xhr = new XMLHttpRequest();
-      // xhr.upload.onprogress = (event) => {
-      //   if (event.lengthComputable) {
-      //     const progressPercent = (event.loaded / event.total) * 100;
-      //     setProgress(progressPercent);
-      //     if (onUploadProgress) {
-      //       onUploadProgress(progressPercent);
-      //     }
-      //   }
-      // };
-
-      // Make API call
-      const response = await post<Report>(
+      // Use the apiService's upload method directly
+      const response = await apiService.upload(
         endpoint,
-        formData,
-        undefined,
-        // In a real implementation, pass the controller signal
-        // { signal: newController.signal }
+        file,
+        uploadProgressCallback
       );
-
-      // Clear the progress interval
-      clearInterval(progressInterval);
 
       // Set full progress when done
       setProgress(100);
@@ -95,16 +69,15 @@ export const useUpload = (options: UseUploadOptions = {}): UseUploadResult => {
         onUploadProgress(100);
       }
 
-      if (response.success) {
-        if (onSuccess) {
-          onSuccess(response);
-        }
-      } else {
-        const errorMsg = response.error || 'Upload failed';
-        setError(errorMsg);
-        if (onError) {
-          onError(errorMsg);
-        }
+      // Format response to match ApiResponse<Report>
+      const formattedResponse: ApiResponse<Report> = {
+        success: true,
+        data: response.data,
+        status: response.status
+      };
+
+      if (onSuccess) {
+        onSuccess(formattedResponse);
       }
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'An unknown error occurred';

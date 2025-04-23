@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Report } from '../../types/Report';
+import { Report } from '../../services/api/reportsService';
 import Card from '../common/Card';
 import Button from '../common/Button';
+import { safeArrayLength, safeObjectAccess, hasItems } from '../../utils/typeUtils';
 
 interface ReportCardProps {
   report: Report;
@@ -42,7 +43,24 @@ const ReportCard: React.FC<ReportCardProps> = ({
   };
 
   // Count abnormal parameters
-  const abnormalCount = report.abnormal_parameters.length;
+  const abnormalCount = safeArrayLength(report.abnormal_parameters);
+
+  // Get total parameters count
+  const totalParameters = safeObjectAccess(
+    report,
+    'test_sections',
+    (sections) => 
+      sections.reduce((total, section) => total + section.parameters.length, 0),
+    0
+  );
+
+  // Get processing status
+  const processingStatus = safeObjectAccess(
+    report.processing,
+    'status',
+    (status) => status,
+    'pending'
+  );
 
   return (
     <Card 
@@ -61,9 +79,9 @@ const ReportCard: React.FC<ReportCardProps> = ({
             </p>
           </div>
           <span 
-            className={`text-xs px-2 py-1 rounded-full font-medium ${getStatusColor(report.processing.status)}`}
+            className={`text-xs px-2 py-1 rounded-full font-medium ${getStatusColor(processingStatus)}`}
           >
-            {report.processing.status.charAt(0).toUpperCase() + report.processing.status.slice(1)}
+            {processingStatus.charAt(0).toUpperCase() + processingStatus.slice(1)}
           </span>
         </div>
         
@@ -84,7 +102,7 @@ const ReportCard: React.FC<ReportCardProps> = ({
               </span>
               <div className="flex items-center">
                 <span className="text-sm text-neutral-700 dark:text-neutral-300 mr-1">
-                  {report.test_sections.reduce((total, section) => total + section.parameters.length, 0)}
+                  {totalParameters}
                 </span>
                 <span className="text-xs text-neutral-500 dark:text-neutral-400">total</span>
               </div>
@@ -99,9 +117,9 @@ const ReportCard: React.FC<ReportCardProps> = ({
             )}
           </div>
           
-          {report.insights.length > 0 && (
+          {hasItems(report.insights) && (
             <div className="bg-primary bg-opacity-10 text-primary text-sm font-medium px-3 py-1 rounded-full">
-              {report.insights.length} Insights
+              {safeArrayLength(report.insights)} Insights
             </div>
           )}
         </div>

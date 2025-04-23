@@ -27,6 +27,17 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
   const [error, setError] = useState<string | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
+  // Generate initials from name
+  const generateInitials = (name: string): string => {
+    if (!name) return '';
+    return name
+      .split(' ')
+      .map(part => part[0])
+      .join('')
+      .toUpperCase()
+      .substring(0, 2);
+  };
+
   // Check for existing token on mount
   useEffect(() => {
     const checkAuth = async () => {
@@ -35,6 +46,12 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
         try {
           // Fetch user info with the stored token
           const user = await getCurrentUser();
+          
+          // Add initials
+          if (user && user.name) {
+            user.initials = generateInitials(user.name);
+          }
+          
           setUser(user);
           setIsAuthenticated(true);
         } catch (err) {
@@ -58,6 +75,12 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
     
     try {
       const user = await authenticateUser(email, password);
+      
+      // Add initials
+      if (user && user.name) {
+        user.initials = generateInitials(user.name);
+      }
+      
       setUser(user);
       setIsAuthenticated(true);
     } catch (err) {
@@ -74,6 +97,12 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
     
     try {
       const user = await registerUser(email, password, name);
+      
+      // Add initials
+      if (user && user.name) {
+        user.initials = generateInitials(user.name);
+      }
+      
       setUser(user);
       setIsAuthenticated(true);
     } catch (err) {
