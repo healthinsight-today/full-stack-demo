@@ -1,121 +1,284 @@
-# Health Insights Today - Frontend
+# Health Insight Today API
 
-A modern React application for visualizing and analyzing blood test reports with detailed insights, recommendations, and health data visualization.
+A FastAPI application for analyzing health reports using Grok AI.
 
 ## Features
 
-- **Upload Blood Test Reports**: Easily upload and process medical reports
-- **Interactive Visualizations**: View your health data through interactive charts and graphs
-- **Personalized Insights**: Get AI-powered insights based on your test results
-- **Customized Recommendations**: Receive dietary and lifestyle recommendations
-- **Trend Analysis**: Track changes in your health metrics over time 
-- **Mobile-First Design**: Fully responsive across all devices
+- **PDF/Image Processing**: Extract text from uploaded medical reports
+- **LLM Analysis**: Use Claude, Grok, and other LLM providers to analyze medical test results
+- **Standardized Output**: Convert diverse medical report formats into structured JSON
+- **Health Insights**: Get detailed insights and recommendations based on test results
+- **API Endpoints**: RESTful endpoints for report management and analysis
+- **Personalized Recommendations**: Get diet plans, shopping lists, and specialist referrals based on analysis
+- **Authentication**: JWT-based user authentication system with login, signup, and user profile endpoints
 
-## Tech Stack
+## API Endpoints
 
-- **React 18+**: UI development with functional components and hooks
-- **TypeScript**: Type-safe code
-- **Tailwind CSS**: Utility-first CSS framework for styling
-- **React Router**: Client-side routing
-- **React Context API**: State management
-- **Chart.js/Recharts**: Data visualization
-- **Axios**: API requests
+### Authentication
+- `POST /api/v1/auth/login`: Login with email and password to receive a JWT token
+- `POST /api/v1/auth/signup`: Create a new user account
+- `GET /api/v1/auth/me`: Get current authenticated user information
+- `POST /api/v1/auth/login/form`: OAuth2 compatible token login for use with Swagger UI
 
-## Project Structure
+### Health Analysis
+- `POST /api/v1/health/analyze/mcp`: Upload and analyze a medical report using an LLM
+- `GET /api/v1/health/providers`: List available LLM providers and their status
 
-```
-src/
-├── assets/             # Static assets (images, icons, styles)
-├── components/         # Reusable components
-│   ├── auth/           # Authentication components
-│   ├── charts/         # Visualization components
-│   ├── common/         # Common UI components
-│   ├── insights/       # Insight-related components
-│   ├── layout/         # Layout components
-│   ├── recommendations/# Recommendation components
-│   └── reports/        # Report-related components
-├── context/            # React context providers
-├── hooks/              # Custom React hooks
-├── pages/              # Page components
-├── services/           # API services
-│   └── api/            # API client and endpoints
-├── types/              # TypeScript interfaces
-└── utils/              # Utility functions
-```
+### Reports Management
+- `GET /api/v1/health/reports`: List all saved reports
+- `GET /api/v1/health/reports/{run_id}`: Get full report details by ID
+- `POST /api/v1/health/save`: Save a report to disk
 
-## Getting Started
+### Analysis Components
+- `GET /api/v1/health/reports/{run_id}/insights`: Get health insights from a report
+- `GET /api/v1/health/reports/{run_id}/recommendations`: Get all recommendations from a report
+- `GET /api/v1/health/reports/{run_id}/parameters/abnormal`: Get abnormal parameters from a report
+
+### Diet and Nutrition
+- `GET /api/v1/diet/meal-plan?run_id={run_id}&preferences={preferences}`: Get personalized meal plan based on health analysis
+
+### Shopping Recommendations
+- `GET /api/v1/shopping/grocery-recommendations?run_id={run_id}&location={location}`: Get personalized grocery recommendations based on health analysis
+
+### Healthcare Specialists
+- `GET /api/v1/specialists?run_id={run_id}&specialty={specialty}&location={location}`: Get healthcare specialist recommendations based on health analysis
+
+## Prerequisites
+
+- Docker
+- Docker Compose
+- Grok API key
+
+## Setup
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit the `.env` file and add your Grok API key:
+   ```
+   GROK_API_KEY=your_grok_api_key_here
+   ```
+
+## Building and Running
+
+### Using Docker Compose (Recommended)
+
+1. Build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. To run in detached mode:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. To stop the containers:
+   ```bash
+   docker-compose down
+   ```
+
+### Using Docker Directly
+
+1. Build the Docker image:
+   ```bash
+   docker build -t health-insight-api .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 8000:8000 \
+     -v $(pwd)/uploads:/app/uploads \
+     -v $(pwd)/text:/app/text \
+     -v $(pwd)/processed:/app/processed \
+     -v $(pwd)/reports:/app/reports \
+     -e GROK_API_KEY=your_grok_api_key_here \
+     health-insight-api
+   ```
+
+## API Documentation
+
+Once the application is running, you can access the API documentation at:
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+
+## Directory Structure
+
+- `uploads/`: Where uploaded files are stored
+- `text/`: Where extracted text files are stored
+- `processed/`: Where processed JSON files are stored
+- `reports/`: Where generated reports are stored
+
+## Environment Variables
+
+- `ENV`: Environment (production/development)
+- `DEBUG`: Debug mode (true/false)
+- `LOG_LEVEL`: Logging level (INFO/DEBUG/ERROR)
+- `GROK_API_KEY`: Your Grok API key
+- `GROK_MODEL`: Grok model to use
+- `GROK_API_URL`: Grok API URL
+
+## Setup Instructions
 
 ### Prerequisites
-
-- Node.js 16+ 
-- npm or yarn
+- Python 3.9+
+- Tesseract OCR (for image and PDF processing)
+- API keys for LLM providers (Claude, Grok, etc.)
 
 ### Installation
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/health-analysis-api.git
+   cd health-analysis-api
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up your environment variables:
+   ```bash
+   cp .env.example .env
+   # Edit .env with your API keys and configuration
+   ```
+
+5. Run the server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+## Usage Examples
+
+### Authentication
+
+#### Login with demo credentials
 ```bash
-git clone https://github.com/yourusername/healthinsighttoday-frontend.git
-cd healthinsighttoday-frontend
+curl -X POST 'http://127.0.0.1:8000/api/v1/auth/login' \
+  -H 'Content-Type: application/json' \
+  -d '{"email": "demo@example.com", "password": "password"}'
 ```
 
-2. Install dependencies:
+#### Create a new user account
 ```bash
-npm install
+curl -X POST 'http://127.0.0.1:8000/api/v1/auth/signup' \
+  -H 'Content-Type: application/json' \
+  -d '{"email": "user@example.com", "password": "password123", "name": "New User"}'
 ```
 
-3. Set up environment variables:
+#### Get current user profile (requires auth token)
 ```bash
-cp .env.example .env.local
-```
-Edit the `.env.local` file to add your API endpoint:
-```
-REACT_APP_API_BASE_URL=http://localhost:8000
+curl -X GET 'http://127.0.0.1:8000/api/v1/auth/me' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
-### Development
+### Analyze a Medical Report
 
-Run the development server:
 ```bash
-npm start
+curl -X POST 'http://127.0.0.1:8000/api/v1/health/analyze/mcp' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@bloodreport.pdf' \
+  -F 'provider=claude' \
+  -F 'model=claude-3-7-sonnet-20250219'
 ```
 
-The application will be available at [http://localhost:3000](http://localhost:3000).
+### Get Health Insights
 
-### Building for Production
-
-To create an optimized production build:
 ```bash
-npm run build
+curl -X GET 'http://127.0.0.1:8000/api/v1/health/reports/{run_id}/insights' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
-The build artifacts will be stored in the `build/` directory.
+### Get Recommendations
 
-## Testing
-
-Run the test suite:
 ```bash
-npm test
+curl -X GET 'http://127.0.0.1:8000/api/v1/health/reports/{run_id}/recommendations' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
-## API Integration
+### Get a Personalized Meal Plan
 
-This frontend is designed to work with the HealthInsightToday API. By default, in development mode, it uses mock data from `src/services/api/sampleData.js`. 
+```bash
+curl -X GET 'http://127.0.0.1:8000/api/v1/diet/meal-plan?run_id={run_id}&preferences=vegetarian,low-carb' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
 
-To connect to the actual backend, make sure to set the `REACT_APP_API_BASE_URL` environment variable.
+### Get Grocery Recommendations
 
-## Demo Credentials
+```bash
+curl -X GET 'http://127.0.0.1:8000/api/v1/shopping/grocery-recommendations?run_id={run_id}&location=Boston,MA' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
+
+### Find Specialists in Your Area
+
+```bash
+curl -X GET 'http://127.0.0.1:8000/api/v1/specialists?run_id={run_id}&specialty=cardiologist&location=New York' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
+
+## Project Structure
+
+```
+app/
+├── main.py                  # Main FastAPI application
+├── config.py                # Configuration settings
+├── routes/
+│   ├── __init__.py
+│   ├── auth.py              # Authentication endpoints
+│   ├── health_analysis.py   # Health analysis endpoints
+│   ├── diet.py              # Diet and meal planning endpoints
+│   ├── shopping.py          # Shopping recommendations endpoints
+│   ├── specialists.py       # Healthcare specialist endpoints
+│   └── ...
+├── services/
+│   ├── document_processor/  # Document processing services
+│   ├── llm_providers/       # LLM integration services
+│   ├── diet_service.py      # Diet recommendation service
+│   ├── grocery_service.py   # Grocery recommendation service
+│   ├── specialist_service.py # Specialist recommendation service
+│   └── ...
+├── models/
+│   ├── schemas.py           # Pydantic models including auth models
+│   └── ...
+├── utils/
+│   ├── auth.py              # Authentication utilities
+│   └── ...
+└── ...
+```
+
+## Demo User Credentials
 
 For testing purposes, you can use these demo credentials:
 - **Email**: demo@example.com
 - **Password**: password
 
+## Future Work
+
+- MongoDB integration for report storage
+- Enhanced user authentication with email verification
+- Role-based access control
+- Additional LLM providers
+- Advanced visualization of health trends
+- Expanded health insights with peer-reviewed medical references
+- AI-powered diet, shopping, and specialist recommendations
+
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Recharts](https://recharts.org/)
+MIT License - See LICENSE file for details
