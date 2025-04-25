@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./text:/app/text
+      - ./processed:/app/processed
+      - ./reports:/app/reports
+    environment:
+      - ENV=production
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - GROK_API_KEY=${GROK_API_KEY}
+      - GROK_MODEL=grok-3-latest
+      - GROK_API_URL=https://api.x.ai/v1/chat/completions
+    restart: unless-stopped 

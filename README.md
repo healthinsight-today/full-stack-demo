@@ -1,6 +1,6 @@
-# Health Analysis API
+# Health Insight Today API
 
-A FastAPI-based backend service for analyzing medical blood test reports using advanced language models.
+A FastAPI application for analyzing health reports using Grok AI.
 
 ## Features
 
@@ -42,6 +42,83 @@ A FastAPI-based backend service for analyzing medical blood test reports using a
 
 ### Healthcare Specialists
 - `GET /api/v1/specialists?run_id={run_id}&specialty={specialty}&location={location}`: Get healthcare specialist recommendations based on health analysis
+
+## Prerequisites
+
+- Docker
+- Docker Compose
+- Grok API key
+
+## Setup
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit the `.env` file and add your Grok API key:
+   ```
+   GROK_API_KEY=your_grok_api_key_here
+   ```
+
+## Building and Running
+
+### Using Docker Compose (Recommended)
+
+1. Build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. To run in detached mode:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. To stop the containers:
+   ```bash
+   docker-compose down
+   ```
+
+### Using Docker Directly
+
+1. Build the Docker image:
+   ```bash
+   docker build -t health-insight-api .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 8000:8000 \
+     -v $(pwd)/uploads:/app/uploads \
+     -v $(pwd)/text:/app/text \
+     -v $(pwd)/processed:/app/processed \
+     -v $(pwd)/reports:/app/reports \
+     -e GROK_API_KEY=your_grok_api_key_here \
+     health-insight-api
+   ```
+
+## API Documentation
+
+Once the application is running, you can access the API documentation at:
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+
+## Directory Structure
+
+- `uploads/`: Where uploaded files are stored
+- `text/`: Where extracted text files are stored
+- `processed/`: Where processed JSON files are stored
+- `reports/`: Where generated reports are stored
+
+## Environment Variables
+
+- `ENV`: Environment (production/development)
+- `DEBUG`: Debug mode (true/false)
+- `LOG_LEVEL`: Logging level (INFO/DEBUG/ERROR)
+- `GROK_API_KEY`: Your Grok API key
+- `GROK_MODEL`: Grok model to use
+- `GROK_API_URL`: Grok API URL
 
 ## Setup Instructions
 

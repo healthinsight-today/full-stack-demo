@@ -19,13 +19,13 @@ class LLMProcessor:
     """
     
     def __init__(self, 
-                 provider: str = "claude", 
+                 provider: str = "grok", 
                  model: Optional[str] = None,
                  temperature: float = 0.1):
         """Initialize the processor with API keys and model configurations.
         
         Args:
-            provider: The LLM provider to use (claude, grok)
+            provider: The LLM provider to use (grok, claude)
             model: The specific model to use (optional, will use default if not specified)
             temperature: The temperature to use for generation (default: 0.1)
         """
@@ -34,24 +34,24 @@ class LLMProcessor:
         
         # Set default model based on provider if not specified
         if model is None:
-            if self.provider == "claude" or self.provider == "anthropic":
-                self.model = settings.ANTHROPIC_MODEL
-            elif self.provider in ["grok", "xai"]:
+            if self.provider in ["grok", "xai"]:
                 self.model = settings.GROK_MODEL
-            else:
-                # Default to Claude if provider is not recognized
-                self.provider = "claude"
+            elif self.provider == "claude" or self.provider == "anthropic":
                 self.model = settings.ANTHROPIC_MODEL
+            else:
+                # Default to Grok if provider is not recognized
+                self.provider = "grok"
+                self.model = settings.GROK_MODEL
         else:
             self.model = model
             
         # Set API keys and URLs based on provider
-        if self.provider == "claude" or self.provider == "anthropic":
-            self.api_key = settings.ANTHROPIC_API_KEY
-            self.api_url = settings.ANTHROPIC_API_URL
-        elif self.provider in ["grok", "xai"]:
+        if self.provider in ["grok", "xai"]:
             self.api_key = settings.GROK_API_KEY
             self.api_url = settings.GROK_API_URL
+        elif self.provider == "claude" or self.provider == "anthropic":
+            self.api_key = settings.ANTHROPIC_API_KEY
+            self.api_url = settings.ANTHROPIC_API_URL
         
         logger.info(f"LLMProcessor initialized with provider: {self.provider}, model: {self.model}")
         

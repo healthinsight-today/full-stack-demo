@@ -58,7 +58,7 @@ class Settings(BaseSettings):
     ANTHROPIC_API_URL: str = os.getenv("ANTHROPIC_API_URL", "https://api.anthropic.com/v1/messages")
     
     # Grok API settings
-    GROK_API_KEY: str = os.getenv("GROK_API_KEY", os.getenv("XAI_API_KEY", ""))
+    GROK_API_KEY: str = os.getenv("GROK_API_KEY", os.getenv("XAI_API_KEY", "xai-9v6udJSTyRIxxYtcUPPsMISWgepK0ro8pZwQsm7tS1kjvyju8afvclb8ITiaBzi7Z0p8HootsU3OZWLp"))
     GROK_MODEL: str = os.getenv("GROK_MODEL", os.getenv("XAI_MODEL", "grok-3-latest"))
     GROK_API_BASE_URL: str = os.getenv("GROK_API_BASE_URL", os.getenv("XAI_API_BASE_URL", "https://api.x.ai/v1"))
     GROK_API_URL: str = os.getenv("GROK_API_URL", os.getenv("XAI_API_URL", f"{GROK_API_BASE_URL}/chat/completions"))

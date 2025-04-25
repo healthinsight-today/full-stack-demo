@@ -10,6 +10,8 @@ import logging
 import asyncio
 from datetime import datetime
 from typing import Optional, Dict, Any, List, Literal
+import mimetypes
+import magic
 
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException, BackgroundTasks, Query
 from fastapi.responses import JSONResponse
@@ -29,7 +31,7 @@ from app.services.document_processor import (
     save_uploaded_file
 )
 
-# Set up logger
+# Configure logger
 logger = logging.getLogger(__name__)
 
 router = APIRouter(
@@ -147,16 +149,6 @@ Use the same field names and nesting structure for all responses.
 Return ONLY the JSON object without any additional text before or after it.
 """
 
-def is_image_file(filename: str) -> bool:
-    """Check if the file is an image based on extension"""
-    image_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.bmp', '.tiff', '.webp'}
-    _, ext = os.path.splitext(filename.lower())
-    return ext in image_extensions
-
-def is_pdf_file(filename: str) -> bool:
-    """Check if the file is a PDF based on extension"""
-    return filename.lower().endswith('.pdf')
-
 def extract_text_from_file(file_path: str) -> str:
     """Extract text from a file based on its type"""
     if is_pdf_file(file_path):
@@ -165,6 +157,83 @@ def extract_text_from_file(file_path: str) -> str:
         return process_image(file_path, None)
     else:
         raise ValueError(f"Unsupported file type: {file_path}")
+
+def get_mime_type(file_path: str) -> str:
+    """
+    Get the MIME type of a file using python-magic
+    
+    Args:
+        file_path: Path to the file
+        
+    Returns:
+        MIME type string
+    """
+    try:
+        return magic.from_file(file_path, mime=True)
+    except Exception as e:
+        logger.error(f"Error getting MIME type: {e}")
+        return ""
+
+def is_image_file(filename: str, file_path: Optional[str] = None) -> bool:
+    """
+    Check if a file is an image based on extension and MIME type.
+    
+    Args:
+        filename: Name of the file
+        file_path: Optional path to the file for MIME type checking
+        
+    Returns:
+        Boolean indicating if the file is an image
+    """
+    image_extensions = {'.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif', '.webp'}
+    ext = os.path.splitext(filename)[1].lower()
+    
+    # Check extension first
+    if ext in image_extensions:
+        return True
+        
+    # Check MIME type from filename
+    mime_type, _ = mimetypes.guess_type(filename)
+    if mime_type and mime_type.startswith('image/'):
+        return True
+        
+    # If file_path is provided and extension/MIME type from name is not conclusive,
+    # check actual file content
+    if file_path and os.path.exists(file_path):
+        file_mime_type = get_mime_type(file_path)
+        return file_mime_type and file_mime_type.startswith('image/')
+        
+    return False
+
+def is_pdf_file(filename: str, file_path: Optional[str] = None) -> bool:
+    """
+    Check if a file is a PDF based on extension and MIME type.
+    
+    Args:
+        filename: Name of the file
+        file_path: Optional path to the file for MIME type checking
+        
+    Returns:
+        Boolean indicating if the file is a PDF
+    """
+    ext = os.path.splitext(filename)[1].lower()
+    
+    # Check extension first
+    if ext == '.pdf':
+        return True
+        
+    # Check MIME type from filename
+    mime_type, _ = mimetypes.guess_type(filename)
+    if mime_type == 'application/pdf':
+        return True
+        
+    # If file_path is provided and extension/MIME type from name is not conclusive,
+    # check actual file content
+    if file_path and os.path.exists(file_path):
+        file_mime_type = get_mime_type(file_path)
+        return file_mime_type == 'application/pdf'
+        
+    return False
 
 def save_json_analysis(analysis: Dict[str, Any], filename_base: str) -> str:
     """Save JSON analysis to a file"""
@@ -369,8 +438,8 @@ async def get_providers():
 async def analyze_report_with_mcp(
     file: UploadFile = File(...),
     context: Optional[str] = Form(None),
-    provider: str = Form("ollama"),
-    model: str = Form("mistral"),
+    provider: str = Form("grok"),
+    model: str = Form("grok-3-latest"),
     include_text: bool = Form(False)
 ):
     """
@@ -442,7 +511,7 @@ async def analyze_report_with_mcp(
         # Extract text from the file
         logger.info(f"[{run_id}] Extracting text from {file_path}")
         update_run(run_id, status="extracting_text")
-        text, metadata = await extract_text_from_file(saved_file_path)
+        text = extract_text_from_file(str(saved_file_path))
         
         if not text or len(text.strip()) < 50:
             update_run(run_id, status="failed", error="Text extraction failed or produced insufficient text")
@@ -462,27 +531,20 @@ async def analyze_report_with_mcp(
             metadata={
                 "document_id": document_id,
                 "file_type": "PDF" if is_pdf else "Image",
-                "word_count": metadata.get("word_count", 0),
-                "char_count": metadata.get("char_count", 0),
-                "page_count": metadata.get("page_count", 1),
-                "ocr_used": metadata.get("ocr_used", False),
-                "text_extraction_time": metadata.get("extraction_duration", 0)
+                "word_count": len(text.split()),
+                "char_count": len(text),
+                "page_count": 1,  # Default to 1 for now
+                "ocr_used": False,  # Default to False for now
+                "text_extraction_time": time.time() - start_time
             }
         )
         
         # Process with LLM
         logger.info(f"[{run_id}] Processing text with {provider}/{model}")
         
-        system_message = get_mcp_system_message()
-        user_message = f"Blood Test Report Content:\n\n{text}"
-        
+        # Add context if provided
         if context:
-            user_message += f"\n\nAdditional Context:\n{context}"
-        
-        messages = [
-            {"role": "system", "content": system_message},
-            {"role": "user", "content": user_message}
-        ]
+            text = f"{text}\n\nAdditional Context:\n{context}"
         
         # Process with retries
         max_retries = 2
@@ -490,11 +552,8 @@ async def analyze_report_with_mcp(
         
         while retry_count <= max_retries:
             try:
-                response = await processor.process_messages(
-                    messages=messages,
-                    provider=provider,
-                    model=model
-                )
+                # Use process_medical_report instead of process_messages
+                analysis_json = await processor.process_medical_report(text)
                 break
             except Exception as e:
                 retry_count += 1
@@ -510,42 +569,26 @@ async def analyze_report_with_mcp(
                 # Wait before retrying
                 await asyncio.sleep(2)
         
-        # Validate response
-        analysis_content = response.get("content", "")
+        # Save JSON to file
+        with open(json_path, "w", encoding="utf-8") as json_file:
+            json.dump(analysis_json, json_file, indent=2)
+            
+        update_run(run_id, status="completed")
         
-        # Try to parse as JSON
-        try:
-            analysis_json = json.loads(analysis_content)
+        # Prepare result
+        result = {
+            "run_id": run_id,
+            "provider": provider,
+            "model": model,
+            "analysis": analysis_json,
+            "processing_time": time.time() - start_time
+        }
+        
+        if include_text:
+            result["text"] = text
             
-            # Save JSON to file
-            with open(json_path, "w", encoding="utf-8") as json_file:
-                json.dump(analysis_json, json_file, indent=2)
-                
-            update_run(run_id, status="completed")
-            
-            # Prepare result
-            result = {
-                "run_id": run_id,
-                "provider": provider,
-                "model": model,
-                "analysis": analysis_json,
-                "processing_time": time.time() - start_time
-            }
-            
-            if include_text:
-                result["text"] = text
-                
-            return result
-            
-        except json.JSONDecodeError:
-            logger.error(f"[{run_id}] Invalid JSON response from LLM: {analysis_content[:500]}...")
-            update_run(run_id, status="failed", error="Invalid JSON response from LLM")
-            
-            raise HTTPException(
-                status_code=500,
-                detail="The analysis result was not a valid JSON object. Please try again."
-            )
-            
+        return result
+        
     except HTTPException:
         # Re-raise HTTP exceptions
         raise

@@ -1,0 +1,1254 @@
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+T3 Total
+ng/mL
+0.60 - 1.81
+Method: Chemiluminiscence Immunoassay
+: 0.75
+T4 Total
+µg/dL
+3.2 - 12.6
+Method: Chemiluminiscence Immunoassay
+: 6.20
+TSH - Ultrasensitive
+µIU/mL
+0.55 - 4.78
+Method: Chemiluminiscence Immunoassay
+: 2.102
+Interpretation / Comments :
+
+Patient preparation is particularly important for hormone studies, results of which may be markedly
+affectedby many factors such as stress, position, fasting state, time of the day, preceding diet and drug
+therapy.
+
+The levels of T3 helps in the diagnosis of T3 thyrotoxicosis and monitoring the course of
+hyperthyroidism.T3 is not recommended for diagnosis of hypothyroidism as decreased values have minimal
+clinical significance.
+
+Values below the lower limits can be caused by a number of conditions including non-thyroidal illness,
+acute and chronic stress and hypothyroidism.
+
+Elevated level of T4 are seen in hyperthyroidism, pregnancy, euthyroid patients with increased serum
+thyroxine binding globulin.
+
+Decreased levels are noted in hypothyroidism, hypoproteinemia, euthyroid sick syndrome, decrease in
+thyroxine binding globulin.
+
+TSH levels are increased in primary hypothyroidism, insufficient thyroid hormone replacement
+therapy,Hashimotos thyroiditis, use of amphetamines, dopamine antagonists, iodine containing agents,
+lithium and iodine induced or deficiency goiter.
+
+Decreased levels of TSH may be seen in graves disease, toxic multinodular goitre, thyroiditis,
+excessivetreatment with thyroid hormone replacement and central hypothyroidism.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+THYROID PROFILE
+Page 1 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Urea
+
+mg/dL
+17 - 43
+Method: Urease/GLDH
+33
+Interpretation / Comments :
+
+In conjunction with serum creatinine,urea level aids in differential diagnosis of pre-renal,renal and
+post-renal hyperuremia.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+UREA
+Page 2 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Haemoglobin
+gm/dL
+13.0 - 17.0
+Method: Photometric Measurement
+: 15.8
+Total RBC Count
+millions/cumm
+4.5 - 5.5
+Method: Coulter Principle
+: 4.9
+Packed Cell Volume / Hematocrit 40.0 - 50.0
+Method: Calculated
+: 44.9
+MCV
+fL
+83.0 - 101.0
+Method: Derived From RBC Histogram
+: 91.2
+MCH
+pg
+27.0 - 32.0
+Method: Calculated
+: 32.0
+MCHC
+gm/dL
+31.5 - 34.5
+Method: Calculated
+: 35.1
+RDW 11.6 - 14.0
+Method: Derived From RBC Histogram
+: 12.6
+Total Leucocytes (WBC) Count
+Cells/cumm
+4000 - 10000
+Method: Coulter Principle
+: 8600
+Differential count
+Neutrophils 40 - 80
+Method: VCSn Technology and Microscopy
+: 46
+Lymphocytes 20 - 40
+Method: VCSn Technology and Microscopy
+: 45
+Eosinophils 1 - 6
+Method: VCSn Technology and Microscopy
+: 2
+Monocytes 2 - 10
+Method: VCSn Technology and Microscopy
+: 6
+Basophils 0-2
+Method: Optical / Resistive DC & Microscopy
+: 1
+Absolute Leucocyte Count
+Absolute Neutrophil Count
+Cells/cumm
+2000 - 7000
+Method: Calculated
+: 3956
+Absolute Lymphocyte Count
+Cells/cumm
+1000 - 3000
+Method: Calculated
+: 3870
+Absolute Eosinophil Count
+Cells/cumm
+20 - 500
+Method: Calculated
+: 172
+Absolute Monocyte Count
+Cells/cumm
+200 - 1000
+Method: Calculated
+: 516
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 08:47
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Whole Blood - EDTA
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+COMPLETE BLOOD PICTURE (CBP)
+Page 3 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Platelet Count
+Cells/cumm
+150000 - 410000
+Method: Coulter Principle and Microscopy
+: 159000
+Peripheral Smear
+RBC
+Method: Microscopy of Leishman stained smear
+: Normocytic Normochromic
+WBC
+Method: Microscopy of Leishman stained smear
+: Relative Lymphocytosis
+Platelets
+Method: Microscopy of Leishman stained smear
+: Adequate
+MC-6432
+DR. RUDRA PRADEEP
+MD PATHOLOGY
+Registration No: TSMC/FMR/01226
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 08:47
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Whole Blood - EDTA
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+COMPLETE BLOOD PICTURE (CBP)
+Page 4 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Pale Yellow
+
+Pale Yellow
+Physical Examination
+Colour
+Method: Physical Examination
+Clear
+
+Clear
+Appearance
+Method: Physical Examination
+1.025
+
+1.003 - 1.030
+Specific Gravity
+Method: Ion Exchange
+6.0
+
+4.6 - 8
+Chemical Examination
+Reaction/pH
+Method: Reagent Strip Method / Double Indicator
+Nil
+
+Nil-Trace
+Protein
+Method : Reagent Strip/Protein error of Indicator
+Nil
+
+Nil
+Glucose
+Method: GOD-POD
+Normal
+
+NA
+Urobilinogen
+Method : Reagent Strip/Modified Ehrlich reaction
+Negative
+
+Negative
+Bilirubin
+Method: Diazonium
+Negative
+
+Negative
+Ketones
+Method : Reagent Strip/Nitroprusside reaction
+Negative
+
+Negative
+Nitrites
+Method: Diazonium
+1-2
+
+0 - 5
+Microscopic Examination
+Pus Cells
+cells / HPF
+Nil
+
+0 - 2
+RBC
+cells / HPF
+0-1
+
+0 - 5
+Epithelial Cells
+cells / HPF
+Nil
+
+Nil
+Casts
+Nil
+
+Nil
+Crystals
+Reagent Strip Method, Microscopy
+
+Method
+DR. RUDRA PRADEEP
+MD PATHOLOGY
+Registration No: TSMC/FMR/01226
+MC-6432
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:31
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Urine
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+CUE (COMPLETE URINE EXAMINATION)
+Page 5 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Fasting Plasma Glucose
+
+mg/dL
+Normal : 70 - 100
+Impaired Fasting Glucose : 101 -
+125
+Diabetes : >/=126
+Method: Hexokinase
+87
+Interpretation / Comments :
+
+ADA guidelines (2023) are adopted for the evaluation of diabetic status.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:18
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Fluoride Plasma
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+FASTING PLASMA GLUCOSE
+Page 6 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Vitamin - B12
+
+pg/mL
+Deficient : <211
+Normal : 211 - 911
+Method: Chemiluminiscence Immunoassay
+281
+Interpretation / Comments :
+
+Vitamin B12 is essential in DNA synthesis, haematopoiesis and CNS integrity.
+
+Serum levels of B12 are used to investigate cases of macrocytic anaemia, megaloblastic anaemia, diagnosis
+of CNS disorders, evaluation of alcoholism and malabsorption syndromes.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+VITAMIN - B12
+Page 7 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Total Bilirubin
+mg/dL
+0.3 - 1.2
+Method: Dichlorophenyl Diazonium Tetrafluoroborate
+: 0.6
+Direct Bilirubin
+mg/dL 0.2
+Method: Dichlorophenyl Diazonium Tetrafluoroborate
+: 0.1
+Indirect Bilirubin
+mg/dL
+<1.0
+Method: Calculation
+: 0.5
+SGPT/ALT
+U/L
+0 - 50
+Method: IFCC without P-5-P
+: 24
+SGOT/AST
+U/L
+0 - 50
+Method: IFCC without P-5-P
+: 19
+Alkaline Phosphatase
+U/L
+43 - 115
+Method: Kinetic PNPP-AMP
+: 60
+Total Protein
+gm/dL
+6.6 - 8.3
+Method: Biuret
+: 6.8
+Albumin
+gm/dL
+3.5 - 5.2
+Method: Bromocresol Green (BCG)
+: 3.6
+Globulin
+gm/dL
+1.8 - 3.6
+Method: Calculation
+: 3.2
+Protein A/G Ratio
+0.8 - 2.0
+Method: Calculation
+: 1.1
+Gamma Glutamyl Transferase
+U/L
+0 - 55
+Method: UV Kinetic
+: 15
+Interpretation / Comments :
+
+Liver function test aids in the diagnosis of various pre hepatic, hepatic and post hepatic causes of dysfunction
+like hemolytic anemias, viral and alcoholic hepatitis and cholestasis of obstructive causes.
+
+The test encompasses hepatic excretory, synthetic function and also hepatic parenchymal cell damage.
+
+LFT helps in evaluating severity, monitoring therapy and assessing prognosis of liver disease and dysfunction.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+LIVER FUNCTION TEST (LFT-A)
+Page 8 of 21
+VIJAYA DIAGNOSTIC CENTRE, Dilsukhnagar
+Age / Gender:
+36/Male
+Patient ID:
+240120128206
+Patient Name:
+Mr. RAJENDAR REDDY
+Date and Time: 17th Sep 24 7:33 AM
+AR: 58bpm
+VR: 59bpm
+QRSD: 87ms
+QT: 397ms
+QTcB: 393.68ms
+PRI: 198ms
+P-R-T: NA
+ECG Within Normal Limits: Sinus bradycardia. Please correlate clinically.
+Disclaimer: Analysis in this report is based on ECG alone and should only be used as an adjunct to clinical history, symptoms and results of other invasive and non-invasive tests and must be interpreted by a qualified physician.
+REPORTED BY
+Dr. Shabarinath S
+MD. DNB (Cardiology)
+Reg. No: 05208
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Calcium
+
+mg/dL
+8.8 - 10.6
+Method: Arsenazo III
+8.8
+Interpretation / Comments :
+
+Useful in diagnosis and prognosis of a wide range of disorders including disorders of proteins and Vitamin D, diseases
+of bone, kidney, parathyroid gland and GI tract.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+CALCIUM
+Page 10 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Creatinine
+mg/dL
+0.7 - 1.2
+Method: Jaffe Kinetic IDMS traceable
+: 1.0
+e-GFR (Glomerular Filtration Rate)
+ml/min/1.73 m²
+Normal kidney function : >/= 90
+(Please refer to Interpretations for
+reference ranges of e-GFR in
+different stages of CKD and also
+average e-GFR based on age. )
+Method: Calculation, CKD EPI equation
+: 99.2
+Interpretation / Comments:
+Stages of chronic kidney disease (CKD)
+Stages
+Description
+e-GFR
+1
+Possible kidney damage (eg: Proteinuria) with normal kidney function
+>/= 90
+2
+Mild loss of kidney function
+60 - 89
+3a
+Mild to moderate loss of kidney function
+45 - 59
+3b
+Moderate to severe loss of kidney function
+30 - 44
+4
+Severe loss of kidney function
+15 - 29
+5
+Kidney failure 15
+Chart for average e-GFR based on age
+Age (Yrs)
+Average e-GFR
+20 - 29
+116
+30 - 39
+107
+40 - 49
+99
+50 - 59
+93
+60 - 69
+85
+>/= 70
+75
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+CREATININE
+Page 11 of 21
+
+Serum Creatinine is useful in the diagnosis of renal insufficiency and is more specific and sensitive indicator of renal
+disease than serum Urea /BUN.
+
+Use of simultaneous Urea / BUN and creatinine levels provide more information in the diagnosis of renal
+insufficiency.
+
+GFR is generally considered the best index of overall kidney function.
+
+Chronic kidney disease is defined as the presence of persistent and usually progressive reduction in GFR.
+
+Repeated determination of GFR in conjunction with creatinine assay establish whether the patient has stable or
+progressive disease.
+
+GFR is useful for people with chronic kidney disease (CKD) and those with risk factors for CKD (diabetes,
+hypertension, cardiovascular disease and family history of kidney disease) to assess the kidney function.
+
+The CKD-EPI equation is the most widely used IDMS traceable equations for estimating GFR in patients above 18
+years of age. This equation includes variables for age and gender, and it may be observed that Kidney may be involved
+despite a serum creatinine concentration appearing to be within or just above the Biological Reference Interval. The
+results of e-GFR by CKD-EPI equation are normalized to 1.73 m² body surface area. CKD-EPI equation is not valid
+for individuals under 18 years of age.
+
+Limitations of CKD-EPI equation includes imprecise estimates in some individuals especially those suffering from
+physiologic limitations of creatinine as filtration markers, thus showing large difference between measured GFR and
+e-GFR (estimated GFR).
+
+Estimates for GFR based on serum creatinine will be less accurate for patients at the extremes of muscle mass (such as
+frail elderly, critically ill, cancer patients) and also those with unusual diets, sudden acute renal failure, patients on
+dialysis and patients with severe liver disease.
+
+Confirmatory tests with exogenous measured GFR or directly measured creatinine clearance should be performed for
+such individuals.
+
+The influence of creatinine measurement imprecision at low creatinine conecentrations (and hence high e-GFR) has a
+possible contribution to the variability at higher e-GFR values.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+CREATININE
+Page 12 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+ESR
+
+mm/hour
+1 - 15
+Method: Automated - Modified Westergren
+4
+Interpretation / Comments :
+
+ESR is a nonspecific parameter, clinically useful in disorders associated with an increased production of acute phase
+proteins.
+
+Elevated in acute and chronic infections and malignancies.
+
+Extremely high ESR values are seen in Multiple myeloma, Leukemias, Lymphomas, breast and lung carcinomas,
+Rheumatoid arthritis, Systemic Lupus Erythematosus and Pulmonary infarction.
+
+ESR is elevated in normal pregnancy
+MC-6432
+DR. RUDRA PRADEEP
+MD PATHOLOGY
+Registration No: TSMC/FMR/01226
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:29
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Whole Blood - EDTA
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+ERYTHROCYTE SEDIMENTATION RATE (ESR)
+Page 13 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+5.3
+
+Non Diabetic : 5.6
+Pre - Diabetic Range : 5.7 - 6.4
+Diabetic Range : >/= 6.5
+Glycated Haemoglobin Method: High performance liquid chromatography
+Interpretation / Comments:
+
+Glycated hemoglobin is proportional to mean plasma glucose level during previous 6-12 weeks.
+
+Values may not be comparable with different methodologies and even different laboratories using same methodology.
+
+Perform A1c at least twice annually in diabetes patients to ascertain meeting of goals.
+
+Perform A1c test quarterly in diabetes patients whose therapy has changed and who are not meeting goals.
+
+Recommended goal of A1c is 7%.
+
+ADA guidelines 2023.
+
+Presence of abnormal Hb may affect HbA1C result.
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:18
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Whole Blood - EDTA
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+GLYCATED HAEMOGLOBIN (HbA1C)
+Page 14 of 21
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+MC-6432
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:18
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Whole Blood - EDTA
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+GLYCATED HAEMOGLOBIN (HbA1C)
+Page 15 of 21
+RESULT
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+Serum Status
+: Clear
+Triglycerides
+mg/dL
+Desirable level : 150
+Borderline : 150 - 199
+High : 200 - 499
+Very High : / = 500
+Method: Glycerol Phosphate Oxidase (GPO),
+Peroxidase (POD)
+: 69
+Total Cholesterol
+mg/dL
+Desirable : 200
+Borderline high : 200 - 239
+High : / = 240
+Method: Cholesterol Oxidase Peroxidase (CHOD-
+POD)
+: 155
+LDL Cholesterol
+mg/dL
+Optimal : 100
+Near optimal : 100 - 129
+Borderline high : 130 - 159
+High : 160 - 189
+Very high : 190
+Method: Calculated
+: 99
+HDL Cholesterol
+mg/dL
+Desirable level : 60
+Optimal : 40 - 59
+Undesriable : 40
+Method: Enzymatic Immunoinhibition
+: 42
+VLDL Cholesterol
+mg/dL 30
+Method: Calculation
+: 14
+Total Cholesterol / HDL Cholesterol
+Ratio
+Low risk : 3.3 - 4.4
+Average risk : 4.5 - 7.1
+Moderate risk : 7.2 - 11.0
+Method: Calculation
+: 3.7
+LDL Cholesterol / HDL Cholesterol Ratio
+Desirable level : 0.5 - 3.0
+Borderline risk : 3.0 - 6.0
+High risk : 6.0
+Method: Calculation
+: 2.4
+Interpretation / Comments :
+
+Lipid profile is a panel of blood tests that serves as an initial broad medical screening tool for abnormalities
+in lipids, the results of this tests can identify certain genetic diseases and can determine approximate
+risks for cardiovascular disease, certain forms of pancreatitis and other diseases.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 12:13
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+LIPID PROFILE
+Page 16 of 21
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+Name
+
+Mr. RAJENDAR REDDY
+Registered on
+: 16-Sep-2024 20:59
+Age/Gender
+
+36 Years/Male
+Released on
+: 17-Sep-2024 14:42
+Registration ID
+
+240120128206
+Printed on
+: 17-Sep-2024 15:27
+Ref. By
+
+Self
+Regn Centre
+: Dilsukhnagar - 12
+ECHO COLOUR DOPPLER STUDY
+TRANSDUCER FREQUENCY - 2.5/3.5/5.0 MHZ
+MITRAL VALVE : Normal
+AORTIC VALVE : Normal
+
+PULMONARY VALVE : Normal
+TRICUPSID VALVE : Normal
+LEFT ATRIUM : 2.8 cm
+LEFT VENTRICLE : ESD = 2.7 cm EDD = 4.2 cm EF = 65%
+PW = 0.7 cm IVS = 1.0 cm FS = 36%
+RIGHT ATRIUM : Normal
+RIGHT VENTRICLE : Normal
+AORTA : 3.3 cm
+PULMONARY ARTERY : Normal
+I A S : Intact
+I V S : Intact
+IVC/SVC/CS : Normal
+PULMONARY VEINS : Normal
+PERICARDIUM : No Effusion
+INTRACARDIAC MASSES : Nil
+OTHERS :-
+
+Page 17 of 21
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+Name
+
+Mr. RAJENDAR REDDY
+Registered on
+: 16-Sep-2024 20:59
+Age/Gender
+
+36 Years/Male
+Released on
+: 17-Sep-2024 14:42
+Registration ID
+
+240120128206
+Printed on
+: 17-Sep-2024 15:27
+Ref. By
+
+Self
+Regn Centre
+: Dilsukhnagar - 12
+ECHO COLOUR DOPPLER STUDY
+TRANSDUCER FREQUENCY - 2.5/3.5/5.0 MHZ
+
+MITRAL FLOW : E = 0.8 m/sec
+A = 0.6 m/sec
+EDT = 180 m.sec
+AORTIC FLOW : 1.3 m/sec
+
+PULMONARY FLOW : 0.8 m/sec
+
+TRICUSPID FLOW : Normal
+
+OTHERS : -
+CONCLUSION : NORMAL SIZED CHAMBERS
+NO RWMA
+GOOD BIVENTRICULAR SYSTOLIC FUNCTION
+NORMAL LV FILLING PATTERN.
+NO MR/AR/TR ; NO PAH
+NO CLOT / EFFUSION
+MIS-2023-0192
+DR. SITARAM
+Consultant Cardiologist
+Reg No: 85270
+
+Page 18 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Uric Acid
+
+mg/dL
+3.5 - 7.2
+Method: Uricase-Peroxidase
+6.9
+Interpretation / Comments :
+
+Useful for monitoring therapeutic management of gout and chemotherapeutic treatment of neoplasms.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+- End of Report -
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+URIC ACID
+Page 19 of 21
+Opp.Metro Pillar No. A1516, Indira Nagar,-
+Dilsukhnagar, Hyderabad - 500089-
+
+Name
+: Mr. RAJENDAR REDDY
+Registration Date Time
+: 16-Sep-2024 20:59
+Age/Gender
+: 036Y / Male
+Study Date Time
+: 17-Sep-2024 07:45
+Registration ID : 240120128206
+Report Date Time
+: 17-Sep-2024 11:09
+Ref. By
+: Self
+Modality
+: DX
+Patient Id
+: 4331068
+Accn No.
+: 23622443
+DEPARTMENT OF RADIOLOGY AND IMAGING SCIENCES
+X-RAY CHEST PA VIEW
+HISTORY: Check up.
+FINDINGS:
+Heart size is normal.
+Mediastinal shadow is within normal limits.
+Hilar shadows are normal.
+Lung fields are clear.
+Costophrenic recesses are clear.
+Domes of diaphragm are normal.
+Bony cage is within normal limits.
+IMPRESSION: Within normal limits.
+- For clinical correlation.
+
+17th Sep 2024 11:09
+Study Sharing Link: https://tinyurl.com/bdz6xv3p
+-End of Report-
+Page 1 of 1
+Page 20 of 21
+TEST NAME
+UNIT
+BIOLOGICAL REFERENCE INTERVAL
+RESULT
+Vitamin D-Total
+
+ng/mL
+Deficiency : 20
+Insufficiency : 20–30
+Sufficiency : 30–100
+Toxicity : >100
+Method: Chemiluminescence Immuno Assay (CLIA)
+38.06
+Interpretation / Comments :
+
+Vitamin D is a steroid hormone involved in the intestinal absorption of calcium and regulation  of calcium
+homeostasis.
+
+Vitamin D deficiency can result from inadequate exposure to sunlight, inadequate dietary intake, decreased absorption,
+abnormal metabolism or Vitamin D resistance.
+
+25-OH Vitamin D levels reflect the storage level in the body and correlate with the clinical symptoms of Vitamin D
+deficiency.
+The assay of Vitamin D (Total and Fractions D2 + D3) on LCMS/MS is available at Vijaya Diagnostic Centre,
+Himayatnagar, Hyderabad.
+MC-6432
+DR. SYED SHABBAR MASIH
+MD BIOCHEMISTRY
+Registration No: TSMC/FMR/44589
+- End of Report -
+Opp.Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089
+17-Sep-2024 09:43
+Ref. By
+: Self
+Printed on
+: 17-Sep-2024 15:27
+
+Sample Type
+Serum
+Ref. No : 17-Sep-2024 06:00
+Regn Centre : Dilsukhnagar - 12
+
+Released on
+
+TEST REPORT
+Name
+: Mr. RAJENDAR REDDY
+Registered on : 16-Sep-2024 20:59
+240120128206
+Age/Gender
+36 Years / Male
+BirthDate : 11-Apr-1988
+Collected on : 17-Sep-2024 07:19
+Registration ID
+
+VITAMIN D - Total
+Page 21 of 21

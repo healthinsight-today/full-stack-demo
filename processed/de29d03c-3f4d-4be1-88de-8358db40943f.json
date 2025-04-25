@@ -1,0 +1,749 @@
+{
+  "report_information": {
+    "date": "17-Sep-2024",
+    "laboratory": "Vijaya Diagnostic Centre, Dilsukhnagar",
+    "address": "Opp. Metro Pillar No. A1516, Indira Nagar, Dilsukhnagar, Hyderabad - 500089",
+    "printed_on": "17-Sep-2024 15:27",
+    "doctors": [
+      {
+        "name": "Dr. Syed Shabbar Masih",
+        "specialization": "MD Biochemistry",
+        "registration_no": "TSMC/FMR/44589"
+      },
+      {
+        "name": "Dr. Rudra Pradeep",
+        "specialization": "MD Pathology",
+        "registration_no": "TSMC/FMR/01226"
+      },
+      {
+        "name": "Dr. Shabarinath S",
+        "specialization": "MD, DNB (Cardiology)",
+        "registration_no": "05208"
+      },
+      {
+        "name": "Dr. Sitaram",
+        "specialization": "Consultant Cardiologist",
+        "registration_no": "85270"
+      }
+    ]
+  },
+  "patient_information": {
+    "name": "Mr. Rajendar Reddy",
+    "age": 36,
+    "gender": "Male",
+    "birth_date": "11-Apr-1988",
+    "patient_id": "240120128206",
+    "registered_on": "16-Sep-2024 20:59",
+    "collected_on": "17-Sep-2024 07:19"
+  },
+  "test_sections": [
+    {
+      "section_name": "Thyroid Profile",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "T3 Total",
+          "value": 0.75,
+          "unit": "ng/mL",
+          "reference_range": "0.60 - 1.81",
+          "method": "Chemiluminiscence Immunoassay"
+        },
+        {
+          "test_name": "T4 Total",
+          "value": 6.2,
+          "unit": "\u00b5g/dL",
+          "reference_range": "3.2 - 12.6",
+          "method": "Chemiluminiscence Immunoassay"
+        },
+        {
+          "test_name": "TSH - Ultrasensitive",
+          "value": 2.102,
+          "unit": "\u00b5IU/mL",
+          "reference_range": "0.55 - 4.78",
+          "method": "Chemiluminiscence Immunoassay"
+        }
+      ]
+    },
+    {
+      "section_name": "Urea",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Urea",
+          "value": 33,
+          "unit": "mg/dL",
+          "reference_range": "17 - 43",
+          "method": "Urease/GLDH"
+        }
+      ]
+    },
+    {
+      "section_name": "Complete Blood Picture (CBP)",
+      "sample_type": "Whole Blood - EDTA",
+      "tests": [
+        {
+          "test_name": "Haemoglobin",
+          "value": 15.8,
+          "unit": "gm/dL",
+          "reference_range": "13.0 - 17.0",
+          "method": "Photometric Measurement"
+        },
+        {
+          "test_name": "Total RBC Count",
+          "value": 4.9,
+          "unit": "millions/cumm",
+          "reference_range": "4.5 - 5.5",
+          "method": "Coulter Principle"
+        },
+        {
+          "test_name": "Packed Cell Volume / Hematocrit",
+          "value": 44.9,
+          "unit": "%",
+          "reference_range": "40.0 - 50.0",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "MCV",
+          "value": 91.2,
+          "unit": "fL",
+          "reference_range": "83.0 - 101.0",
+          "method": "Derived From RBC Histogram"
+        },
+        {
+          "test_name": "MCH",
+          "value": 32.0,
+          "unit": "pg",
+          "reference_range": "27.0 - 32.0",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "MCHC",
+          "value": 35.1,
+          "unit": "gm/dL",
+          "reference_range": "31.5 - 34.5",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "RDW",
+          "value": 12.6,
+          "unit": "%",
+          "reference_range": "11.6 - 14.0",
+          "method": "Derived From RBC Histogram"
+        },
+        {
+          "test_name": "Total Leucocytes (WBC) Count",
+          "value": 8600,
+          "unit": "Cells/cumm",
+          "reference_range": "4000 - 10000",
+          "method": "Coulter Principle"
+        },
+        {
+          "test_name": "Neutrophils",
+          "value": 46,
+          "unit": "%",
+          "reference_range": "40 - 80",
+          "method": "VCSn Technology and Microscopy"
+        },
+        {
+          "test_name": "Lymphocytes",
+          "value": 45,
+          "unit": "%",
+          "reference_range": "20 - 40",
+          "method": "VCSn Technology and Microscopy"
+        },
+        {
+          "test_name": "Eosinophils",
+          "value": 2,
+          "unit": "%",
+          "reference_range": "1 - 6",
+          "method": "VCSn Technology and Microscopy"
+        },
+        {
+          "test_name": "Monocytes",
+          "value": 6,
+          "unit": "%",
+          "reference_range": "2 - 10",
+          "method": "VCSn Technology and Microscopy"
+        },
+        {
+          "test_name": "Basophils",
+          "value": 1,
+          "unit": "%",
+          "reference_range": "0 - 2",
+          "method": "Optical / Resistive DC & Microscopy"
+        },
+        {
+          "test_name": "Absolute Neutrophil Count",
+          "value": 3956,
+          "unit": "Cells/cumm",
+          "reference_range": "2000 - 7000",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "Absolute Lymphocyte Count",
+          "value": 3870,
+          "unit": "Cells/cumm",
+          "reference_range": "1000 - 3000",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "Absolute Eosinophil Count",
+          "value": 172,
+          "unit": "Cells/cumm",
+          "reference_range": "20 - 500",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "Absolute Monocyte Count",
+          "value": 516,
+          "unit": "Cells/cumm",
+          "reference_range": "200 - 1000",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "Platelet Count",
+          "value": 159000,
+          "unit": "Cells/cumm",
+          "reference_range": "150000 - 410000",
+          "method": "Coulter Principle and Microscopy"
+        },
+        {
+          "test_name": "Peripheral Smear - RBC",
+          "value": "Normocytic Normochromic",
+          "unit": "",
+          "reference_range": "",
+          "method": "Microscopy of Leishman stained smear"
+        },
+        {
+          "test_name": "Peripheral Smear - WBC",
+          "value": "Relative Lymphocytosis",
+          "unit": "",
+          "reference_range": "",
+          "method": "Microscopy of Leishman stained smear"
+        },
+        {
+          "test_name": "Peripheral Smear - Platelets",
+          "value": "Adequate",
+          "unit": "",
+          "reference_range": "",
+          "method": "Microscopy of Leishman stained smear"
+        }
+      ]
+    },
+    {
+      "section_name": "Complete Urine Examination (CUE)",
+      "sample_type": "Urine",
+      "tests": [
+        {
+          "test_name": "Colour",
+          "value": "Pale Yellow",
+          "unit": "",
+          "reference_range": "Pale Yellow",
+          "method": "Physical Examination"
+        },
+        {
+          "test_name": "Appearance",
+          "value": "Clear",
+          "unit": "",
+          "reference_range": "Clear",
+          "method": "Physical Examination"
+        },
+        {
+          "test_name": "Specific Gravity",
+          "value": 1.025,
+          "unit": "",
+          "reference_range": "1.003 - 1.030",
+          "method": "Ion Exchange"
+        },
+        {
+          "test_name": "Reaction/pH",
+          "value": 6.0,
+          "unit": "",
+          "reference_range": "4.6 - 8",
+          "method": "Reagent Strip Method / Double Indicator"
+        },
+        {
+          "test_name": "Protein",
+          "value": "Nil",
+          "unit": "",
+          "reference_range": "Nil-Trace",
+          "method": "Reagent Strip/Protein error of Indicator"
+        },
+        {
+          "test_name": "Glucose",
+          "value": "Nil",
+          "unit": "",
+          "reference_range": "Nil",
+          "method": "GOD-POD"
+        },
+        {
+          "test_name": "Urobilinogen",
+          "value": "Normal",
+          "unit": "",
+          "reference_range": "NA",
+          "method": "Reagent Strip/Modified Ehrlich reaction"
+        },
+        {
+          "test_name": "Bilirubin",
+          "value": "Negative",
+          "unit": "",
+          "reference_range": "Negative",
+          "method": "Diazonium"
+        },
+        {
+          "test_name": "Ketones",
+          "value": "Negative",
+          "unit": "",
+          "reference_range": "Negative",
+          "method": "Reagent Strip/Nitroprusside reaction"
+        },
+        {
+          "test_name": "Nitrites",
+          "value": "Negative",
+          "unit": "",
+          "reference_range": "Negative",
+          "method": "Diazonium"
+        },
+        {
+          "test_name": "Pus Cells",
+          "value": "1-2",
+          "unit": "cells / HPF",
+          "reference_range": "0 - 5",
+          "method": "Microscopic Examination"
+        },
+        {
+          "test_name": "RBC",
+          "value": "Nil",
+          "unit": "cells / HPF",
+          "reference_range": "0 - 2",
+          "method": "Microscopic Examination"
+        },
+        {
+          "test_name": "Epithelial Cells",
+          "value": "0-1",
+          "unit": "cells / HPF",
+          "reference_range": "0 - 5",
+          "method": "Microscopic Examination"
+        },
+        {
+          "test_name": "Casts",
+          "value": "Nil",
+          "unit": "",
+          "reference_range": "Nil",
+          "method": "Microscopic Examination"
+        },
+        {
+          "test_name": "Crystals",
+          "value": "Nil",
+          "unit": "",
+          "reference_range": "Nil",
+          "method": "Microscopic Examination"
+        }
+      ]
+    },
+    {
+      "section_name": "Fasting Plasma Glucose",
+      "sample_type": "Fluoride Plasma",
+      "tests": [
+        {
+          "test_name": "Fasting Plasma Glucose",
+          "value": 87,
+          "unit": "mg/dL",
+          "reference_range": "Normal: 70 - 100, Impaired: 101 - 125, Diabetes: >=126",
+          "method": "Hexokinase"
+        }
+      ]
+    },
+    {
+      "section_name": "Vitamin B12",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Vitamin B12",
+          "value": 281,
+          "unit": "pg/mL",
+          "reference_range": "Deficient: <211, Normal: 211 - 911",
+          "method": "Chemiluminiscence Immunoassay"
+        }
+      ]
+    },
+    {
+      "section_name": "Liver Function Test (LFT-A)",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Total Bilirubin",
+          "value": 0.6,
+          "unit": "mg/dL",
+          "reference_range": "0.3 - 1.2",
+          "method": "Dichlorophenyl Diazonium Tetrafluoroborate"
+        },
+        {
+          "test_name": "Direct Bilirubin",
+          "value": 0.1,
+          "unit": "mg/dL",
+          "reference_range": "0.2",
+          "method": "Dichlorophenyl Diazonium Tetrafluoroborate"
+        },
+        {
+          "test_name": "Indirect Bilirubin",
+          "value": 0.5,
+          "unit": "mg/dL",
+          "reference_range": "<1.0",
+          "method": "Calculation"
+        },
+        {
+          "test_name": "SGPT/ALT",
+          "value": 24,
+          "unit": "U/L",
+          "reference_range": "0 - 50",
+          "method": "IFCC without P-5-P"
+        },
+        {
+          "test_name": "SGOT/AST",
+          "value": 19,
+          "unit": "U/L",
+          "reference_range": "0 - 50",
+          "method": "IFCC without P-5-P"
+        },
+        {
+          "test_name": "Alkaline Phosphatase",
+          "value": 60,
+          "unit": "U/L",
+          "reference_range": "43 - 115",
+          "method": "Kinetic PNPP-AMP"
+        },
+        {
+          "test_name": "Total Protein",
+          "value": 6.8,
+          "unit": "gm/dL",
+          "reference_range": "6.6 - 8.3",
+          "method": "Biuret"
+        },
+        {
+          "test_name": "Albumin",
+          "value": 3.6,
+          "unit": "gm/dL",
+          "reference_range": "3.5 - 5.2",
+          "method": "Bromocresol Green (BCG)"
+        },
+        {
+          "test_name": "Globulin",
+          "value": 3.2,
+          "unit": "gm/dL",
+          "reference_range": "1.8 - 3.6",
+          "method": "Calculation"
+        },
+        {
+          "test_name": "Protein A/G Ratio",
+          "value": 1.1,
+          "unit": "",
+          "reference_range": "0.8 - 2.0",
+          "method": "Calculation"
+        },
+        {
+          "test_name": "Gamma Glutamyl Transferase",
+          "value": 15,
+          "unit": "U/L",
+          "reference_range": "0 - 55",
+          "method": "UV Kinetic"
+        }
+      ]
+    },
+    {
+      "section_name": "Calcium",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Calcium",
+          "value": 8.8,
+          "unit": "mg/dL",
+          "reference_range": "8.8 - 10.6",
+          "method": "Arsenazo III"
+        }
+      ]
+    },
+    {
+      "section_name": "Creatinine",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.7 - 1.2",
+          "method": "Jaffe Kinetic IDMS traceable"
+        },
+        {
+          "test_name": "e-GFR (Glomerular Filtration Rate)",
+          "value": 99.2,
+          "unit": "ml/min/1.73 m\u00b2",
+          "reference_range": "Normal kidney function: >=90",
+          "method": "Calculation, CKD EPI equation"
+        }
+      ]
+    },
+    {
+      "section_name": "Erythrocyte Sedimentation Rate (ESR)",
+      "sample_type": "Whole Blood - EDTA",
+      "tests": [
+        {
+          "test_name": "ESR",
+          "value": 4,
+          "unit": "mm/hour",
+          "reference_range": "1 - 15",
+          "method": "Automated - Modified Westergren"
+        }
+      ]
+    },
+    {
+      "section_name": "Glycated Haemoglobin (HbA1C)",
+      "sample_type": "Whole Blood - EDTA",
+      "tests": [
+        {
+          "test_name": "Glycated Haemoglobin",
+          "value": 5.3,
+          "unit": "%",
+          "reference_range": "Non Diabetic: <5.6, Pre-Diabetic: 5.7 - 6.4, Diabetic: >=6.5",
+          "method": "High Performance Liquid Chromatography"
+        }
+      ]
+    },
+    {
+      "section_name": "Lipid Profile",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Triglycerides",
+          "value": 69,
+          "unit": "mg/dL",
+          "reference_range": "Desirable: <150, Borderline: 150-199, High: 200-499, Very High: >=500",
+          "method": "Glycerol Phosphate Oxidase (GPO), Peroxidase (POD)"
+        },
+        {
+          "test_name": "Total Cholesterol",
+          "value": 155,
+          "unit": "mg/dL",
+          "reference_range": "Desirable: <200, Borderline High: 200-239, High: >=240",
+          "method": "Cholesterol Oxidase Peroxidase (CHOD-POD)"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 99,
+          "unit": "mg/dL",
+          "reference_range": "Optimal: <100, Near Optimal: 100-129, Borderline High: 130-159, High: 160-189, Very High: >=190",
+          "method": "Calculated"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 42,
+          "unit": "mg/dL",
+          "reference_range": "Desirable: >=60, Optimal: 40-59, Undesirable: <40",
+          "method": "Enzymatic Immunoinhibition"
+        },
+        {
+          "test_name": "VLDL Cholesterol",
+          "value": 14,
+          "unit": "mg/dL",
+          "reference_range": "<30",
+          "method": "Calculation"
+        },
+        {
+          "test_name": "Total Cholesterol / HDL Cholesterol Ratio",
+          "value": 3.7,
+          "unit": "",
+          "reference_range": "Low Risk: 3.3-4.4, Average Risk: 4.5-7.1, Moderate Risk: 7.2-11.0",
+          "method": "Calculation"
+        },
+        {
+          "test_name": "LDL Cholesterol / HDL Cholesterol Ratio",
+          "value": 2.4,
+          "unit": "",
+          "reference_range": "Desirable: 0.5-3.0, Borderline Risk: 3.0-6.0, High Risk: >6.0",
+          "method": "Calculation"
+        }
+      ]
+    },
+    {
+      "section_name": "Echo Colour Doppler Study",
+      "sample_type": "N/A",
+      "tests": [
+        {
+          "test_name": "Mitral Valve",
+          "value": "Normal",
+          "unit": "",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Aortic Valve",
+          "value": "Normal",
+          "unit": "",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Pulmonary Valve",
+          "value": "Normal",
+          "unit": "",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Tricuspid Valve",
+          "value": "Normal",
+          "unit": "",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Left Atrium",
+          "value": 2.8,
+          "unit": "cm",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Left Ventricle - ESD",
+          "value": 2.7,
+          "unit": "cm",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Left Ventricle - EDD",
+          "value": 4.2,
+          "unit": "cm",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Left Ventricle - EF",
+          "value": 65,
+          "unit": "%",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        },
+        {
+          "test_name": "Conclusion",
+          "value": "Normal sized chambers, No RWMA, Good biventricular systolic function, Normal LV filling pattern, No MR/AR/TR, No PAH, No clot/effusion",
+          "unit": "",
+          "reference_range": "",
+          "method": "Transducer Frequency - 2.5/3.5/5.0 MHz"
+        }
+      ]
+    },
+    {
+      "section_name": "Uric Acid",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Uric Acid",
+          "value": 6.9,
+          "unit": "mg/dL",
+          "reference_range": "3.5 - 7.2",
+          "method": "Uricase-Peroxidase"
+        }
+      ]
+    },
+    {
+      "section_name": "X-Ray Chest PA View",
+      "sample_type": "N/A",
+      "tests": [
+        {
+          "test_name": "X-Ray Chest PA View",
+          "value": "Heart size normal, Mediastinal shadow normal, Hilar shadows normal, Lung fields clear, Costophrenic recesses clear, Domes of diaphragm normal, Bony cage normal",
+          "unit": "",
+          "reference_range": "",
+          "method": "Radiology and Imaging Sciences"
+        },
+        {
+          "test_name": "Impression",
+          "value": "Within normal limits",
+          "unit": "",
+          "reference_range": "",
+          "method": "Radiology and Imaging Sciences"
+        }
+      ]
+    },
+    {
+      "section_name": "Vitamin D - Total",
+      "sample_type": "Serum",
+      "tests": [
+        {
+          "test_name": "Vitamin D - Total",
+          "value": 38.06,
+          "unit": "ng/mL",
+          "reference_range": "Deficiency: <20, Insufficiency: 20-30, Sufficiency: 30-100, Toxicity: >100",
+          "method": "Chemiluminescence Immuno Assay (CLIA)"
+        }
+      ]
+    }
+  ],
+  "abnormal_parameters": [
+    {
+      "test_name": "MCHC",
+      "section": "Complete Blood Picture (CBP)",
+      "value": 35.1,
+      "unit": "gm/dL",
+      "reference_range": "31.5 - 34.5",
+      "status": "High"
+    },
+    {
+      "test_name": "Lymphocytes",
+      "section": "Complete Blood Picture (CBP)",
+      "value": 45,
+      "unit": "%",
+      "reference_range": "20 - 40",
+      "status": "High"
+    },
+    {
+      "test_name": "Absolute Lymphocyte Count",
+      "section": "Complete Blood Picture (CBP)",
+      "value": 3870,
+      "unit": "Cells/cumm",
+      "reference_range": "1000 - 3000",
+      "status": "High"
+    },
+    {
+      "test_name": "Peripheral Smear - WBC",
+      "section": "Complete Blood Picture (CBP)",
+      "value": "Relative Lymphocytosis",
+      "unit": "",
+      "reference_range": "",
+      "status": "Abnormal"
+    },
+    {
+      "test_name": "Direct Bilirubin",
+      "section": "Liver Function Test (LFT-A)",
+      "value": 0.1,
+      "unit": "mg/dL",
+      "reference_range": "0.2",
+      "status": "Low"
+    },
+    {
+      "test_name": "HDL Cholesterol",
+      "section": "Lipid Profile",
+      "value": 42,
+      "unit": "mg/dL",
+      "reference_range": "Desirable: >=60, Optimal: 40-59, Undesirable: <40",
+      "status": "Optimal but not Desirable"
+    }
+  ],
+  "health_insights": {
+    "clinical_interpretation": "The blood test results indicate overall normal health with a few parameters outside the reference range. Elevated MCHC, Lymphocytes, and Absolute Lymphocyte Count along with Relative Lymphocytosis in the peripheral smear may suggest a mild inflammatory or immune response, which should be correlated clinically. Low Direct Bilirubin is not typically clinically significant. HDL Cholesterol is within the optimal range but not at the desirable level, indicating a potential area for cardiovascular risk management. Thyroid profile, liver function, kidney function (e-GFR), glucose levels, and lipid profile are within normal limits. ECG shows sinus bradycardia, which should be correlated with clinical symptoms. Echo Doppler study and X-Ray Chest PA view are normal.",
+    "recommendations": [
+      "Consult a physician to evaluate the cause of elevated lymphocyte count and relative lymphocytosis, possibly indicating a mild infection or inflammation.",
+      "Monitor cardiovascular health and consider lifestyle modifications to improve HDL Cholesterol levels through diet and exercise.",
+      "Follow up on ECG findings of sinus bradycardia with a cardiologist if symptomatic (e.g., dizziness, fatigue).",
+      "Maintain regular health check-ups to monitor kidney function, lipid profile, and glucose levels, especially given the normal but borderline parameters.",
+      "Ensure adequate Vitamin D and B12 levels through diet or supplements if advised by a healthcare provider."
+    ]
+  },
+  "metadata": {
+    "processing_time_seconds": 77.83,
+    "model": "grok-3-latest",
+    "provider": "grok",
+    "timestamp": "2025-04-25T17:00:34.951971"
+  }
+}
